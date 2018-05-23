@@ -1,76 +1,58 @@
-languageCode = "en-us"
-title = "Prologue"
 baseurl = "http://example.org/"
+languageCode = "en-us"
 theme = "prologue"
-
+title = "Prologue"
 [params]
-  name = "Prasang Misra"
-  description = "Singer,Entertainer"
-  copyright = "Untitled."
-
-[[params.social]]
-  medium = "twitter"
-  icon = "twitter"
-  link = "https://twitter.com/prasangmisra"
-
-[[params.social]]
-  medium = "facebook"
-  icon = "facebook"
-  link = "https://www.facebook.com/rbrbandrecords"
-
-[[params.social]]
-  medium = "youtube"
-  icon = "youtube"
-  link = "https://www.youtube.com/channel/UCmS5QyYmLb1qLZAs_Kg97Bg"
-
-[[params.social]]
-  medium = "soundcloud"
-  icon = "dribbble"
-  link = "#"
-
-[[params.social]]
-  medium = "email"
-  icon = "envelope"
-  link = "#"
-
-# Portfolio column one
-
+copyright = "Untitled."
+description = "Singer,Entertainer"
+name = "Prasang Misra"
 [[params.portfolio1]]
-  title = "Ipsum Feugiat"
-  alt = ""
-  source = "img/pic02.jpg"
-  url = "#"
-
+alt = ""
+source = "img/pic02.jpg"
+title = "Ipsum Feugiat"
+url = "#"
 [[params.portfolio1]]
-  title = "Rhoncus Semper"
-  alt = ""
-  source = "img/pic03.jpg"
-  url = "#"
-
-# Portfolio column two
-
+alt = ""
+source = "img/pic03.jpg"
+title = "Rhoncus Semper"
+url = "#"
 [[params.portfolio2]]
-  title = "Magna Nullam"
-  alt = ""
-  source = "img/pic04.jpg"
-  url = "#"
-
+alt = ""
+source = "img/pic04.jpg"
+title = "Magna Nullam"
+url = "#"
 [[params.portfolio2]]
-  title = "Natoque Vitae"
-  alt = ""
-  source = "img/pic05.jpg"
-  url = "#"
-
-# Portfolio column 3
-
+alt = ""
+source = "img/pic05.jpg"
+title = "Natoque Vitae"
+url = "#"
 [[params.portfolio3]]
-  title = "Dolor Penatibus"
-  alt = ""
-  source = "img/pic06.jpg"
-  url = "#"
-
+alt = ""
+source = "img/pic06.jpg"
+title = "Dolor Penatibus"
+url = "#"
 [[params.portfolio3]]
-  title = "Orci Convallis"
-  alt = ""
-  source = "img/pic07.jpg"
-  url = "#"
+alt = ""
+source = "img/pic07.jpg"
+title = "Orci Convallis"
+url = "#"
+[[params.social]]
+icon = "twitter"
+link = "https://twitter.com/prasangmisra"
+medium = "twitter"
+[[params.social]]
+icon = "facebook"
+link = "https://www.facebook.com/rbrbandrecords"
+medium = "facebook"
+[[params.social]]
+icon = "youtube"
+link = "https://www.youtube.com/channel/UCmS5QyYmLb1qLZAs_Kg97Bg"
+medium = "youtube"
+[[params.social]]
+icon = "dribbble"
+link = "#"
+medium = "soundcloud"
+[[params.social]]
+icon = "envelope"
+link = "#"
+medium = "email"
