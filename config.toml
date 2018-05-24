@@ -3,7 +3,7 @@ languageCode = "en-us"
 theme = "prologue"
 title = "Prologue"
 [params]
-copyright = "Untitled."
+copyright = "RBRband Records"
 description = "Vocalist, Sound Engineer"
 name = "Prasang Misra"
 [[params.portfolio1]]
@@ -50,7 +50,7 @@ link = "https://www.youtube.com/channel/UCmS5QyYmLb1qLZAs_Kg97Bg"
 medium = "youtube"
 [[params.social]]
 icon = "soundcloud"
-link = "#"
+link = "https://soundcloud.com/prasangmisra"
 medium = "soundcloud"
 [[params.social]]
 icon = "envelope"
