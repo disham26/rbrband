@@ -49,7 +49,7 @@ icon = "youtube"
 link = "https://www.youtube.com/channel/UCmS5QyYmLb1qLZAs_Kg97Bg"
 medium = "youtube"
 [[params.social]]
-icon = "dribbble"
+icon = "soundcloud"
 link = "#"
 medium = "soundcloud"
 [[params.social]]
