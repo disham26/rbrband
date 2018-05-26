@@ -1,7 +1,7 @@
-baseurl = "http://example.org/"
+baseurl = "http://www.rbrband.in/"
 languageCode = "en-us"
 theme = "prologue"
-title = "Prologue"
+title = "RBRband Records"
 [params]
 copyright = "RBRband Records"
 description = "Vocalist, Sound Engineer"
@@ -9,7 +9,7 @@ name = "Prasang Misra"
 [[params.portfolio1]]
 alt = ""
 source = "img/pic02.jpg"
-title = "Ipsum Feugiat"
+title = "Safar Cover"
 url = "#"
 [[params.portfolio1]]
 alt = ""

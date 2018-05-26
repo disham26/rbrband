@@ -1,48 +1,33 @@
 <!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
-		<title>{{ .Title }}</title>
+	<meta name="generator" content="Hugo 0.38.1" />
+		<title>RBRband Records</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+		
 		<link rel="stylesheet" href="/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+		
+		
 	</head>
 	<body>
 
-		<!-- Header -->
+		
 			<div id="header">
 
 				<div class="top">
 
-					<!-- Logo -->
+					
 						<div id="logo">
 							<span class="image avatar48"><img src="img/my_dp.jpg" alt="" /></span>
-							<h1 id="title">{{ .Site.Params.name }}</h1>
-							<p>{{ .Site.Params.description }}</p>
+							<h1 id="title">Prasang Misra</h1>
+							<p>Vocalist, Sound Engineer</p>
 						</div>
 
-					<!-- Nav -->
+					
 						<nav id="nav">
-							<!--
-
-								Prologue's nav expects links in one of two formats:
-
-								1. Hash link (scrolls to a different section within the page)
-
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-								2. Standard link (sends the user to another page/site)
-
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-							-->
+							
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
@@ -59,21 +44,29 @@
 
 				<div class="bottom">
 
-					<!-- Social Icons -->
+					
 						<ul class="icons">
-              {{ range .Site.Params.social }}
-              <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
-              {{ end }}
+              
+              <li><a href="https://twitter.com/prasangmisra" class="icon fa-twitter"><span class="label">twitter</span></a></li>
+              
+              <li><a href="https://www.facebook.com/rbrbandrecords" class="icon fa-facebook"><span class="label">facebook</span></a></li>
+              
+              <li><a href="https://www.youtube.com/channel/UCmS5QyYmLb1qLZAs_Kg97Bg" class="icon fa-youtube"><span class="label">youtube</span></a></li>
+              
+              <li><a href="https://soundcloud.com/prasangmisra" class="icon fa-soundcloud"><span class="label">soundcloud</span></a></li>
+              
+              <li><a href="#" class="icon fa-envelope"><span class="label">email</span></a></li>
+              
 						</ul>
 
 				</div>
 
 			</div>
 
-		<!-- Main -->
+		
 			<div id="main">
 
-				<!-- Intro -->
+				
 					<section id="top" class="one dark cover">
 						<div class="container">
 
@@ -91,7 +84,7 @@
 						</div>
 					</section>
 
-				<!-- Portfolio -->
+				
 					<section id="portfolio" class="two">
 						<div class="container">
 
@@ -104,35 +97,55 @@
 
               <div class="row">
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio1 }} 
+                   
                   <article class="item">
 <iframe width="280" height="315" src="https://www.youtube.com/embed/1SA6c7UCcr0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                    <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Safar Cover</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+<iframe width="280" height="315" src="https://www.youtube.com/embed/1SA6c7UCcr0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                    <header>
+                      <h3>Rhoncus Semper</h3>
+                    </header>
+                  </article>
+                  
                 </div>
 
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio2 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic04.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Magna Nullam</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic05.jpg" alt="" /></a>
+                    <header>
+                      <h3>Natoque Vitae</h3>
+                    </header>
+                  </article>
+                  
                 </div>
 
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio3 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic06.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Dolor Penatibus</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic07.jpg" alt="" /></a>
+                    <header>
+                      <h3>Orci Convallis</h3>
+                    </header>
+                  </article>
+                  
                 </div>
               </div>
 
@@ -143,7 +156,7 @@
 
 
 
-		<!-- Services -->
+		
 					<section id="services" class="two">
 						<div class="container">
 
@@ -156,36 +169,57 @@
 
               <div class="row">
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio1 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic02.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Safar Cover</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic03.jpg" alt="" /></a>
+                    <header>
+                      <h3>Rhoncus Semper</h3>
+                    </header>
+                  </article>
+                  
                 </div>
 
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio2 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic04.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Magna Nullam</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic05.jpg" alt="" /></a>
+                    <header>
+                      <h3>Natoque Vitae</h3>
+                    </header>
+                  </article>
+                  
                 </div>
 
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio3 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic06.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Dolor Penatibus</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic07.jpg" alt="" /></a>
+                    <header>
+                      <h3>Orci Convallis</h3>
+                    </header>
+                  </article>
+                  
                 </div>
               </div>
 
@@ -194,7 +228,7 @@
 					</section>
 
 
-				<!-- About Me -->
+				
 					<section id="about" class="three">
 						<div class="container">
 
@@ -209,7 +243,7 @@
 						</div>
 					</section>
 
-				<!-- Contact -->
+				
 					<section id="contact" class="four">
 						<div class="container">
 
@@ -236,7 +270,7 @@
 					</section>
 
 
-					<!-- Media -->
+					
 					<section id="media" class="two">
 						<div class="container">
 
@@ -249,36 +283,57 @@
 
               <div class="row">
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio1 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic02.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Safar Cover</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic03.jpg" alt="" /></a>
+                    <header>
+                      <h3>Rhoncus Semper</h3>
+                    </header>
+                  </article>
+                  
                 </div>
 
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio2 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic04.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Magna Nullam</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic05.jpg" alt="" /></a>
+                    <header>
+                      <h3>Natoque Vitae</h3>
+                    </header>
+                  </article>
+                  
                 </div>
 
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio3 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic06.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Dolor Penatibus</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic07.jpg" alt="" /></a>
+                    <header>
+                      <h3>Orci Convallis</h3>
+                    </header>
+                  </article>
+                  
                 </div>
               </div>
 
@@ -290,7 +345,7 @@
 
 
 
-					<!-- Gallery -->
+					
 					<section id="gallery" class="two">
 						<div class="container">
 
@@ -303,36 +358,57 @@
 
               <div class="row">
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio1 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic02.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Safar Cover</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic03.jpg" alt="" /></a>
+                    <header>
+                      <h3>Rhoncus Semper</h3>
+                    </header>
+                  </article>
+                  
                 </div>
 
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio2 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic04.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Magna Nullam</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic05.jpg" alt="" /></a>
+                    <header>
+                      <h3>Natoque Vitae</h3>
+                    </header>
+                  </article>
+                  
                 </div>
 
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio3 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic06.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Dolor Penatibus</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic07.jpg" alt="" /></a>
+                    <header>
+                      <h3>Orci Convallis</h3>
+                    </header>
+                  </article>
+                  
                 </div>
               </div>
 
@@ -343,7 +419,7 @@
 
 
 
-					<!-- Events -->
+					
 					<section id="events" class="two">
 						<div class="container">
 
@@ -356,36 +432,57 @@
 
               <div class="row">
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio1 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic02.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Safar Cover</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic03.jpg" alt="" /></a>
+                    <header>
+                      <h3>Rhoncus Semper</h3>
+                    </header>
+                  </article>
+                  
                 </div>
 
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio2 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic04.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Magna Nullam</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic05.jpg" alt="" /></a>
+                    <header>
+                      <h3>Natoque Vitae</h3>
+                    </header>
+                  </article>
+                  
                 </div>
 
                 <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio3 }} 
+                   
                   <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <a href="#" class="image fit"><img src="img/pic06.jpg" alt="" /></a>
                     <header>
-                      <h3>{{ .title }}</h3>
+                      <h3>Dolor Penatibus</h3>
                     </header>
                   </article>
-                  {{ end }}
+                   
+                  <article class="item">
+                    <a href="#" class="image fit"><img src="img/pic07.jpg" alt="" /></a>
+                    <header>
+                      <h3>Orci Convallis</h3>
+                    </header>
+                  </article>
+                  
                 </div>
               </div>
 
@@ -395,23 +492,23 @@
 
 			</div>
 
-		<!-- Footer -->
+		
 			<div id="footer">
 
-				<!-- Copyright -->
+				
 					<ul class="copyright">
-						<li>&copy; {{ .Site.Params.copyright }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Powered by <a href="https://gohugo.io/">Hugo</a></li>
+						<li>&copy; RBRband Records</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Powered by <a href="https://gohugo.io/">Hugo</a></li>
 					</ul>
 
 			</div>
 
-		<!-- Scripts -->
+		
 			<script src="/js/jquery.min.js"></script>
 			<script src="/js/jquery.scrolly.min.js"></script>
 			<script src="/js/jquery.scrollzer.min.js"></script>
 			<script src="/js/skel.min.js"></script>
 			<script src="/js/util.js"></script>
-			<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+			
 			<script src="/js/main.js"></script>
 
 	</body>
