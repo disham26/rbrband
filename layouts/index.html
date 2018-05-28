@@ -1,418 +1,621 @@
 <!DOCTYPE HTML>
 <!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Prologue by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
-	<head>
-		<title>{{ .Title }}</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
+<html class="no-js">
+<head>
+  <title>{{ .Title }}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/scroll.css" />
+  <link rel="stylesheet" href="/css/scrollIG.css" />
+  <link rel="stylesheet" href="/css/scrollISh.css" />
+  <link rel="stylesheet" href="/css/scrollISe.css" />
+  <link rel="stylesheet" href="/css/scrollCG.css" />
+  <link rel="stylesheet" href="/css/scrollCSe.css" />
+  <link rel="stylesheet" href="/css/scrollCSh.css" />
 
-		<!-- Header -->
-			<div id="header">
+  <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+</head>
+<body>
 
-				<div class="top">
+  <!-- Header -->
+  <div id="header">
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="img/my_dp.jpg" alt="" /></span>
-							<h1 id="title">{{ .Site.Params.name }}</h1>
-							<p>{{ .Site.Params.description }}</p>
-						</div>
+    <div class="top">
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
+      <!-- Logo -->
+      <div id="logo">
+        <span class="image avatar48"><img src="img/my_dp.jpg" alt="" /></span>
+        <h1 id="title">{{ .Site.Params.name }}</h1>
+        <p>{{ .Site.Params.description }}</p>
+      </div>
 
-								Prologue's nav expects links in one of two formats:
+      <!-- Nav -->
+      <nav id="nav">
+              <!--
 
-								1. Hash link (scrolls to a different section within the page)
+                Prologue's nav expects links in one of two formats:
 
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+                1. Hash link (scrolls to a different section within the page)
 
-								2. Standard link (sends the user to another page/site)
+                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+                2. Standard link (sends the user to another page/site)
 
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#services" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Services</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-								<li><a href="#media" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper-o">Media Coverage</span></a></li>
-								<li><a href="#gallery" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-image">Gallery</span></a></li>
-								<li><a href="#events" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar">Events</span></a></li>
-		</ul>
-						</nav>
+                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 
-				</div>
+                 -->
+                 <ul>
+                  <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                  <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+                  <li><a href="#services" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Services</span></a></li>
+                  <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+                  <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+                  <li><a href="#media" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper-o">Media Coverage</span></a></li>
+                  <li><a href="#gallery" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-image">Gallery</span></a></li>
+                  <li><a href="#events" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar">Events</span></a></li>
+                </ul>
+              </nav>
 
-				<div class="bottom">
+            </div>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-              {{ range .Site.Params.social }}
-              <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
-              {{ end }}
-						</ul>
+            <div class="bottom">
 
-				</div>
+              <!-- Social Icons -->
+              <ul class="icons">
+                {{ range .Site.Params.social }}
+                <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+                {{ end }}
+              </ul>
 
-			</div>
+            </div>
 
-		<!-- Main -->
-			<div id="main">
+          </div>
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+          <!-- Main -->
+          <div id="main">
 
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Prasang</strong>, <br>
-								Welcome to my website </a>.</h2>
-								<p>Hope you find something interesting here<br />
-								and book me for your show</p>
-							</header>
+            <!-- Intro -->
+            <section id="top" class="one dark cover">
+              <div class="container">
 
-							<footer>
-								<a href="#portfolio" class="button scrolly">My Portfolio</a>
-							</footer>
+                <header>
+                  <h2 class="alt">Hi! I'm <strong>Prasang</strong>, <br>
+                  Welcome to my website </a>.</h2>
+                  <p>Hope you find something interesting here<br />
+                  and book me for your show</p>
+                </header>
 
-						</div>
-					</section>
+                <footer>
+                  <a href="#portfolio" class="button scrolly">My Portfolio</a>
+                </footer>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-
-							<p>Some random text about my portfolio</p>
-
-
-              <div class="row">
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio1 }} 
-                  <article class="item">
-<iframe width="280" height="315" src="https://www.youtube.com/embed/1SA6c7UCcr0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio2 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio3 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
               </div>
+            </section>
+
+            <!-- Portfolio -->
+            <section id="portfolio" class="two">
+              <div class="container">
+
+                <header>
+                  <h2>Portfolio</h2>
+                </header>
+
+                <p2>Some basic portfolio</p2>
+
+                <!-- Indivudual Section-->
+<!--Individual -->                <h3>Individual</h3>
+
+<!-- Gigs -->                <div>
+                  <h4>Gigs</h4>
+                  
+                  <div class="pn-ProductNav_WrapperIG">
+                    <nav id="pnProductNavIG" class="pn-ProductNavIG dragscrollIG">
+                      <div id="pnProductNavContentsIG" class="pn-ProductNav_ContentsIG">
+<!-- <a href="#" class="pn-ProductNav_Link" aria-selected="true">Chairs</a>
+-->
+
+{{ range .Site.Params.Individual.Gigs }} 
+<article class="pn-ProductNav_LinkIG" aria-selected="true">  
+  <article class="item">
+    <iframe width="280" height="315" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+      <h3>{{ .title }}</h3>
+    </header>
+  </article>
+</article>
+{{ end }}
+
+
+
+<span id="pnIndicatorIG" class="pn-ProductNav_IndicatorIG"></span>
+</div>
+</nav>
+<button id="pnAdvancerLeftIG" name="pnAdvancerLeftIG" class="pn-AdvancerIG pn-Advancer_LeftIG" type="button">
+  <svg class="pn-Advancer_IconIG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg>
+</button>
+
+<button id="pnAdvancerRightIG" name="pnAdvancerRightIG" class="pn-AdvancerIG pn-Advancer_RightIG" type="button">
+  <svg class="pn-Advancer_IconIG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" /></svg>
+</button>
+</div>
+
+</div>
+
+
+
+
+<!-- Shows -->                <div>
+                  <h4>Shows</h4>
+                  
+                  <div class="pn-ProductNav_WrapperISh">
+                    <nav id="pnProductNavISh" class="pn-ProductNavISh dragscrollISh">
+                      <div id="pnProductNavContentsISh" class="pn-ProductNav_ContentsISh">
+<!-- <a href="#" class="pn-ProductNav_Link" aria-selected="true">Chairs</a>
+-->
+
+{{ range .Site.Params.Individual.Shows.JKVM }} 
+<article class="pn-ProductNav_LinkISh" aria-selected="true">  
+  <article class="item">
+    <iframe width="280" height="498" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+      <h3>{{ .title }}</h3>
+    </header>
+  </article>
+</article>
+{{ end }}
+
+
+
+<span id="pnIndicatorISh" class="pn-ProductNav_IndicatorISh"></span>
+</div>
+</nav>
+<button id="pnAdvancerLeftISh" name="pnAdvancerLeftISh" class="pn-AdvancerISh pn-Advancer_LeftISh" type="button">
+  <svg class="pn-Advancer_IconISh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg>
+</button>
+
+<button id="pnAdvancerRightISh" name="pnAdvancerRightISh" class="pn-AdvancerISh pn-Advancer_RightISh" type="button">
+  <svg class="pn-Advancer_IconISh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" /></svg>
+</button>
+</div>
+
+</div>
+
+<!-- Sessions -->                <div>
+                  <h4>Sessions</h4>
+                  
+                  <div class="pn-ProductNav_WrapperISe">
+                    <nav id="pnProductNavISe" class="pn-ProductNavISe dragscrollISe">
+                      <div id="pnProductNavContentsISe" class="pn-ProductNav_ContentsISe">
+{{ range .Site.Params.Individual.Sessions }} 
+<article class="pn-ProductNav_LinkISe" aria-selected="true">  
+  <article class="item">
+    <iframe width="280" height="315" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+      <h3>{{ .title }}</h3>
+    </header>
+  </article>
+</article>
+{{ end }}
+<span id="pnIndicatorISe" class="pn-ProductNav_IndicatorISe"></span>
+</div>
+</nav>
+<button id="pnAdvancerLeftISe" name="pnAdvancerLeftISe" class="pn-AdvancerISe pn-Advancer_LeftISe" type="button">
+  <svg class="pn-Advancer_IconISe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg>
+</button>
+<button id="pnAdvancerRightISe" name="pnAdvancerRightISe" class="pn-AdvancerISe pn-Advancer_RightISe" type="button">
+  <svg class="pn-Advancer_IconISe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" /></svg>
+</button>
+</div>
+
+</div>
+
+
+<!-- Collab Section-->
+<h3>Collab</h3>
+
+<!-- Gigs -->                <div>
+                  <h4>Gigs</h4>
+                  
+                  <div class="pn-ProductNav_WrapperCG">
+                    <nav id="pnProductNavCG" class="pn-ProductNav dragscrollCG">
+                      <div id="pnProductNavContentsCG" class="pn-ProductNav_ContentsCG">
+<!-- <a href="#" class="pn-ProductNav_Link" aria-selected="true">Chairs</a>
+-->
+
+{{ range .Site.Params.Individual.Gigs }} 
+<article class="pn-ProductNav_LinkCG" aria-selected="true">  
+  <article class="item">
+    <iframe width="280" height="315" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+      <h3>{{ .title }}</h3>
+    </header>
+  </article>
+</article>
+{{ end }}
+
+
+
+<span id="pnIndicatorCG" class="pn-ProductNav_IndicatorCG"></span>
+</div>
+</nav>
+<button id="pnAdvancerLeftCG" name="pnAdvancerLeftCG" class="pn-AdvancerCG pn-Advancer_LeftCG" type="button">
+  <svg class="pn-Advancer_IconCG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg>
+</button>
+
+<button id="pnAdvancerRightCG" name="pnAdvancerRightCG" class="pn-AdvancerCG pn-Advancer_RightCG" type="button">
+  <svg class="pn-Advancer_IconCG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" /></svg>
+</button>
+</div>
+
+</div>
+
+
+
+<!-- Shows -->                <div>
+                  <h4>Shows</h4>
+                  
+                  <div class="pn-ProductNav_WrapperCSh">
+                    <nav id="pnProductNavCSh" class="pn-ProductNav dragscrollCSh">
+                      <div id="pnProductNavContentsCSh" class="pn-ProductNav_ContentsCSh">
+<!-- <a href="#" class="pn-ProductNav_Link" aria-selected="true">Chairs</a>
+-->
+
+{{ range .Site.Params.Individual.Shows.JKVM }} 
+<article class="pn-ProductNav_LinkCSh" aria-selected="true">  
+  <article class="item">
+    <iframe width="280" height="315" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+      <h3>{{ .title }}</h3>
+    </header>
+  </article>
+</article>
+{{ end }}
+
+
+
+<span id="pnIndicatorCSh" class="pn-ProductNav_IndicatorCSh"></span>
+</div>
+</nav>
+<button id="pnAdvancerLeftCSh" name="pnAdvancerLeftCSh" class="pn-AdvancerCSh pn-Advancer_LeftCSh" type="button">
+  <svg class="pn-Advancer_IconCSh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg>
+</button>
+
+<button id="pnAdvancerRightCSh" name="pnAdvancerRightCSh" class="pn-AdvancerCSh pn-Advancer_RightCSh" type="button">
+  <svg class="pn-Advancer_IconCSh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" /></svg>
+</button>
+</div>
+
+</div>
+
+
+<!-- Sessions -->                <div>
+                  <h4>Sessions</h4>
+                
+                  <div class="pn-ProductNav_WrapperCSe">
+                    <nav id="pnProductNavCSe" class="pn-ProductNavCSe dragscrollCSe">
+                      <div id="pnProductNavContentsCSe" class="pn-ProductNav_ContentsCSe">
+{{ range .Site.Params.Individual.Sessions }} 
+<article class="pn-ProductNav_LinkCSe" aria-selected="true">  
+  <article class="item">
+    <iframe width="280" height="315" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+      <h3>{{ .title }}</h3>
+    </header>
+  </article>
+</article>
+{{ end }}
+<span id="pnIndicatorCSe" class="pn-ProductNav_IndicatorCSe"></span>
+</div>
+</nav>
+<button id="pnAdvancerLeftCSe" name="pnAdvancerLeftCSe" class="pn-AdvancerCSe pn-Advancer_LeftCSe" type="button">
+  <svg class="pn-Advancer_IconCSe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg>
+</button>
+<button id="pnAdvancerRightCSe" name="pnAdvancerRightCSe" class="pn-AdvancerCSe pn-Advancer_RightCSe" type="button">
+  <svg class="pn-Advancer_IconCSe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" /></svg>
+</button>
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+
+
+
+<!-- Services -->
+<section id="services" class="three">
+  <div class="container">
 
+    <header>
+      <h2>Services</h2>
+    </header>
 
-						</div>
-					</section>
+    <p>Here we will describe the list of services we provide</p>
 
 
+    <div class="row">
+      <div class="4u 12u$(mobile)">
+        {{ range .Site.Params.portfolio1 }} 
+        <article class="item">
+          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+          <header>
+            <h3>{{ .title }}</h3>
+          </header>
+        </article>
+        {{ end }}
+      </div>
 
+      <div class="4u 12u$(mobile)">
+        {{ range .Site.Params.portfolio2 }} 
+        <article class="item">
+          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+          <header>
+            <h3>{{ .title }}</h3>
+          </header>
+        </article>
+        {{ end }}
+      </div>
+
+      <div class="4u 12u$(mobile)">
+        {{ range .Site.Params.portfolio3 }} 
+        <article class="item">
+          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+          <header>
+            <h3>{{ .title }}</h3>
+          </header>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+
+<!-- About Me -->
+<section id="about" class="four">
+  <div class="container">
 
-		<!-- Services -->
-					<section id="services" class="two">
-						<div class="container">
+    <header>
+      <h2>About Me</h2>
+    </header>
 
-							<header>
-								<h2>Services</h2>
-							</header>
+    <a href="#" class="image featured"><img src="img/about_me_prasang.jpg" alt="" /></a>
 
-							<p>Here we will describe the list of services we provide</p>
+    <p>Prasang is a brilliant vocalist who took his first step into music at the at the age of 4 to now performing Bollywood songs live at multiple venues and stage shows. He has bagged numerous awards for performance arts since then. He trended on YouTube for his rendition of the infamous "Kolaveri Di" adaptation as a Bhajan "Ambe Ji" with 50k+ views and likes and charted on the radio for his original compositions. <br>He has a firm belief that music is the only language that can connect people at every level and has the power to shape moods and emotions. <br>With the goal to feature the most serene to the most dynamic renditions of the latest Bollywood songs as well as freshly brewed compositions from our studio, he will stretch the band of your music spectrum.</p>
 
+  </div>
+</section>
 
-              <div class="row">
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio1 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio2 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio3 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-              </div>
-
 
-						</div>
-					</section>
 
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+<!-- Contact -->
+<section id="contact" class="five">
+  <div class="container">
 
-							<a href="#" class="image featured"><img src="img/about_me_prasang.jpg" alt="" /></a>
+    <header>
+      <h2>Contact</h2>
+    </header>
 
-							<p>Prasang is a brilliant vocalist who took his first step into music at the at the age of 4 to now performing Bollywood songs live at multiple venues and stage shows. He has bagged numerous awards for performance arts since then. He trended on YouTube for his rendition of the infamous "Kolaveri Di" adaptation as a Bhajan "Ambe Ji" with 50k+ views and likes and charted on the radio for his original compositions. <br>He has a firm belief that music is the only language that can connect people at every level and has the power to shape moods and emotions. <br>With the goal to feature the most serene to the most dynamic renditions of the latest Bollywood songs as well as freshly brewed compositions from our studio, he will stretch the band of your music spectrum.</p>
+    <p>For any business enquiries you can call on +91-7698189874</p>
 
-						</div>
-					</section>
+    <form method="post" action="#">
+      <div class="row">
+        <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+        <div class="6u$ 12u$(mobile)"><input type="email" name="email" placeholder="Email" /></div>
+        <div class="12u$">
+          <textarea name="message" placeholder="Message"></textarea>
+        </div>
+        <div class="12u$">
+          <input type="submit" value="Send Message" />
+        </div>
+      </div>
+    </form>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Media -->
+<section id="media" class="six">
+  <div class="container">
+
+    <header>
+      <h2>Media Coverage</h2>
+    </header>
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>For any business enquiries you can call on +91-7698189874</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="email" name="email" placeholder="Email" /></div>
-									<div class="12u$">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="12u$">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-
-
-					<!-- Media -->
-					<section id="media" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Media Coverage</h2>
-							</header>
-
-							<p>Interviews, blog posts, social shares, this section will have it all</p>
-
-
-              <div class="row">
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio1 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio2 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio3 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-              </div>
-
-
-						</div>
-					</section>
-
-
-
-
-
-					<!-- Gallery -->
-					<section id="gallery" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Gallery</h2>
-							</header>
-
-							<p>Images showing how people go crazy when I perform</p>
-
-
-              <div class="row">
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio1 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio2 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio3 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-              </div>
-
-
-						</div>
-					</section>
-
-
-
-
-					<!-- Events -->
-					<section id="events" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Events</h2>
-							</header>
-
-							<p>My tight schedule will be out to public access</p>
-
-
-              <div class="row">
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio1 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio2 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio3 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-              </div>
-
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; {{ .Site.Params.copyright }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Powered by <a href="https://gohugo.io/">Hugo</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="/js/jquery.min.js"></script>
-			<script src="/js/jquery.scrolly.min.js"></script>
-			<script src="/js/jquery.scrollzer.min.js"></script>
-			<script src="/js/skel.min.js"></script>
-			<script src="/js/util.js"></script>
-			<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/js/main.js"></script>
-
-	</body>
+    <p>Interviews, blog posts, social shares, this section will have it all</p>
+
+
+    <div class="row">
+      <div class="4u 12u$(mobile)">
+        {{ range .Site.Params.portfolio1 }} 
+        <article class="item">
+          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+          <header>
+            <h3>{{ .title }}</h3>
+          </header>
+        </article>
+        {{ end }}
+      </div>
+
+      <div class="4u 12u$(mobile)">
+        {{ range .Site.Params.portfolio2 }} 
+        <article class="item">
+          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+          <header>
+            <h3>{{ .title }}</h3>
+          </header>
+        </article>
+        {{ end }}
+      </div>
+
+      <div class="4u 12u$(mobile)">
+        {{ range .Site.Params.portfolio3 }} 
+        <article class="item">
+          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+          <header>
+            <h3>{{ .title }}</h3>
+          </header>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+
+<!-- Gallery -->
+<section id="gallery" class="seven">
+  <div class="container">
+
+    <header>
+      <h2>Gallery</h2>
+    </header>
+
+    <p>Images showing how people go crazy when I perform</p>
+
+
+    <div class="row">
+      <div class="4u 12u$(mobile)">
+        {{ range .Site.Params.portfolio1 }} 
+        <article class="item">
+          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+          <header>
+            <h3>{{ .title }}</h3>
+          </header>
+        </article>
+        {{ end }}
+      </div>
+
+      <div class="4u 12u$(mobile)">
+        {{ range .Site.Params.portfolio2 }} 
+        <article class="item">
+          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+          <header>
+            <h3>{{ .title }}</h3>
+          </header>
+        </article>
+        {{ end }}
+      </div>
+
+      <div class="4u 12u$(mobile)">
+        {{ range .Site.Params.portfolio3 }} 
+        <article class="item">
+          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+          <header>
+            <h3>{{ .title }}</h3>
+          </header>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Events -->
+<section id="events" class="eight">
+  <div class="container">
+
+    <header>
+      <h2>Events</h2>
+    </header>
+
+    <p>My tight schedule will be out to public access</p>
+
+
+    <div class="row">
+      <div class="4u 12u$(mobile)">
+        {{ range .Site.Params.portfolio1 }} 
+        <article class="item">
+          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+          <header>
+            <h3>{{ .title }}</h3>
+          </header>
+        </article>
+        {{ end }}
+      </div>
+
+      <div class="4u 12u$(mobile)">
+        {{ range .Site.Params.portfolio2 }} 
+        <article class="item">
+          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+          <header>
+            <h3>{{ .title }}</h3>
+          </header>
+        </article>
+        {{ end }}
+      </div>
+
+      <div class="4u 12u$(mobile)">
+        {{ range .Site.Params.portfolio3 }} 
+        <article class="item">
+          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+          <header>
+            <h3>{{ .title }}</h3>
+          </header>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+
+  <!-- Copyright -->
+  <ul class="copyright">
+    <li>&copy; {{ .Site.Params.copyright }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Powered by <a href="https://gohugo.io/">Hugo</a></li>
+  </ul>
+
+</div>
+
+<!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.scrolly.min.js"></script>
+<script src="/js/jquery.scrollzer.min.js"></script>
+<script src="/js/skel.min.js"></script>
+<script src="/js/util.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/scrollCG.js"></script>
+<script src="/js/scrollCSe.js"></script>
+<script src="/js/scrollCSh.js"></script>
+<script src="/js/scrollIG.js"></script>
+<script src="/js/scrollISe.js"></script>
+<script src="/js/scrollISh.js"></script>
+
+
+
+</body>
 </html>

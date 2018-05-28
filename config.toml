@@ -56,3 +56,122 @@ medium = "soundcloud"
 icon = "envelope"
 link = "#"
 medium = "email"
+
+
+[[params.individual.gigs]]
+title = "Enna Sona"
+url = "https://www.youtube.com/embed/IrfZ3fC5NWo"
+
+[[params.individual.gigs]]
+title = "Gulaabi Aakhein"
+url = "https://www.youtube.com/embed/0jK6wxLgiIc"
+
+[[params.individual.gigs]]
+title = "Haareya"
+url = "https://www.youtube.com/embed/Y8pIj4kIheI"
+
+
+[[params.individual.gigs]]
+title = "Fitoor"
+url = "https://www.youtube.com/embed/J6GacoGTGDA"
+
+[[params.individual.gigs]]
+title = "Love Mashup"
+url = "https://www.youtube.com/embed/uHuB-meZnC8"
+
+
+
+[[params.individual.shows.jkvm]]
+title = "Episode1"
+url = "https://www.youtube.com/embed/MQYQwj3TM50"
+
+[[params.individual.shows.jkvm]]
+title = "Episode 2"
+url = "https://www.youtube.com/embed/Njy4M6cmAq8"
+
+[[params.individual.shows.jkvm]]
+title = "Episode 3"
+url = "https://www.youtube.com/embed/APFupfYWcb8"
+
+[[params.individual.shows.jkvm]]
+title = "Episode 4"
+url = "https://www.youtube.com/embed/sC0qCaUwaxs"
+
+[[params.individual.shows.jkvm]]
+title = "Episode 5"
+url = "https://www.youtube.com/embed/bVY3gaP14OA"
+
+[[params.individual.shows.jkvm]]
+title = "Episode 6"
+url = "https://www.youtube.com/embed/gMJzQhiqKEI"
+
+[[params.individual.shows.jkvm]]
+title = "Episode 7"
+url = "https://www.youtube.com/embed/LbE_ifbWv58"
+
+[[params.individual.shows.jkvm]]
+title = "Episode 8"
+url = "https://www.youtube.com/embed/Tu04t5j9CkI"
+
+[[params.individual.shows.jkvm]]
+title = "Episode9"
+url = "https://www.youtube.com/embed/KDsFcaOBw5M"
+
+
+[[params.individual.shows.jkvm]]
+title = "FB  EPISODE"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1050884941717435%2F&show_text=0&width=267"
+
+
+
+
+[[params.individual.sessions]]
+title = "Chookar Mere Man Ko"
+url = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/382024121&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+
+
+[[params.individual.sessions]]
+title = "9 Se 12 Power Ballad"
+url = "https://www.youtube.com/embed/ft-_F_kGAtA"
+
+
+
+[[params.individual.sessions]]
+title = "Safar Cover"
+url = "https://www.youtube.com/embed/1SA6c7UCcr0"
+
+[[params.individual.sessions]]
+title = "Hawaayein Whistle Mashup"
+url = "https://www.youtube.com/embed/lYK1tC-xJbk"
+
+[[params.individual.sessions]]
+title = "O Maajhi Re Cover"
+url = "https://www.youtube.com/embed/PdI-lLu17UU"
+
+
+
+
+
+[[params.individual.collab1]]
+alt = ""
+source = "img/pic02.jpg"
+title = "Safar Cover"
+url = "#"
+
+[[params.individual.collab1]]
+alt = ""
+source = "img/pic02.jpg"
+title = "Safar Cover"
+url = "#"
+
+[[params.individual.collab1]]
+alt = ""
+source = "img/pic02.jpg"
+title = "Safar Cover"
+url = "#"
+
+[[params.individual.collab1]]
+alt = ""
+source = "img/pic02.jpg"
+title = "Safar Cover"
+url = "#"
