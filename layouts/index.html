@@ -55,7 +55,7 @@
                   <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
                   <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
                   <li><a href="#services" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Services</span></a></li>
-                  <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+                 <!--  <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li> -->
                   <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
                   <li><a href="#media" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper-o">Media Coverage</span></a></li>
                   <li><a href="#gallery" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-image">Gallery</span></a></li>
@@ -109,7 +109,7 @@
 
                 <p2>Some basic portfolio</p2>
 
-                <!-- Indivudual Section-->
+<div id="individual">
 <!--Individual -->                <h3>Individual</h3>
 
 <!-- Gigs -->                <div>
@@ -124,7 +124,7 @@
 {{ range .Site.Params.Individual.Gigs }} 
 <article class="pn-ProductNav_LinkIG" aria-selected="true">  
   <article class="item">
-    <iframe width="280" height="315" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="320" height="194" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3>{{ .title }}</h3>
     </header>
   </article>
@@ -147,10 +147,7 @@
 
 </div>
 
-
-
-
-<!-- Shows -->                <div>
+<!-- Shows -->    <div>
                   <h4>Shows</h4>
                   
                   <div class="pn-ProductNav_WrapperISh">
@@ -162,7 +159,7 @@
 {{ range .Site.Params.Individual.Shows.JKVM }} 
 <article class="pn-ProductNav_LinkISh" aria-selected="true">  
   <article class="item">
-    <iframe width="280" height="498" src={{.url}}  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="194" height="320" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3>{{ .title }}</h3>
     </header>
   </article>
@@ -194,7 +191,7 @@
 {{ range .Site.Params.Individual.Sessions }} 
 <article class="pn-ProductNav_LinkISe" aria-selected="true">  
   <article class="item">
-    <iframe width="280" height="315" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="320" height="194" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3>{{ .title }}</h3>
     </header>
   </article>
@@ -214,11 +211,15 @@
 </div>
 
 
+
+</div>
+
+<div id="collab" width=100% style="background-color: #A00000 ;">
 <!-- Collab Section-->
-<h3>Collab</h3>
+<h3 style="color:black">Collab</h3>
 
 <!-- Gigs -->                <div>
-                  <h4>Gigs</h4>
+                  <h4 style="color:black">Gigs</h4>
                   
                   <div class="pn-ProductNav_WrapperCG">
                     <nav id="pnProductNavCG" class="pn-ProductNav dragscrollCG">
@@ -229,7 +230,7 @@
 {{ range .Site.Params.Individual.Gigs }} 
 <article class="pn-ProductNav_LinkCG" aria-selected="true">  
   <article class="item">
-    <iframe width="280" height="315" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="320" height="194" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3>{{ .title }}</h3>
     </header>
   </article>
@@ -255,7 +256,7 @@
 
 
 <!-- Shows -->                <div>
-                  <h4>Shows</h4>
+                  <h4 style="color:black">Shows</h4>
                   
                   <div class="pn-ProductNav_WrapperCSh">
                     <nav id="pnProductNavCSh" class="pn-ProductNav dragscrollCSh">
@@ -266,7 +267,7 @@
 {{ range .Site.Params.Individual.Shows.JKVM }} 
 <article class="pn-ProductNav_LinkCSh" aria-selected="true">  
   <article class="item">
-    <iframe width="280" height="315" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="194" height="320" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3>{{ .title }}</h3>
     </header>
   </article>
@@ -291,7 +292,7 @@
 
 
 <!-- Sessions -->                <div>
-                  <h4>Sessions</h4>
+                  <h4 style="color:black">Sessions</h4>
                 
                   <div class="pn-ProductNav_WrapperCSe">
                     <nav id="pnProductNavCSe" class="pn-ProductNavCSe dragscrollCSe">
@@ -299,7 +300,7 @@
 {{ range .Site.Params.Individual.Sessions }} 
 <article class="pn-ProductNav_LinkCSe" aria-selected="true">  
   <article class="item">
-    <iframe width="280" height="315" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="320" height="194" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3>{{ .title }}</h3>
     </header>
   </article>
@@ -308,7 +309,7 @@
 <span id="pnIndicatorCSe" class="pn-ProductNav_IndicatorCSe"></span>
 </div>
 </nav>
-<button id="pnAdvancerLeftCSe" name="pnAdvancerLeftCSe" class="pn-AdvancerCSe pn-Advancer_LeftCSe" type="button">
+<button id="pnAdvancerLeftCSe" name="pnAdvancerLeftCSe" class="pn-AdvancerCSe pn-Advancer_LeftCSe" type="button" style="color: black;">
   <svg class="pn-Advancer_IconCSe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg>
 </button>
 <button id="pnAdvancerRightCSe" name="pnAdvancerRightCSe" class="pn-AdvancerCSe pn-Advancer_RightCSe" type="button">
@@ -380,6 +381,7 @@
 
 
 <!-- About Me -->
+<!-- 
 <section id="about" class="four">
   <div class="container">
 
@@ -389,11 +391,11 @@
 
     <a href="#" class="image featured"><img src="img/about_me_prasang.jpg" alt="" /></a>
 
-    <p>Prasang is a brilliant vocalist who took his first step into music at the at the age of 4 to now performing Bollywood songs live at multiple venues and stage shows. He has bagged numerous awards for performance arts since then. He trended on YouTube for his rendition of the infamous "Kolaveri Di" adaptation as a Bhajan "Ambe Ji" with 50k+ views and likes and charted on the radio for his original compositions. <br>He has a firm belief that music is the only language that can connect people at every level and has the power to shape moods and emotions. <br>With the goal to feature the most serene to the most dynamic renditions of the latest Bollywood songs as well as freshly brewed compositions from our studio, he will stretch the band of your music spectrum.</p>
+    <p class="about_me">Prasang is a brilliant vocalist who took his first step into music at the at the age of 4 to now performing Bollywood songs live at multiple venues and stage shows. He has bagged numerous awards for performance arts since then. He trended on YouTube for his rendition of the infamous "Kolaveri Di" adaptation as a Bhajan "Ambe Ji" with 50k+ views and likes and charted on the radio for his original compositions. <br>He has a firm belief that music is the only language that can connect people at every level and has the power to shape moods and emotions. <br>With the goal to feature the most serene to the most dynamic renditions of the latest Bollywood songs as well as freshly brewed compositions from our studio, he will stretch the band of your music spectrum.</p>
 
   </div>
 </section>
-
+ -->
 
 
 
