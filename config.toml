@@ -123,6 +123,10 @@ title = "FB  EPISODE"
 url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1050884941717435%2F&show_text=0&width=267"
 
 
+[[params.gallery]]
+title = "BMC"
+url1 = "https://photos.google.com/share/AF1QipOLKYqzKzThxkqVDKEAqyeLjgb_WBiELgu5IFbj5UXDIqOC_pOMaPgyzPFCRyKDCg?key=OWpDNzh4OVc2QTNBYTRoU1NBbXJTQ1JabjJ1NmJ3&source=ctrlq.org"
+url = "https://lh3.googleusercontent.com/dvMewqqRxav1-gSmTe8wqPjKzOkbRCkSThXGKYzbs2Q_esXxuYrukj6bD1TZoVPPjm57LlCpIzP3NQ742IB3t63UNh0CgjybZm3ILOzGrb508Uv0dW9Qwf0rEbyukAKVD1AibtRqF20=w2400"
 
 
 [[params.individual.sessions]]

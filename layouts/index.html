@@ -408,7 +408,7 @@
 
     <p>For any business enquiries you can call on +91-7698189874</p>
 
-    <form method="post" action="#">
+    <form method="POST" action="https://formspree.io/prasang@rbrband.in">
       <div class="row">
         <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
         <div class="6u$ 12u$(mobile)"><input type="email" name="email" placeholder="Email" /></div>
@@ -496,15 +496,16 @@
 
     <div class="row">
       <div class="4u 12u$(mobile)">
-        {{ range .Site.Params.portfolio1 }} 
-        <article class="item">
-          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-          <header>
-            <h3>{{ .title }}</h3>
-          </header>
-        </article>
+        {{ range .Site.Params.Gallery }} 
+         <article class="item">
+   <img src={{.url}} width=280px height=315px />                       <header>
+      <h3>{{ .title }}</h3>
+    </header>
+  </article>
         {{ end }}
       </div>
+
+
 
       <div class="4u 12u$(mobile)">
         {{ range .Site.Params.portfolio2 }} 
