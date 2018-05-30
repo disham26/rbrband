@@ -42,7 +42,7 @@
 <body>
 <!-- 
  -->
-<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- <button oncli/*ck="topFunction()" id="myBtn" title="Go to top">Top</button>
  -->  <!-- Header -->
 
      <a id="myBtn" style="background-color: #222729;"href="#top" class="button scrolly">Go To Top</a>
@@ -74,13 +74,14 @@
 
                  -->
                  <ul>
+
                   <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro </span></a></li>
                   <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-                  <li><a href="#services" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Services</span></a></li>
+                  <li><a href="#services" id="services-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Services</span></a></li>
                  <!--  <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li> -->
                   <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-                  <li><a href="#media" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper-o">Media Coverage</span></a></li>
-                  <li><a href="#gallery" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-image">Gallery</span></a></li>
+                  <li><a href="#media" id="media-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper-o">Media Coverage</span></a></li>
+                  <li><a href="#gallery" id="gallery-link" class="skel-layers-ignoreHref"><span class="icon fa-image">Gallery</span></a></li>
                 <!--   <li><a href="#events" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar">Events</span></a></li> -->
                 </ul>
               </nav>
@@ -92,7 +93,7 @@
               <!-- Social Icons -->
               <ul class="icons">
                 {{ range .Site.Params.social }}
-                <li style="width: 0.4em;"><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+                <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
                 {{ end }}
               </ul>
 
