@@ -104,7 +104,7 @@
         .pn-Advancer_LeftISh {
           left: 1.5em;
 
-          /*bottom:0;*/
+          bottom:8em;
          /* margin-left:-2%;
        */ }
         [data-overflowing="both"] ~ .pn-Advancer_LeftISh, [data-overflowing="left"] ~ .pn-Advancer_LeftISh {
@@ -114,6 +114,8 @@
         .pn-Advancer_RightISh {
 /*          right: 0;
 */          right: 1.5em;
+          bottom:8em;
+
 /*          bottom:0;
 */         /* margin-right:-1.9em;*/
 

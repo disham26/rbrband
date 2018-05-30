@@ -104,8 +104,8 @@
         .pn-Advancer_LeftCSe {
           left: 1.5em;
 
-          /*bottom:0;*/
-         /* margin-left:-2%;
+          /*bottom:2.5em;
+         *//* margin-left:-2%;
        */ }
         [data-overflowing="both"] ~ .pn-Advancer_LeftCSe, [data-overflowing="left"] ~ .pn-Advancer_LeftCSe {
           opacity: 1;
@@ -114,6 +114,7 @@
         .pn-Advancer_RightCSe {
 /*          right: 0;
 */          right: 1.5em;
+           /* bottom:2.5em;*/
 /*          bottom:0;
 */         /* margin-right:-1.9em;*/
 
@@ -125,7 +126,7 @@
         .pn-Advancer_IconCSe {
           width: 20px;
           height: 44px;
-          fill: black;
+          fill: white;
         }
 
         .pn-ProductNav_IndicatorCSe {

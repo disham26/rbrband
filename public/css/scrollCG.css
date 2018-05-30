@@ -114,6 +114,7 @@
         .pn-Advancer_RightCG {
 /*          right: 0;
 */          right: 1.5em;
+
 /*          bottom:0;
 */         /* margin-right:-1.9em;*/
 
@@ -125,7 +126,7 @@
         .pn-Advancer_IconCG {
           width: 20px;
           height: 44px;
-          fill: black;
+          fill: white;
         }
 
         .pn-ProductNav_IndicatorCG {

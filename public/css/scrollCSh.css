@@ -104,7 +104,7 @@
         .pn-Advancer_LeftCSh {
           left: 1.5em;
 
-          /*bottom:0;*/
+          bottom:8em;
          /* margin-left:-2%;
        */ }
         [data-overflowing="both"] ~ .pn-Advancer_LeftCSh, [data-overflowing="left"] ~ .pn-Advancer_LeftCSh {
@@ -114,8 +114,8 @@
         .pn-Advancer_RightCSh {
 /*          right: 0;
 */          right: 1.5em;
-/*          bottom:0;
-*/         /* margin-right:-1.9em;*/
+          bottom:8em;
+        /* margin-right:-1.9em;*/
 
         }
         [data-overflowing="both"] ~ .pn-Advancer_RightCSh, [data-overflowing="right"] ~ .pn-Advancer_RightCSh {
@@ -125,7 +125,7 @@
         .pn-Advancer_IconCSh {
           width: 20px;
           height: 44px;
-          fill: black;
+          fill: white;
         }
 
         .pn-ProductNav_IndicatorCSh {
