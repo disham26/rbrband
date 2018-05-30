@@ -1623,10 +1623,12 @@
 	h3 {
 		font-size: 0.8em;
 		letter-spacing: 0.25px;
-		padding: 0 3.3em 0 3em;
+		padding: 0 5em 1em 5em;
 		text-align: justify;
 		-moz-text-align-last: center;
      	text-align-last: center;
+
+
 
 	}
 
