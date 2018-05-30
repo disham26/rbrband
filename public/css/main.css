@@ -26,6 +26,7 @@
 		line-height: 1;
 	}
 
+
 	ol, ul {
 		list-style: none;
 	}
@@ -910,7 +911,7 @@
 		}
 
 		.row {
-			margin: -20px 0 -1px -20px;
+			margin: 20px 0 -1px 0em;
 		}
 
 		.row.uniform > * {
@@ -1574,7 +1575,7 @@
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
-		line-height: 1.75em;
+		line-height: 1em;
 		color: #888;
 	}
 
@@ -1665,7 +1666,7 @@
 	}
 
 		a:hover {
-			color: #E27689;
+			color: white;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -1722,6 +1723,18 @@
 		}
 
 /* Image */
+#contact_wrapper {
+  display: flex;
+}
+@media (max-width: 562px) {
+  #contact_wrapper {
+    flex-direction: column-reverse;
+  }
+  #contact_right,
+  #contact_left {
+    width: 100% !important;;
+  }
+}
 
 	.image {
 		display: inline-block;
@@ -1818,7 +1831,10 @@
 
 	form input[type="text"],
 	form input[type="email"],
+	form input[type="tel"],
+	form input[type="number"],
 	form input[type="password"],
+	form input[type="submit"],
 	form select,
 	form textarea {
 		position: relative;
@@ -1829,19 +1845,21 @@
 		background: #fff;
 		background: rgba(255, 255, 255, 0.75);
 		width: 100%;
-		border-radius: 0.35em;
-		padding: 0.75em 1em 0.75em 1em;
+		/*border-radius: 0.35em;*/
+		padding: 0.2em 0em 0.2em 1em;
 		box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
 		border: solid 1px rgba(0, 0, 0, 0.15);
 		-moz-transition: all 0.35s ease-in-out;
 		-webkit-transition: all 0.35s ease-in-out;
 		-ms-transition: all 0.35s ease-in-out;
 		transition: all 0.35s ease-in-out;
+		margin-left: 2em;
 	}
 
 		form input[type="text"]:focus,
 		form input[type="email"]:focus,
 		form input[type="password"]:focus,
+		form input[type="submit"]:focus,
 		form select:focus,
 		form textarea:focus {
 			box-shadow: 0 0 2px 1px #8ebebc;
@@ -2240,7 +2258,7 @@
 			}
 
 			#main > section.five {
-				background-color: #e8edec;
+				background-color: #222629;
 			}
 
 			#main > section.six {
@@ -2394,7 +2412,7 @@
 			}
 
 			.container {
-				padding: 0 2em 0 0;
+				padding: 0 0 0 0;
 			}
 
 		/* Item */
@@ -2565,6 +2583,19 @@
 				}
 
 	}
+
+#contact_left{
+    width:50%;
+    height:100%;
+    margin-right:10px;
+    float:left;
+}
+#contact_lright{
+    width:50%;
+    height:100%;
+    margin-right:10px;
+    float:right;
+}
 
 /* Mobile */
 

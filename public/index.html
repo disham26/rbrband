@@ -19,17 +19,15 @@
  <style>
   #myBtn {
   display: none;
+  color:red;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 0.2em;
+  right: 0.2em;
   z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
+  font-size: 3em;
+   outline: none;
+   
   cursor: pointer;
-  padding: 15px;
   border-radius: 4px;
 }
 </style> 
@@ -40,8 +38,10 @@
 
   
 
-     <a id="myBtn" style="background-color: #222729;"href="#top" class="button scrolly">Go To Top</a>
-
+     <span class="icon fa-chevron-circle-up scrolly" id="myBtn" href="#top" 
+     style="opacity:0.7;font-size:60px;color:#222729;text-shadow:2px 2px 4px #000000;"></span>
+    
+</span>
   <div id="header">
 
     <div class="top">
@@ -100,7 +100,7 @@
               <div class="container">
 
                 <header>
-                  <h1 class="alt" style="color: white;text-align: center;"><strong><b>Hi! I'm Prasang, <br>
+                  <h1 class="alt" style="color: white;text-align: center;"><strong>Hi! I'm Prasang, <br>
                   Welcome to my website </a>.</h1>
                   <p>Hope you find something interesting here<br />
                   and book me for your show</p>
@@ -118,7 +118,7 @@
             
             <section id="portfolio" class="two">
               <div class="container">
-<br>
+
                 <header>
                   <h1>Portfolio</h1>
                 </header>
@@ -142,7 +142,7 @@
  
 <article class="pn-ProductNav_LinkIG" aria-selected="true">  
   <article class="item">
-    <iframe width="320" height="194" src=https://www.youtube.com/embed/IrfZ3fC5NWo frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="320" height="180" src=https://www.youtube.com/embed/IrfZ3fC5NWo frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3>Enna Sona</h3>
     </header>
   </article>
@@ -150,7 +150,7 @@
  
 <article class="pn-ProductNav_LinkIG" aria-selected="true">  
   <article class="item">
-    <iframe width="320" height="194" src=https://www.youtube.com/embed/0jK6wxLgiIc frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="320" height="180" src=https://www.youtube.com/embed/0jK6wxLgiIc frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3>Gulaabi Aakhein</h3>
     </header>
   </article>
@@ -158,7 +158,7 @@
  
 <article class="pn-ProductNav_LinkIG" aria-selected="true">  
   <article class="item">
-    <iframe width="320" height="194" src=https://www.youtube.com/embed/Y8pIj4kIheI frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="320" height="180" src=https://www.youtube.com/embed/Y8pIj4kIheI frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3>Haareya</h3>
     </header>
   </article>
@@ -166,7 +166,7 @@
  
 <article class="pn-ProductNav_LinkIG" aria-selected="true">  
   <article class="item">
-    <iframe width="320" height="194" src=https://www.youtube.com/embed/J6GacoGTGDA frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="320" height="180" src=https://www.youtube.com/embed/J6GacoGTGDA frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3>Fitoor</h3>
     </header>
   </article>
@@ -174,7 +174,7 @@
  
 <article class="pn-ProductNav_LinkIG" aria-selected="true">  
   <article class="item">
-    <iframe width="320" height="194" src=https://www.youtube.com/embed/uHuB-meZnC8 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="320" height="180" src=https://www.youtube.com/embed/uHuB-meZnC8 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3>Love Mashup</h3>
     </header>
   </article>
@@ -699,28 +699,63 @@
 
 
 
-<section id="contact" class="five">
+<section id="contact" class="five" style="background-color: #222629;">
   <div class="container">
+    <h2 style="color: white;">Contact</h2>
+    <div id="contact_wrapper">
+    <div  id="contact_left" style="padding-bottom: 2em;">
+    <h2 style="color: #7d172f;text-align: center;font-weight: 700;">Let's get to business</h2>
+    <h3 style="color: white;text-align: center;">What can I do for you?</h3>
 
-    <header>
-      <h2>Contact</h2>
-    </header>
-
-    <p>For any business enquiries you can call on +91-7698189874</p>
 
     <form method="POST" action="https://formspree.io/prasang@rbrband.in">
       <div class="row">
-        <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-        <div class="6u$ 12u$(mobile)"><input type="email" name="email" placeholder="Email" /></div>
-        <div class="12u$">
-          <textarea name="message" placeholder="Message"></textarea>
+        <div style="width:80%;" class="6u$ 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+        <div style="width:80%;" class="6u$ 12u$(mobile)"><input type="email" name="email" placeholder="Email" /></div>
+        <div style="width:80%;" class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Phone No." /></div>
+        <div style="width:80%;" class="6u$ 12u$(mobile)"><input type="text" name="org" placeholder="Organization/Venue" /></div>
+        <div style="width:80%;" class="6u$ 12u$(mobile)"><input type="text" name="nature" placeholder="Nature of work" /></div>
+        <div style="width:80%;" class="6u$ 12u$(mobile)"><input type="text" name="budget" placeholder="Budget" /></div>
+
+        <div style="width:80%;" class="12u$">
+          <textarea name="message" placeholder="Drop a message"></textarea>
         </div>
-        <div class="12u$">
-          <input type="submit" value="Send Message" />
+        <div style="width:80%;" class="6u$ 12u$(mobile)">
+          <input style="background-color: #7d172f;color: white;font-weight: 700;padding: 0.7em;" type="submit" value="Submit >>" />
+
         </div>
       </div>
     </form>
+</div>
 
+<div id="contact_right">
+ <b><h2 style="color: #7d172f;text-align: center;font-weight: 700;"> Like our work?</h2></b>
+ <h3 style="color: white;padding-bottom: 2em;">Get in touch</h3>
+ <ul>
+
+  <li><div id="phone" class="skel-layers-ignoreHref"><span style="padding-right: 2em;font-size: 2em;" class="icon fa-mobile"></span>+91-7698189874</div></li>
+  <li><div id="phone" class="skel-layers-ignoreHref"><span style="padding-right: 2em;" class="icon fa-envelope">        </span>prasang@rbrband.in</div></li>
+  </ul>
+
+<h2 style="color: white;">Want to know more?</h2>
+<h3 style="color: #7d172f;font-weight: 700;">Visit our Gallery</h3>
+
+<ul class="icons">
+                
+                <li><a href="https://twitter.com/prasangmisra" class="icon fa-twitter"><span class="label">twitter</span></a></li>
+                
+                <li><a href="https://www.facebook.com/rbrbandrecords" class="icon fa-facebook"><span class="label">facebook</span></a></li>
+                
+                <li><a href="https://www.youtube.com/channel/UCmS5QyYmLb1qLZAs_Kg97Bg" class="icon fa-youtube"><span class="label">youtube</span></a></li>
+                
+                <li><a href="https://soundcloud.com/prasangmisra" class="icon fa-soundcloud"><span class="label">soundcloud</span></a></li>
+                
+                <li><a href="#" class="icon fa-envelope"><span class="label">email</span></a></li>
+                
+              </ul>
+
+</div>
+</div>
   </div>
 </section>
 
