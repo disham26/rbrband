@@ -1694,6 +1694,10 @@
 		margin-bottom: 2em;
 	}
 
+	li {
+		padding-right: 1em;
+	}
+
 	br.clear {
 		clear: both;
 	}
@@ -2031,7 +2035,7 @@
 			flex-grow: 1;
 			position: relative;
 			position: relative;
-					padding-right: 2em;
+					/*padding-right: 2em;*/
 					/*padding-right: 1em;*/
 
 		}
@@ -2067,7 +2071,7 @@
 
 	#logo {
 		position: relative;
-		margin: 0.5em 0em 0em 0em;
+		margin: 0.5em 0.2em 0em 0em;
 		min-height: 48px;
 		cursor: default;
 	}
@@ -2097,6 +2101,7 @@
 
 	#nav ul {
 		margin-bottom: 0;
+		padding-right: 5%;
 	}
 
 		#nav ul li a {
@@ -2322,7 +2327,7 @@
 		/* Header */
 
 			#header {
-				width: 15%;
+				width: 18%;
 			}
 
 			#logo .image {
@@ -2349,13 +2354,13 @@
 		/* Footer */
 
 			#footer {
-				margin-left: 15%;
+				margin-left: 18%;
 			}
 
 		/* Main */
 
 			#main {
-				margin-left: 15%;
+				margin-left: 18%;
 			}
 
 	}

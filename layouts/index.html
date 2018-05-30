@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="/css/scrollCSe.css" />
   <link rel="stylesheet" href="/css/scrollCSh.css" />
  <style>
-  #Ontop {
+  #myBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -42,8 +42,11 @@
 <body>
 <!-- 
  -->
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+ -->  <!-- Header -->
 
-  <!-- Header -->
+     <a id="myBtn" style="background-color: #222729;"href="#top" class="button scrolly">Go To Top</a>
+
   <div id="header">
 
     <div class="top">
@@ -71,7 +74,7 @@
 
                  -->
                  <ul>
-                  <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                  <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro </span></a></li>
                   <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
                   <li><a href="#services" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Services</span></a></li>
                  <!--  <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li> -->
@@ -626,8 +629,8 @@
 <div id="footer">
 
   <!-- Copyright -->
-  <ul class="copyright">
-    <li>&copy; {{ .Site.Params.copyright }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Powered by <a href="https://gohugo.io/">Hugo</a></li>
+  <ul style="color: black;"class="copyright">
+    <li>&copy; {{ .Site.Params.copyright }}</li><li>Design: Disha Manocha</li><li>Powered by <a href="https://gohugo.io/">Hugo</a></li>
   </ul>
 
 </div>
@@ -648,10 +651,10 @@
 <script>
   window.onscroll = function() {scrollFunction()};
   function scrollFunction() {
-    if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-        document.getElementById("onTop").style.display = "block";
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
     } else {
-        document.getElementById("onTop").style.display = "none";
+        document.getElementById("myBtn").style.display = "none";
     }
 }
 </script>
