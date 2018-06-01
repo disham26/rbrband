@@ -2109,7 +2109,7 @@
 		}
 	#logo {
 		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
+		margin: 1.75em 2em 1.5em 1.5em;
 		min-height: 4em;
 		cursor: default;
 	}
@@ -2506,7 +2506,7 @@
 			}
 
 			#nav ul li a {
-				padding: 0.5em 1.25em 0.5em 1.25em;
+				padding: 0.5em 2em 0.5em 1.25em;
 			}
 
 			#headerToggle {
