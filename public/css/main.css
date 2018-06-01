@@ -2287,6 +2287,8 @@ padding-bottom: 1em;}
 /*				background-image: url("../img/banner.jpg");
 */				background-image: url("../img/IntroImageMaroon.jpg");
 			}
+			
+
 
 			#main > section.two {
 				background-color: #f5fafa;
@@ -2361,6 +2363,10 @@ padding-bottom: 1em;}
 			#main section.cover {
 				padding: 1em 0;
 			}
+			#main section.galleryCover{
+				padding-bottom: 9em;
+			}
+
 
 	}
 
@@ -2694,6 +2700,9 @@ padding-bottom: 1em;}
 
 			#main section.cover {
 				padding: 1em 0em;
+			}
+			#main section.galleryCover{
+				padding-bottom: 3.5em;
 			}
 
 				#main section.cover header {
