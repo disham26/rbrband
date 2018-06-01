@@ -26,7 +26,21 @@
 		line-height: 1;
 	}
 
-
+.tabular {
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+}
+ul#horizontal-list {
+	min-width: 100%;
+	list-style: none;
+	padding-top: 20px;
+	padding-right: 1em;
+	}
+ul#horizontal-list li {
+		display: inline;
+		padding-right: :1em;
+	}
 	ol, ul {
 		list-style: none;
 	}
@@ -85,10 +99,10 @@
 	.container {
 		width: 100%;
 	}
-	.service_section {
+	/*.service_section {
 			padding-left:31%;
 			font-size: 1em;
-		}
+		}*/
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
 
@@ -97,10 +111,10 @@
 			max-width: 1500px;
 			min-width: 1200px;
 		}
-.service_section {
+/*.service_section {
 			padding-left:31%;
 			font-size: 1em;
-		}
+		}*/
 		.container.\37 5\25 {
 			width: 900px;
 		}
@@ -130,10 +144,10 @@
 		.container.\37 5\25 {
 			width: 720px;
 		}
-.service_section {
+/*.service_section {
 			padding-left:31%;
 			font-size: 1em;
-		}
+		}*/
 		.container.\35 0\25 {
 			width: 480px;
 		}
@@ -159,10 +173,10 @@
 		.container.\37 5\25 {
 			width: 75%;
 		}
-.service_section {
+/*.service_section {
 			padding-left:31%;
 			font-size: 1em;
-		}
+		}*/
 		.container.\35 0\25 {
 			width: 50%;
 		}
@@ -1737,17 +1751,30 @@
 		}
 
 /* Image */
-#contact_wrapper {
+#contact_wrapper,#details_wrapper {
   display: flex;
 }
+
 @media (max-width: 562px) {
-  #contact_wrapper {
-    flex-direction: column-reverse;
+  #contact_wrapper,#details_wrapper {
+    flex-direction: column;
   }
-  #contact_right,
+  #contact_right,#details_mobile,#details_email,#details_videos,
   #contact_left {
     width: 100% !important;;
   }
+#details_mobile,#details_email,#details_videos{
+text-align: left;
+padding-left: 2em;
+padding-bottom: 1em;}
+
+}
+#contact_message{
+	width: 90%;
+}
+
+#send_message{
+	margin-left:30%;width:30%;text-align:center;
 }
 
 	.image {
@@ -1834,9 +1861,9 @@
 		ol.default li {
 			padding-left: 0.25em;
 		}
-.service_section {
+/*.service_section {
 			padding-left:45%;
-		}
+		}*/
 /* Form */
 
 	form label {
@@ -2103,11 +2130,11 @@
 				#header .icons a:hover {
 					color: #fff;
 				}
-.service_section {
+/*.service_section {
 			padding-left:45%;
 			font-size: 1em;
 		}
-	#logo {
+*/	#logo {
 		position: relative;
 		margin: 1.75em 2em 1.5em 1.5em;
 		min-height: 4em;
@@ -2143,7 +2170,7 @@
 
 		#nav ul li a {
 			display: block;
-			padding: 0.5em 2em 0.5em 1.5em;
+			padding: 0.5em 3em 0.5em 1.5em;
 			color: rgba(255, 255, 255, 0.5);
 			text-decoration: none;
 			outline: 0;
@@ -2187,7 +2214,7 @@
 		margin-left: 18%;
 		text-align: center;
 		background-color: #dce3e2;
-		padding: 0.5em 0 1em 0;
+		padding: 0em 0 0em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
 	}
@@ -2328,9 +2355,9 @@
 			#main > section {
 	/*			padding: 3em 2.5em 0 0.2em;
 	*/		}
-		.service_section {
+	/*	.service_section {
 			padding-left:45%;
-		}
+		}*/
 			#main section.cover {
 				padding: 1em 0;
 			}
@@ -2350,9 +2377,9 @@
 			.container {
 				/*padding: 0 0em 0 1.2em
 			*/}
-				.service_section {
-			padding-left:40s%;
-		}
+	/*			.service_section {
+			padding-left:40%;
+		}*/
 
 		/* List */
 
@@ -2378,6 +2405,7 @@
 			}
 
 			#nav ul li a {
+				padding: 0.5em 2em 0.5em 1.5em;
 				font-size: 0.8em;
 				padding-top: 0.5em;
 				padding-bottom: 0.5em;
@@ -2423,10 +2451,10 @@
 				    height: 100%;
 
 			}
-.service_section {
+/*.service_section {
 			padding-left:31%;
 			font-size: 1em;
-		}
+		}*/
 			body, input, textarea, select {
 				font-size: 16pt;
 			}
@@ -2496,10 +2524,10 @@
 					margin-top: 2em;
 					position: relative;
 				}
-						.service_section {
+		/*				.service_section {
 			padding-left:31%;
 			font-size: 1em;
-		}
+		}*/
 
 			#logo {
 				margin: 1.5em 1.25em 1.25em 1.25em;
@@ -2536,6 +2564,12 @@
 					outline: 0;
 					border: 0;
 				}
+#contact_message{
+	width:80%;
+}
+#send_message{
+	width:80%;text-align:center;margin-left: 0%;
+}
 
 					#headerToggle .toggle:before {
 						font-family: FontAwesome;
@@ -2598,7 +2632,7 @@
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				padding-bottom: 1px;
+				padding-bottom: 0px;
 				margin-left: 0;
 			}
 
@@ -2612,18 +2646,18 @@
 
 	}
 
-#contact_left{
+/*#contact_left{
     width:50%;
     height:100%;
     margin-right:10px;
     float:left;
 }
-#contact_lright{
+#contact_right{
     width:50%;
     height:100%;
     margin-right:10px;
     float:right;
-}
+}*/
 
 /* Mobile */
 

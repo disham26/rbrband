@@ -375,8 +375,12 @@
 <div>
 
 
-      <div id="service_section" class="skel-layers-ignoreHref service_section"><span style="padding-right: 1em; float: left;font-size: {{ .icon_size }}em;" class="icon {{.icon}}">        </span><b style="color: black;font-weight: 1000;float: left;">{{ .name }}</b></div>
-      <br><br>
+      <div id="service_section" style="text-align: center;"class="skel-layers-ignoreHref service_section">
+        <span class="icon {{.icon}}">
+          </span>
+          <b style="color: #212728;font-weight: 1000;float: center;">{{ .name }}</b>
+      </div>
+      
       <h3>{{ .description }}</h3>
        <footer style="margin-top: 1em;">
       <a style="background-color: #222729;" href="/gallery/" class="button scrolly">View Gallery</a>
@@ -386,7 +390,7 @@
    
 <br>
 {{ end }}
-  </div>
+
 </section>
 
 
@@ -416,53 +420,63 @@
 <!-- Contact -->
 <section id="contact" class="five" style="background-color: #222629;">
   <div class="container">
-    <h2 style="color: white;">Contact</h2>
-    <div id="contact_wrapper">
+    <!-- <h2 style="color: white;">Contact</h2> -->
+    
     <div  id="contact_left" style="padding-bottom: 2em;">
-    <h2 style="color: #7d172f;text-align: center;font-weight: 700;">Let's get to business</h2>
-    <h3 style="color: white;text-align: center;">What can I do for you?</h3>
+    <h2 style="color: #888;text-align: center;font-weight: 700;">Let's get to business</h2>
+    
+<div class="tabular">
+ <ul id="horizontal-list" style="color: #7d172f;">
 
+  <div id="details_wrapper">
+    
+  <li id="details_mobile" style="display: inline; padding-right: 1em;"><span style="color:white;padding-right: 0.5em;font-size: 1.5em;" class="icon fa-mobile"></span>+91-7698189874</li>
+
+
+  <li id="details_email" style="display: inline; padding-right: 1em;"><span style="color:white;padding-right: 0.5em;font-size: 1em;" class="icon fa-envelope"></span>prasang@rbrband.in</li>
+
+
+  <li id="details_videos" style="display: inline;padding-right: 1em; "><span style="color:white;padding-right: 0.5em;font-size: 1em;" class="icon fa-video-camera"></span>More Videos</li>
+</div>
+ </div>
+  </ul>
+  <h3 style="color: white;text-align-last: left;padding:0 0 1em 3em;">What can I do for you?</h3>
+  
 
     <form method="POST" action="https://formspree.io/prasang@rbrband.in">
-      <div class="row">
-        <div style="width:80%;" class="6u$ 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-        <div style="width:80%;" class="6u$ 12u$(mobile)"><input type="email" name="email" placeholder="Email" /></div>
-        <div style="width:80%;" class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Phone No." /></div>
-        <div style="width:80%;" class="6u$ 12u$(mobile)"><input type="text" name="org" placeholder="Organization/Venue" /></div>
-        <div style="width:80%;" class="6u$ 12u$(mobile)"><input type="text" name="nature" placeholder="Nature of work" /></div>
-        <div style="width:80%;" class="6u$ 12u$(mobile)"><input type="text" name="budget" placeholder="Budget" /></div>
-
-        <div style="width:80%;" class="12u$">
-          <textarea name="message" placeholder="Drop a message"></textarea>
+     
+        <div id="contact_wrapper">
+        <div id="contact_left" style="width:50%;padding: 0 0 0.2em 0;">
+        <div style="width:80%;padding-bottom: 1em;" class="6u$ 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+        <div style="width:80%;padding-bottom: 1em;" class="6u$ 12u$(mobile)"><input type="email" name="email" placeholder="Email" /></div>
+        <div style="width:80%;padding-bottom: 1em;" class="6u$ 12u$(mobile)"><input type="text" name="nature" placeholder="Nature of work" /></div>
         </div>
-        <div style="width:80%;" class="6u$ 12u$(mobile)">
-          <input style="background-color: #7d172f;color: white;font-weight: 700;padding: 0.7em;" type="submit" value="Submit >>" />
 
+        <div id="contact_right" style="width:50%;padding: 0 0 0.2em 0;">
+        <div style="width:80%;padding-bottom: 1em;" class="6u$ 12u$(mobile)"><input type="text" name="org" placeholder="Organization/Venue" /></div>
+        <div style="width:80%;padding-bottom: 1em;" class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Phone No." /></div>       
+        <div style="width:80%;padding-bottom: 1em;" class="6u$ 12u$(mobile)"><input type="text" name="budget" placeholder="Budget" /></div>
         </div>
       </div>
+        <div id="contact_message"  class="12u$">
+          <textarea name="message" placeholder="Drop a message"></textarea>
+        </div>
+        <br>
+        <div id="send_message" class="6u$ 12u$(mobile)">
+          <input style="background-color: #7d172f;color: white;font-weight: 700;padding: 0.7em;" type="submit" value=">> Send Message" />
+
+        </div>
+      
     </form>
-</div>
 
-<div id="contact_right">
- <b><h2 style="color: #7d172f;text-align: center;font-weight: 700;"> Like our work?</h2></b>
- <h3 style="color: white;padding-bottom: 2em;">Get in touch</h3>
- <ul>
-
-  <li><div id="phone" class="skel-layers-ignoreHref"><span style="padding-right: 2em;font-size: 2em;" class="icon fa-mobile"></span>+91-7698189874</div></li>
-  <li><div id="phone" class="skel-layers-ignoreHref"><span style="padding-right: 2em;" class="icon fa-envelope">        </span>prasang@rbrband.in</div></li>
-  </ul>
-
-<h2 style="color: white;">Want to know more?</h2>
-<h3 style="color: #7d172f;font-weight: 700;">Visit our Gallery</h3>
-
+  <br>
 <ul class="icons">
                 {{ range .Site.Params.social }}
                 <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
                 {{ end }}
               </ul>
+</div>
 
-</div>
-</div>
   </div>
 </section>
 
