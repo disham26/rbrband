@@ -84,27 +84,29 @@
     </header>
 
     <p>Images showing how people go crazy when I perform</p>
-
+ 
+        
 
     <div class="row">
       <div class="4u 12u$(mobile)">
-        {{ range .Site.Params.Gallery }} 
+        {{ range .Site.Params.Gallery.Videos }} 
          <article class="item">
-   <img src={{.url}} width=280px height=315px />                       <header>
+    <iframe width="194" height="320" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3>{{ .title }}</h3>
     </header>
   </article>
+
         {{ end }}
       </div>
-
-
 
       <div class="4u 12u$(mobile)">
         {{ range .Site.Params.portfolio2 }} 
         <article class="item">
+
           <a href="{{ .url }}" class="image fit"><img src="../{{ .source }}" alt="{{ .alt }}" /></a>
           <header>
             <h3>{{ .title }}</h3>
+
           </header>
         </article>
         {{ end }}

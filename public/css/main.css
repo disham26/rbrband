@@ -83,8 +83,12 @@
 	}
 
 	.container {
-		width: 1400px;
+		width: 100%;
 	}
+	.service_section {
+			padding-left:31%;
+			font-size: 1em;
+		}
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
 
@@ -93,7 +97,10 @@
 			max-width: 1500px;
 			min-width: 1200px;
 		}
-
+.service_section {
+			padding-left:31%;
+			font-size: 1em;
+		}
 		.container.\37 5\25 {
 			width: 900px;
 		}
@@ -123,7 +130,10 @@
 		.container.\37 5\25 {
 			width: 720px;
 		}
-
+.service_section {
+			padding-left:31%;
+			font-size: 1em;
+		}
 		.container.\35 0\25 {
 			width: 480px;
 		}
@@ -149,7 +159,10 @@
 		.container.\37 5\25 {
 			width: 75%;
 		}
-
+.service_section {
+			padding-left:31%;
+			font-size: 1em;
+		}
 		.container.\35 0\25 {
 			width: 50%;
 		}
@@ -197,6 +210,7 @@
 			max-width: 125%;
 			min-width: 100%;
 		}
+	
 
 		.container.\37 5\25 {
 			width: 75%;
@@ -1820,7 +1834,9 @@
 		ol.default li {
 			padding-left: 0.25em;
 		}
-
+.service_section {
+			padding-left:45%;
+		}
 /* Form */
 
 	form label {
@@ -2046,7 +2062,7 @@
 		position: fixed;
 		text-align: right;
 		top: 0;
-		/*width: 375px;*/
+		width: 18%;
 	}
 
 		#header .top {
@@ -2087,7 +2103,10 @@
 				#header .icons a:hover {
 					color: #fff;
 				}
-
+.service_section {
+			padding-left:31%;
+			font-size: 1em;
+		}
 	#logo {
 		position: relative;
 		margin: 1.75em 1.5em 1.5em 1.5em;
@@ -2168,7 +2187,7 @@
 /* Footer */
 
 	#footer {
-		margin-left: 375px;
+		margin-left: 18%;
 		text-align: center;
 		background-color: #dce3e2;
 		padding: 0.5em 0 1em 0;
@@ -2198,8 +2217,8 @@
 /* Main */
 
 	#main {
-/*		margin-left: 375px;
-*/	}
+		margin-left: 18%;
+	}
 	
 		#main > section {
 			margin: 0;
@@ -2298,7 +2317,7 @@
 		/* Main */
 
 			#main {
-				margin-left: 18%;
+				/*margin-left: 18%;*/
 			}
 
 	}
@@ -2312,7 +2331,9 @@
 			#main > section {
 	/*			padding: 3em 2.5em 0 0.2em;
 	*/		}
-
+		.service_section {
+			padding-left:45%;
+		}
 			#main section.cover {
 				padding: 1em 0;
 			}
@@ -2332,6 +2353,9 @@
 			.container {
 				/*padding: 0 0em 0 1.2em
 			*/}
+				.service_section {
+			padding-left:40s%;
+		}
 
 		/* List */
 
@@ -2399,10 +2423,13 @@
 
 			html, body {
 				overflow-x: hidden;
-				    height: 99%;
+				    height: 100%;
 
 			}
-
+.service_section {
+			padding-left:31%;
+			font-size: 1em;
+		}
 			body, input, textarea, select {
 				font-size: 16pt;
 			}
@@ -2472,6 +2499,10 @@
 					margin-top: 2em;
 					position: relative;
 				}
+						.service_section {
+			padding-left:31%;
+			font-size: 1em;
+		}
 
 			#logo {
 				margin: 1.5em 1.25em 1.25em 1.25em;
@@ -2571,8 +2602,8 @@
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				padding-bottom: 1px;
-/*				margin-left: 1%;
-*/			}
+				margin-left: 0;
+			}
 
 				#main > section {
 					padding: 0em 0;

@@ -365,48 +365,27 @@
   <div class="container">
 
     <header>
-      <h2>Services</h2>
+      <h1>Services</h1>
     </header>
 
     <p>Here we will describe the list of services we provide</p>
 
+{{ range .Site.Params.Services }} 
 
-    <div class="row">
-      <div class="4u 12u$(mobile)">
-        {{ range .Site.Params.portfolio1 }} 
-        <article class="item">
-          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-          <header>
-            <h3>{{ .title }}</h3>
-          </header>
-        </article>
-        {{ end }}
-      </div>
+<div>
 
-      <div class="4u 12u$(mobile)">
-        {{ range .Site.Params.portfolio2 }} 
-        <article class="item">
-          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-          <header>
-            <h3>{{ .title }}</h3>
-          </header>
-        </article>
-        {{ end }}
-      </div>
 
-      <div class="4u 12u$(mobile)">
-        {{ range .Site.Params.portfolio3 }} 
-        <article class="item">
-          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-          <header>
-            <h3>{{ .title }}</h3>
-          </header>
-        </article>
-        {{ end }}
-      </div>
+      <div id="service_section" class="skel-layers-ignoreHref service_section"><span style="padding-right: 1em; float: left;font-size: {{ .icon_size }}em;" class="icon {{.icon}}">        </span><b style="color: black;font-weight: 1000;float: left;">{{ .name }}</b></div>
+      <br><br>
+      <h3>{{ .description }}</h3>
+       <footer style="margin-top: 1em;">
+      <a style="background-color: #222729;" href="/gallery/" class="button scrolly">View Gallery</a>
+                </footer>
     </div>
-
-
+    
+   
+<br>
+{{ end }}
   </div>
 </section>
 
@@ -545,59 +524,6 @@
 
 
 
-
-<!-- Gallery -->
-<!-- <section id="gallery" class="seven">
-  <div class="container">
-
-    <header>
-      <h2>Gallery</h2>
-    </header>
-
-    <p>Images showing how people go crazy when I perform</p>
-
-
-    <div class="row">
-      <div class="4u 12u$(mobile)">
-        {{ range .Site.Params.Gallery }} 
-         <article class="item">
-   <img src={{.url}} width=280px height=315px />                       <header>
-      <h3>{{ .title }}</h3>
-    </header>
-  </article>
-        {{ end }}
-      </div>
-
-
-
-      <div class="4u 12u$(mobile)">
-        {{ range .Site.Params.portfolio2 }} 
-        <article class="item">
-          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-          <header>
-            <h3>{{ .title }}</h3>
-          </header>
-        </article>
-        {{ end }}
-      </div>
-
-      <div class="4u 12u$(mobile)">
-        {{ range .Site.Params.portfolio3 }} 
-        <article class="item">
-          <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-          <header>
-            <h3>{{ .title }}</h3>
-          </header>
-        </article>
-        {{ end }}
-      </div>
-    </div>
-
-
-  </div>
-</section>
-
- -->
 
 
 

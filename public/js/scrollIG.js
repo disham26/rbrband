@@ -78,7 +78,7 @@ var SETTINGSIG = {
                 // Find how far this panel has been scrolled
                 var availableScrollLeftIG = pnProductNavIG.scrollLeft;
                 // If the space available is less than two lots of our desired distance, just move the whole amount
-                // otherwise, move by the amount in the settings
+                // otherwIG, move by the amount in the settings
                 if (availableScrollLeftIG < SETTINGSIG.navBarTravelDistanceIG * 2) {
                     pnProductNavContentsIG.style.transform = "translateX(" + availableScrollLeftIG + "px)";
                 } else {
@@ -108,8 +108,9 @@ var SETTINGSIG = {
                 // Now we know how much space we have available to scroll
                 var availableScrollRightIG = Math.floor(navBarRightEdgeIG - navBarScrollerRightEdgeIG);
                 // If the space available is less than two lots of our desired distance, just move the whole amount
-                // otherwise, move by the amount in the settings
+                // otherwIG, move by the amount in the settings
                 if (availableScrollRightIG < SETTINGSIG.navBarTravelDistanceIG * 2) {
+                    
                     pnProductNavContentsIG.style.transform = "translateX(-" + availableScrollRightIG + "px)";
                 } else {
                     pnProductNavContentsIG.style.transform = "translateX(-" + SETTINGSIG.navBarTravelDistanceIG + "px)";
@@ -166,7 +167,7 @@ var SETTINGSIG = {
             // count = count += 100;
             // pnIndicator.style.transform = "translateX(" + count + "px)";
             
-          /*  if (color) {
+           /* if (color) {
                 pnIndicatorIG.style.backgroundColor = color;
             }*/
         }
