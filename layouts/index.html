@@ -391,6 +391,26 @@
 <br>
 {{ end }}
 
+<div id="collab" width=100% style="padding-top: 1em; background-image: url(img/collab_background.png)">
+  <h1 style="color: white;">RBRBAND was here</h1>
+  <div class="tabular">
+ <ul id="horizontal-list" style="color: #7d172f;">
+
+  <div id="details_wrapper">
+  {{ range .Site.Params.Venues }} 
+
+  <li id="details_mobile" style="display: inline; padding-right: 1em;"><img src="{{ .source }}" style='width:80%;' border="0" alt="Null" /><br>
+    <b>{{ .name }}</b></li>
+
+{{ end}}
+  
+</div>
+
+ </div>
+<br>
+</div>
+
+
 </section>
 
 

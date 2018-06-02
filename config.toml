@@ -208,3 +208,24 @@ name= "Cant think of any"
 description = "Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records."
 icon= "fa-headphones"
 icon_size="1"
+
+
+[[params.venues]]
+name="Crowne Plaza"
+source="img/crowne_plaza.png"
+
+[[params.venues]]
+name="Crowne Plaza"
+source="img/crowne_plaza.png"
+
+[[params.venues]]
+name="Crowne Plaza"
+source="img/crowne_plaza.png"
+
+[[params.venues]]
+name="Crowne Plaza"
+source="img/crowne_plaza.png"
+
+[[params.venues]]
+name="Crowne Plaza"
+source="img/crowne_plaza.png"
