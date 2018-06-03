@@ -141,7 +141,12 @@ width:50%;
 }
 .formInput{
 	/*margin-right: 2em;*/
-	width:87%;
+/*	width:84%;*/
+		padding-right: 0.2em;
+
+}
+.formInputRight{
+	padding-right: 4em;
 }
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
 
@@ -163,8 +168,12 @@ width:50%;
 	width:100%;
 }
 .formInput{
-	/*margin-right: 2em;*/
-	width:84%;
+padding-right: 0.2em;
+/*	width:84%;
+*/
+}
+.formInputRight{
+	padding-right: 4em;
 }
 
 		.container.\31 25\25 {
@@ -204,8 +213,14 @@ padding: 0 0 0 0;
 width:50%;
 }
 .formInput{
-	/*margin-right: 2em;*/
-	width:84%;
+/*	margin-right: 2em;
+*/	
+/*width:84%;
+*/	padding-right: 0.2em;
+
+}
+.formInputRight{
+	padding-right: 4em;
 }
 #contact_message{
 	padding: 0 4em 0em 4em;
@@ -2515,7 +2530,12 @@ width:50%;
 }
 .formInput{
 	/*margin-right: 2em;*/
-	width:84%;
+/*	width:84%;*/
+		padding-right: 0.2em;
+
+}
+.formInputRight{
+	padding-right: 4em;
 }
 
 			body, input, textarea, select {
