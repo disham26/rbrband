@@ -145,9 +145,9 @@ width:50%;
 		padding-right: 0.2em;
 
 }
-.formInputRight{
+/*.formInputRight{
 	padding-right: 4em;
-}
+}*/
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
 
 		#contact_left{
