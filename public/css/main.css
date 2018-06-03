@@ -127,7 +127,7 @@ ul#horizontal-list li {
 	width:50%;
 }
 #contact_right{
-padding: 0 0em 0.2em 0;
+padding: 0 4em 0.2em 0;
 width:50%;
 }
 #contact_message{
@@ -2623,10 +2623,14 @@ width:50%;
 			padding-left:31%;
 			font-size: 1em;
 		}*/
+
 			body, input, textarea, select {
 				font-size: 16pt;
 			}
 
+#contact_right{
+	padding:0 4em 0.2em 4em;
+}
 			header br {
 				display: none;
 			}
