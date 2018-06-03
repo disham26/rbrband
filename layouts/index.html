@@ -120,7 +120,7 @@
                 </header>
 
                 <footer>
-                  <a style="background-color: #222729;"href="#portfolio" class="button scrolly">My Portfolio</a>
+                  <a style="background-color: #222729;"href="#portfolio" class="inline_button scrolly">My Portfolio</a>
                 </footer>
 
               </div>
@@ -135,14 +135,14 @@
                 </header>
 
                 <!-- <p2>Some basic portfolio</p2> -->
-
+{{if .Site.Params.Individual }}
 <div id="individual">
 <!--Individual -->               <!--  <h3>Individual</h3> -->
-
+{{if .Site.Params.Individual.Gigs }}
 <!-- Gigs -->                <div>
-                  <h2>Individual>>Gigs</h2>
+                  <h2>Individual>> Gigs</h2>
                   
-                  <h3>Performed at various venues in cities like Pune, Ahmedabad, Ratlam, Jabalpur and NOIDA</h3>
+                  <h3>{{ .Site.Params.individual_gigs_description }}</h3>
                   <div class="pn-ProductNav_WrapperIG">
                                       
 
@@ -176,10 +176,11 @@
 </div>
 
 </div>
-
+{{ end }}
+{{ if .Site.Params.Individual.Shows }}
 <!-- Shows -->    <div>
-                  <h2>Individual>>Shows</h2>
-          <h3>Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records.</h3>
+                  <h2>Individual>> Shows</h2>
+          <h3>{{ .Site.Params.individual_shows_description }}</h3>
                     <div class="pn-ProductNav_WrapperISh">                    
                     <nav id="pnProductNavISh" class="pn-ProductNavISh dragscrollISh">
                       <div id="pnProductNavContentsISh" class="pn-ProductNav_ContentsISh">
@@ -188,7 +189,7 @@
 {{ range .Site.Params.Individual.Shows.JKVM }} 
 <article class="pn-ProductNav_LinkISh" aria-selected="true">  
   <article class="item">
-    <iframe width="194" height="320" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="320" height="569" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true" src={{.url}} ></iframe>                        <header>
       <h3>{{ .title }}</h3>
     </header>
   </article>
@@ -210,10 +211,11 @@
 </div>
 
 </div>
-
+{{ end }}
+{{if .Site.Params.Individual.Sessions }}
 <!-- Sessions -->                <div>
-    <h2>Individual>>Sessions and Compositions</h2>
-  <h3>Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records.</h3>
+    <h2>Individual>> Sessions and Compositions</h2>
+  <h3>{{.Site.Params.individual_sessions_description}}</h3>
                   <div class="pn-ProductNav_WrapperISe">
                     
                     <nav id="pnProductNavISe" class="pn-ProductNavISe dragscrollISe">
@@ -240,14 +242,16 @@
 
 </div>
 
-
+{{ end }}
 
 </div>
 
+{{ end }}
+{{ if .Site.Params.Collab }}
 <div id="collab" width=100% style="padding-top: 1em; background-image: url(img/collab_background.png)">
-
+{{ if .Site.Params.Collab.Gigs }}
 <!-- Gigs --> <div>
-                   <h2 style="color:white">Collab>>Gigs</h2>
+                   <h2 style="color:white">Collab>> Gigs</h2>
                   
                   <h3 style="color:white">Performed at various venues in cities like Pune, Ahmedabad, Ratlam, Jabalpur and NOIDA</h3>
                   <div class="pn-ProductNav_WrapperCG">
@@ -257,7 +261,7 @@
 <!-- <a href="#" class="pn-ProductNav_Link" aria-selected="true">Chairs</a>
 -->
 
-{{ range .Site.Params.Individual.Gigs }} 
+{{ range .Site.Params.Collab.Gigs }} 
 <article class="pn-ProductNav_LinkCG" aria-selected="true">  
   <article class="item">
     <iframe width="320" height="194" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
@@ -282,11 +286,11 @@
 </div>
 
 </div>
+{{ end }}
 
-
-
+{{ if .Site.Params.Collab.Shows.JKVM }}
 <!-- Shows -->                <div>
-                    <h2 style="color:white">Collab>>Shows</h2>
+                    <h2 style="color:white">Collab>> Shows</h2>
                   
                   <h3 style="color:white">Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records.</h3>
                   <div class="pn-ProductNav_WrapperCSh">
@@ -296,10 +300,10 @@
 <!-- <a href="#" class="pn-ProductNav_Link" aria-selected="true">Chairs</a>
 -->
 
-{{ range .Site.Params.Individual.Shows.JKVM }} 
+{{ range .Site.Params.Collab.Shows.JKVM }} 
 <article class="pn-ProductNav_LinkCSh" aria-selected="true">  
   <article class="item">
-    <iframe width="194" height="320" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <iframe width="200" height="320" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
       <h3 style="color:white">{{ .title }}</h3>
     </header>
   </article>
@@ -321,17 +325,18 @@
 </div>
 
 </div>
+{{ end }}
 
-
+{{ if .Site.Params.Collab.Sessions }}
 <!-- Sessions -->                <div>
-                    <h2 style="color:white">Collab>>Sessions and Compositions</h2>
+                    <h2 style="color:white">Collab>> Sessions and Compositions</h2>
                   
                 <h3 style="color:white">Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records.</h3>
                   <div class="pn-ProductNav_WrapperCSe">
                     
                     <nav id="pnProductNavCSe" class="pn-ProductNavCSe dragscrollCSe">
                       <div id="pnProductNavContentsCSe" class="pn-ProductNav_ContentsCSe">
-{{ range .Site.Params.Individual.Sessions }} 
+{{ range .Site.Params.Collab.Sessions }} 
 <article class="pn-ProductNav_LinkCSe" aria-selected="true">  
   <article class="item">
     <iframe width="320" height="194" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
@@ -352,7 +357,9 @@
 </div>
 
 </div>
+{{ end }}
 </div>
+{{ end }}
 </section>
 
 
@@ -368,7 +375,7 @@
       <h1>Services</h1>
     </header>
 
-    <p>Here we will describe the list of services we provide</p>
+    <h2>Here we will describe the list of services we provide</h2>
 
 {{ range .Site.Params.Services }} 
 
@@ -383,33 +390,36 @@
       
       <h3>{{ .description }}</h3>
        <footer style="margin-top: 1em;">
-      <a style="background-color: #222729;" href="/gallery/" class="button scrolly">View Gallery</a>
+      <a style="background-color: #222729;" href="/gallery/" class="inline_button scrolly">View Gallery</a>
                 </footer>
     </div>
     
    
 <br>
 {{ end }}
-
-<div id="collab" width=100% style="padding-top: 1em; background-image: url(img/collab_background.png)">
+{{ if .Site.Params.Venues }}
+<div id="collab" width=100% style="background-image: url(img/collab_background.png)">
+ <header>
   <h1 style="color: white;">RBRBAND was here</h1>
+</header>
   <div class="tabular">
  <ul id="horizontal-list" style="color: #7d172f;">
 
   <div id="details_wrapper">
   {{ range .Site.Params.Venues }} 
 
-  <li id="details_mobile" style="display: inline; padding-right: 1em;"><img src="{{ .source }}" style='width:80%;' border="0" alt="Null" /><br>
-    <b style="text-align-last: center;">{{ .name }}</b></li>
+  <li id="details_mobile" style="display: inline; padding-right: 1em;">
+    <img src="{{ .source }}"  width="150" height="90" border="0" alt="Null" /><br>
+   <!--  <b style="text-align-last: center;font-weight: 100;font-size: 1em;">{{ .name }}</b> --></li>
 
 {{ end}}
   
 </div>
 
  </div>
-<br>
-</div>
 
+</div>
+{{ end }}
 
 </section>
 
@@ -441,41 +451,54 @@
 <section id="contact" class="five" style="background-color: #222629;">
   <div class="container">
     <!-- <h2 style="color: white;">Contact</h2> -->
-    
-    <div  id="contact_left" style="padding-bottom: 2em;">
-    <h1 style="padding:0 0 0 0;color: #888;text-align: center;">Let's get to business</h1>
+        <header>
+        <h1 style="color: #888;">Let's get to business</h1>
+</header>
+    <div  style="padding-bottom: 2em;">
     
 <div class="tabular">
  <ul id="horizontal-list" style="color: #7d172f;">
 
   <div id="details_wrapper">
     
-  <li id="details_mobile" style="display: inline; padding-right: 1em;"><span style="color:white;padding-right: 0.5em;font-size: 1.5em;" class="icon fa-mobile"></span>+91-7698189874</li>
+  <li id="details_mobile" ><span style="color:white;padding-right: 0.5em;font-size: 1.5em;" class="icon fa-mobile"></span>+91-7698189874</li>
 
 
-  <li id="details_email" style="display: inline; padding-right: 1em;"><span style="color:white;padding-right: 0.5em;font-size: 1em;" class="icon fa-envelope"></span>prasang@rbrband.in</li>
+  <li id="details_email" ><span style="color:white;padding-right: 0.5em;font-size: 1em;" class="icon fa-envelope"></span>prasang@rbrband.in</li>
 
 
-  <li id="details_videos" style="display: inline;padding-right: 1em; "><span style="color:white;padding-right: 0.5em;font-size: 1em;" class="icon fa-video-camera"></span>More Videos</li>
+  <li id="details_videos"><span style="color:white;padding-right: 0.5em;font-size: 1em;" class="icon fa-video-camera"></span>More Videos</li>
 </div>
  </div>
   </ul>
-  <h3 style="color: white;text-align-last: left;padding:0 0 1em 3em;">What can I do for you?</h3>
+  <h3 id="contact_subheader" style="color: white;text-align-last: left;">What can I do for you?</h3>
   
 
     <form method="POST" action="https://formspree.io/prasang@rbrband.in">
      
         <div id="contact_wrapper">
-        <div id="contact_left" style="width:50%;padding: 0 0 0.2em 0;">
-        <div style="width:80%;padding-bottom: 1em;" class="6u$ 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-        <div style="width:80%;padding-bottom: 1em;" class="6u$ 12u$(mobile)"><input type="email" name="email" placeholder="Email" /></div>
-        <div style="width:80%;padding-bottom: 1em;" class="6u$ 12u$(mobile)"><input type="text" name="nature" placeholder="Nature of work" /></div>
+        <div id="contact_left">
+        <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput" >
+          <input type="text" name="name" placeholder="Name*" class="formInputType" required />
+        </div>
+        <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
+          <input type="email" name="email" placeholder="E-mail*" required class="formInputType"/>
+        </div>
+        <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
+          <input type="text" name="nature" placeholder="Nature of work" class="formInputType" />
+        </div>
         </div>
 
-        <div id="contact_right" style="width:50%;padding: 0 0 0.2em 0;">
-        <div style="width:80%;padding-bottom: 1em;" class="6u$ 12u$(mobile)"><input type="text" name="org" placeholder="Organization/Venue" /></div>
-        <div style="width:80%;padding-bottom: 1em;" class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Phone No." /></div>       
-        <div style="width:80%;padding-bottom: 1em;" class="6u$ 12u$(mobile)"><input type="text" name="budget" placeholder="Budget" /></div>
+        <div id="contact_right">
+        <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput" >
+          <input type="text" name="org" placeholder="Organization/Venue" class="formInputType" />
+        </div>
+        <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
+          <input type="text" name="email" placeholder="Phone Number*" required class="formInputType" />
+        </div>       
+        <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
+          <input type="text" name="budget" placeholder="Budget" class="formInputType" />
+        </div>
         </div>
       </div>
         <div id="contact_message"  class="12u$">

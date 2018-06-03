@@ -43,6 +43,8 @@
     background: #212729; 
 }
 
+
+
 .tabular {
 	display: table;
 	margin: 0 auto;
@@ -56,7 +58,7 @@ ul#horizontal-list {
 	}
 ul#horizontal-list li {
 		display: inline;
-		padding-right: :1em;
+		padding-right: 1em;
 	}
 	ol, ul {
 		list-style: none;
@@ -120,8 +122,50 @@ ul#horizontal-list li {
 			padding-left:31%;
 			font-size: 1em;
 		}*/
-
+		#contact_left{
+	padding: 0 0 0.2em 4em;
+	width:50%;
+}
+#contact_right{
+padding: 0 0em 0.2em 0;
+width:50%;
+}
+#contact_message{
+	padding: 0 4em 0em 4em;
+	width:100%;
+}
+#send_message{
+	text-align: center;
+	padding: 0 10em 0em 10em;
+	width:100%;
+}
+.formInput{
+	/*margin-right: 2em;*/
+	width:87%;
+}
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
+
+		#contact_left{
+	padding: 0 0 0.2em 4em;
+	width:50%;
+}
+#contact_right{
+padding: 0 0em 0.2em 0;
+width:50%;
+}
+#contact_message{
+	padding: 0 4em 0em 4em;
+	width:100%;
+}
+#send_message{
+	text-align: center;
+	padding: 0 10em 0em 10em;
+	width:100%;
+}
+.formInput{
+	/*margin-right: 2em;*/
+	width:84%;
+}
 
 		.container.\31 25\25 {
 			width: 100%;
@@ -145,12 +189,33 @@ ul#horizontal-list li {
 		}
 
 		.container {
-			width: 1200px;
+			width: 100%;
 		}
 
 	}
 
 	@media screen and (min-width: 961px) and (max-width: 1620px) {
+#contact_left{
+	padding: 0 0 0 4em;
+	width:50%;
+}
+#contact_right{
+padding: 0 0 0 0;
+width:50%;
+}
+.formInput{
+	/*margin-right: 2em;*/
+	width:84%;
+}
+#contact_message{
+	padding: 0 4em 0em 4em;
+	width:100%;
+}
+#send_message{
+	text-align: center;
+	padding: 0 10em 0em 10em;
+	width:100%;
+}
 
 		.container.\31 25\25 {
 			width: 100%;
@@ -181,6 +246,17 @@ ul#horizontal-list li {
 
 	@media screen and (min-width: 961px) and (max-width: 1320px) {
 
+#contact_left{
+	padding: 0 0 0.2em 4em;
+	width:50%;
+}
+#contact_right{
+padding: 0 5em 0.2em 0;
+width:50%;
+}
+.formInputType{
+	padding: 0em 0em 0em 0em;
+}
 		.container.\31 25\25 {
 			width: 100%;
 			max-width: 125%;
@@ -425,7 +501,7 @@ ul#horizontal-list li {
 	}
 
 	.\36 u, .\36 u\24 {
-		width: 50%;
+		/*width: 50%;*/
 		clear: none;
 		margin-left: 0;
 	}
@@ -1623,7 +1699,9 @@ ul#horizontal-list li {
 		line-height: 1em;
 		color: #888;
 	}
-
+/*#contact_message{
+	width:80%;
+}*/
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		color: #212728;
@@ -1652,16 +1730,16 @@ ul#horizontal-list li {
 
 	h1 {
 		font-size: 1.5em;
-        padding: 0 2.6em 0 3em;
-        text-align: justify;
+        padding: 0 3em 1em 3em;
+        text-align: center;
 		-moz-text-align-last: center;
      	text-align-last: center;
 
 	}
 	h2 {
-		font-size: 1.2em;
-        padding: 0 2.6em 0 3em;
-        text-align: justify;
+		font-size: 1em;
+        padding: 0 3em 1em 3em;
+        text-align: center;
 		-moz-text-align-last: center;
      	text-align-last: center;
 		/*letter-spacing: -1px;*/
@@ -1751,6 +1829,7 @@ ul#horizontal-list li {
 		clear: both;
 	}
 
+
 /* Sections/Article */
 
 	section, article {
@@ -1776,9 +1855,12 @@ ul#horizontal-list li {
   #contact_wrapper,#details_wrapper {
     flex-direction: column;
   }
-  #contact_right,#details_mobile,#details_email,#details_videos,
-  #contact_left {
+  #details_mobile,#details_email,#details_videos{
     width: 100% !important;;
+  }
+  #contact_left,#contact_right,#contact_message,#send_message{
+  	padding:0 4em 0.2em 4em;
+  	width: 100%;
   }
 #details_mobile,#details_email,#details_videos{
 text-align: left;
@@ -1786,13 +1868,9 @@ padding-left: 2em;
 padding-bottom: 1em;}
 
 }
-#contact_message{
-	width: 90%;
-}
 
-#send_message{
-	margin-left:30%;width:30%;text-align:center;
-}
+
+
 
 	.image {
 		display: inline-block;
@@ -1906,14 +1984,14 @@ padding-bottom: 1em;}
 		background: rgba(255, 255, 255, 0.75);
 		width: 100%;
 		/*border-radius: 0.35em;*/
-		padding: 0.2em 0em 0.2em 1em;
+		/*padding: 0.2em 0em 0.2em 1em;*/
 		box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
 		border: solid 1px rgba(0, 0, 0, 0.15);
 		-moz-transition: all 0.35s ease-in-out;
 		-webkit-transition: all 0.35s ease-in-out;
 		-ms-transition: all 0.35s ease-in-out;
 		transition: all 0.35s ease-in-out;
-		margin-left: 2em;
+		/*margin-left: 2em;*/
 	}
 
 		form input[type="text"]:focus,
@@ -2021,6 +2099,26 @@ padding-bottom: 1em;}
 		-webkit-transition: background-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out;
 		transition: background-color 0.35s ease-in-out;
+	}
+	.inline_button{
+	border-top: solid 5px #FFFFFF;
+		position: relative;
+		display: inline-block;
+/*		border-radius: 0.35em;
+*/		color: #FFFFFF !important;
+		text-decoration: none;
+		padding: 0.5em 0.5em 0.5em 0.5em;
+		background-color: white;
+		border: 0;
+		cursor: pointer;
+		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
+		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
+		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
+		background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
+		-moz-transition: background-color 0.35s ease-in-out;
+		-webkit-transition: background-color 0.35s ease-in-out;
+		-ms-transition: background-color 0.35s ease-in-out;
+		transition: background-color 0.35s ease-in-out;	
 	}
 
 		input[type="button"]:hover,
@@ -2153,7 +2251,7 @@ padding-bottom: 1em;}
 		}
 */	#logo {
 		position: relative;
-		margin: 1.75em 2em 1.5em 1.5em;
+		margin: 1.75em 1em 1.5em 1.5em;
 		min-height: 4em;
 		cursor: default;
 	}
@@ -2392,6 +2490,33 @@ padding-bottom: 1em;}
 	@media screen and (min-width: 961px) and (max-width: 1320px) {
 
 		/* Basic */
+#contact_left{
+	padding: 0 0 0em 4em;
+	width:50%;
+}
+#contact_subheader{
+	padding:0 0 1em 5em;
+}
+#contact_right{
+padding: 0 0em 0em 0;
+width:50%;
+}
+.formInputType{
+	width:100%;
+}
+#contact_message{
+	padding: 0 4em 0em 4em;
+	width:100%;
+}
+#send_message{
+	text-align: center;
+	padding: 0 10em 0em 10em;
+	width:100%;
+}
+.formInput{
+	/*margin-right: 2em;*/
+	width:84%;
+}
 
 			body, input, textarea, select {
 				font-size: 16pt;
@@ -2587,12 +2712,8 @@ padding-bottom: 1em;}
 					outline: 0;
 					border: 0;
 				}
-#contact_message{
-	width:80%;
-}
-#send_message{
-	width:80%;text-align:center;margin-left: 0%;
-}
+
+
 
 					#headerToggle .toggle:before {
 						font-family: FontAwesome;
