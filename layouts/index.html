@@ -11,6 +11,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="/css/youtube.css" />
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/scroll.css" />
   <link rel="stylesheet" href="/css/scrollIG.css" />
@@ -150,13 +151,22 @@
                       <div id="pnProductNavContentsIG" class="pn-ProductNav_ContentsIG">
 <!-- <a href="#" class="pn-ProductNav_Link" aria-selected="true">Chairs</a>
 -->
-
+    
+  </div>
 {{ range .Site.Params.Individual.Gigs }} 
 <article class="pn-ProductNav_LinkIG" aria-selected="true">  
   <article class="item">
-    <iframe width="320" height="180" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+  <div class="youtube-player" id={{.id}} style="width: 320px; height: 180px;">
+    
+  </div>
+  <!--   <iframe width="320" height="180" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>      
+    </iframe> -->
+    <header>
       <h3>{{ .title }}</h3>
     </header>
+
+
+
   </article>
 </article>
 {{ end }}
@@ -189,7 +199,11 @@
 {{ range .Site.Params.Individual.Shows.JKVM }} 
 <article class="pn-ProductNav_LinkISh" aria-selected="true">  
   <article class="item">
-    <iframe width="320" height="569" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true" src={{.url}} ></iframe>                        <header>
+  
+ <div class="youtube-player" id={{.id}} style="width: 320px; height: 569px;">
+    
+  </div>
+                            <header>
       <h3>{{ .title }}</h3>
     </header>
   </article>
@@ -223,7 +237,9 @@
 {{ range .Site.Params.Individual.Sessions }} 
 <article class="pn-ProductNav_LinkISe" aria-selected="true">  
   <article class="item">
-    <iframe width="320" height="194" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+   <div class="youtube-player" id={{.id}} style="width: 320px; height: 180px;">
+    
+  </div>                     <header>
       <h3>{{ .title }}</h3>
     </header>
   </article>
@@ -264,7 +280,9 @@
 {{ range .Site.Params.Collab.Gigs }} 
 <article class="pn-ProductNav_LinkCG" aria-selected="true">  
   <article class="item">
-    <iframe width="320" height="194" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <div class="youtube-player" id={{.id}} style="width: 320px; height: 180px;">
+    
+  </div>                       <header>
       <h3 style="color:white">{{ .title }}</h3>
     </header>
   </article>
@@ -303,7 +321,9 @@
 {{ range .Site.Params.Collab.Shows.JKVM }} 
 <article class="pn-ProductNav_LinkCSh" aria-selected="true">  
   <article class="item">
-    <iframe width="200" height="320" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <div class="youtube-player" id={{.id}} style="width: 320px; height: 569px;">
+    
+  </div>                      <header>
       <h3 style="color:white">{{ .title }}</h3>
     </header>
   </article>
@@ -339,7 +359,9 @@
 {{ range .Site.Params.Collab.Sessions }} 
 <article class="pn-ProductNav_LinkCSe" aria-selected="true">  
   <article class="item">
-    <iframe width="320" height="194" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
+    <div class="youtube-player" id={{.id}} style="width: 320px; height: 180px;">
+    
+  </div>                    <header>
       <h3 style="color:white">{{ .title }}</h3>
     </header>
   </article>
@@ -650,6 +672,7 @@
 
 <!-- Scripts -->
 <script src="/js/jquery.min.js"></script>
+<script src="/js/youtube.js"></script>
 <script src="/js/jquery.scrolly.min.js"></script>
 <script src="/js/jquery.scrollzer.min.js"></script>
 <script src="/js/skel.min.js"></script>
