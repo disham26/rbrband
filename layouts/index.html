@@ -121,7 +121,8 @@
                 </header>
 
                 <footer>
-                  <a style="background-color: #222729;"href="#portfolio" class="inline_button scrolly">My Portfolio</a>
+                  <a style="border-color: white;border-style: solid;border-width: 1px; opacity: 0.8;  
+                  background-color: #DB4A37; padding:0 0 0 0; width:170px;height:45px;font-size: 18px; text-align: center;" href="#portfolio" class="inline_button scrolly">My Portfolio</a>
                 </footer>
 
               </div>
@@ -132,7 +133,7 @@
               <div class="container">
 
                 <header>
-                  <h1>Portfolio</h1>
+                  <h2>Portfolio</h2>
                 </header>
 
                 <!-- <p2>Some basic portfolio</p2> -->
@@ -141,9 +142,9 @@
 <!--Individual -->               <!--  <h3>Individual</h3> -->
 {{if .Site.Params.Individual.Gigs }}
 <!-- Gigs -->                <div>
-                  <h2>Individual>> Gigs</h2>
+                  <h3>Individual <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Gigs</h3>
                   
-                  <h3>{{ .Site.Params.individual_gigs_description }}</h3>
+                  <p>{{ .Site.Params.individual_gigs_description }}</p>
                   <div class="pn-ProductNav_WrapperIG">
                                       
 
@@ -159,7 +160,7 @@
   <!--   <iframe width="320" height="180" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>      
     </iframe> -->
     <header>
-      <h3>{{ .title }}</h3>
+      <caption>{{ .title }}</caption>
     </header>
 
 
@@ -186,8 +187,8 @@
 {{ end }}
 {{ if .Site.Params.Individual.Shows }}
 <!-- Shows -->    <div>
-                  <h2>Individual>> Shows</h2>
-          <h3>{{ .Site.Params.individual_shows_description }}</h3>
+                  <h3>Individual <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Shows</h3>
+          <p>{{ .Site.Params.individual_shows_description }}</p>
                     <div class="pn-ProductNav_WrapperISh">                    
                     <nav id="pnProductNavISh" class="pn-ProductNavISh dragscrollISh">
                       <div id="pnProductNavContentsISh" class="pn-ProductNav_ContentsISh">
@@ -197,11 +198,9 @@
 <article class="pn-ProductNav_LinkISh" aria-selected="true">  
   <article class="item">
   
- <div class="youtube-player" id={{.id}} style="width: 180px; height: 320px;">
-    
-  </div>
+ <iframe src={{.url}} width="180" height="320" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
                             <header>
-      <h3>{{ .title }}</h3>
+      <caption>{{ .title }}</caption>
     </header>
   </article>
 </article>
@@ -225,8 +224,8 @@
 {{ end }}
 {{if .Site.Params.Individual.Sessions }}
 <!-- Sessions -->                <div>
-    <h2>Individual>> Sessions and Compositions</h2>
-  <h3>{{.Site.Params.individual_sessions_description}}</h3>
+    <h3>Individual <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Sessions and Compositions</h3>
+  <p>{{.Site.Params.individual_sessions_description}}</p>
                   <div class="pn-ProductNav_WrapperISe">
                     
                     <nav id="pnProductNavISe" class="pn-ProductNavISe dragscrollISe">
@@ -237,7 +236,7 @@
    <div class="youtube-player" id={{.id}} style="width: 320px; height: 180px;">
     
   </div>                     <header>
-      <h3>{{ .title }}</h3>
+      <caption>{{ .title }}</caption>
     </header>
   </article>
 </article>
@@ -264,9 +263,9 @@
 <div id="collab" width=100% style="padding-top: 1em; background-image: url(img/collab_background.png)">
 {{ if .Site.Params.Collab.Gigs }}
 <!-- Gigs --> <div>
-                   <h2 style="color:white">Collab>> Gigs</h2>
+                   <h3 style="color: white;">Collab <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Gigs</h3>
                   
-                  <h3 style="color:white">Performed at various venues in cities like Pune, Ahmedabad, Ratlam, Jabalpur and NOIDA</h3>
+                  <p style="color:white;font-weight: 100;opacity: 0.5;">Performed at various venues in cities like Pune, Ahmedabad, Ratlam, Jabalpur and NOIDA</p>
                   <div class="pn-ProductNav_WrapperCG">
                     
                     <nav id="pnProductNavCG" class="pn-ProductNav dragscrollCG">
@@ -279,8 +278,10 @@
   <article class="item">
     <div class="youtube-player" id={{.id}} style="width: 320px; height: 180px;">
     
-  </div>                       <header>
-      <h3 style="color:white">{{ .title }}</h3>
+  </div>                       
+  <header style="color: white;">
+      <caption>{{ .title }}
+      </caption>
     </header>
   </article>
 </article>
@@ -305,9 +306,9 @@
 
 {{ if .Site.Params.Collab.Shows.JKVM }}
 <!-- Shows -->                <div>
-                    <h2 style="color:white">Collab>> Shows</h2>
+                    <h3 style="color: white;">Collab>> Shows</h3>
                   
-                  <h3 style="color:white">Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records.</h3>
+                 <p style="color:white;font-weight: 100;opacity: 0.5;">Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records.</p>
                   <div class="pn-ProductNav_WrapperCSh">
                     
                     <nav id="pnProductNavCSh" class="pn-ProductNav dragscrollCSh">
@@ -320,8 +321,9 @@
   <article class="item">
     <div class="youtube-player" id={{.id}} style="width: 320px; height: 569px;">
     
-  </div>                      <header>
-      <h3 style="color:white">{{ .title }}</h3>
+  </div>                      
+  <header style="color: white;">
+      <caption style="color:white">{{ .title }}</caption>
     </header>
   </article>
 </article>
@@ -346,9 +348,9 @@
 
 {{ if .Site.Params.Collab.Sessions }}
 <!-- Sessions -->                <div>
-                    <h2 style="color:white">Collab>> Sessions and Compositions</h2>
+                    <h3 style="color: white;">Collab>> Sessions and Compositions</h3>
                   
-                <h3 style="color:white">Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records.</h3>
+                <p style="color:white;font-weight: 100;opacity: 0.5;">Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records.</p>
                   <div class="pn-ProductNav_WrapperCSe">
                     
                     <nav id="pnProductNavCSe" class="pn-ProductNavCSe dragscrollCSe">
@@ -358,8 +360,9 @@
   <article class="item">
     <div class="youtube-player" id={{.id}} style="width: 320px; height: 180px;">
     
-  </div>                    <header>
-      <h3 style="color:white">{{ .title }}</h3>
+  </div>                    
+  <header style="color: white;">
+      <caption style="color:white">{{ .title }}</caption>
     </header>
   </article>
 </article>
@@ -391,10 +394,10 @@
   <div class="container">
 
     <header>
-      <h1>Services</h1>
+      <h2>Services</h2>
     </header>
 
-    <h2>Here we will describe the list of services we provide</h2>
+    <caption>Here we will describe the list of services we provide</caption>
 
 {{ range .Site.Params.Services }} 
 
@@ -402,14 +405,13 @@
 
 
       <div id="service_section" style="text-align: center;"class="skel-layers-ignoreHref service_section">
-        <span class="icon {{.icon}}">
-          </span>
-          <b style="color: #212728;font-weight: 1000;float: center;">{{ .name }}</b>
+       
+          <h3 style="float: center;">{{ .name }}</h3>
       </div>
       
-      <h3>{{ .description }}</h3>
+      <p>{{ .description }}</p>
        <footer style="margin-top: 1em;">
-      <a style="background-color: #222729;" href="/gallery/" class="inline_button scrolly">View Gallery</a>
+      <a style="background-color: #DB4A37; padding:0 0 0 0;" href="/gallery/" class="inline_button scrolly">View Gallery</a>
                 </footer>
     </div>
     
@@ -419,7 +421,8 @@
 {{ if .Site.Params.Venues }}
 <div id="collab" width=100% style="background-image: url(img/collab_background.png)">
  <header>
-  <h1 style="color: white;">RBRBAND was here</h1>
+  <h2 style="color: white; letter-spacing: 0.25em;">RBRBAND <span style="color:black;font-weight: 1000"; > 
+  was here</span></h2>
 </header>
   <div class="tabular">
  <ul id="horizontal-list" style="color: #7d172f;">
@@ -467,26 +470,26 @@
 
 
 <!-- Contact -->
-<section id="contact" class="five" style="background-color: #222629;">
+<section id="contact" class="five">
   <div class="container">
     <!-- <h2 style="color: white;">Contact</h2> -->
         <header>
-        <h1 style="color: #888;">Let's get to business</h1>
+        <h2 style="color: #212728;">Let's get to business</h2>
 </header>
     <div  style="padding-bottom: 2em;">
     
 <div class="tabular">
- <ul id="horizontal-list" style="color: #7d172f;">
+ <ul id="horizontal-list" style="color: #DB4A37;">
 
-  <div id="details_wrapper">
+  <div id="details_wrapper" style="padding-right: 4em;padding-left: 4em;">
     
-  <li id="details_mobile" ><span style="color:white;padding-right: 0.5em;font-size: 1.5em;" class="icon fa-mobile"></span>+91-7698189874</li>
+  <li id="details_mobile" position: relative; style="float: left;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1.2em; line-height: 1em;" class="icon fa-mobile"></span><h2 style="font-size: 20px;">+91-7698189874</h2></li>
 
 
-  <li id="details_email" ><span style="color:white;padding-right: 0.5em;font-size: 1em;" class="icon fa-envelope"></span>prasang@rbrband.in</li>
+  <li id="details_email" position: relative; ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-envelope"></span><h2 style="font-size: 20px;">prasang@rbrband.in</h2></li>
 
 
-  <li id="details_videos"><span style="color:white;padding-right: 0.5em;font-size: 1em;" class="icon fa-video-camera"></span>More Videos</li>
+  <li id="details_videos" position: relative; style="float: right;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-video-camera"></span><h2 style="font-size: 20px;">More Videos</h2></li>
 </div>
  </div>
   </ul>
@@ -525,18 +528,18 @@
         </div>
         <br>
         <div id="send_message" class="6u$ 12u$(mobile)">
-          <input style="background-color: #7d172f;color: white;font-weight: 700;padding: 0.7em;" type="submit" value=">> Send Message" />
-
+          <!-- <input style="background-color: #7d172f;color: white;font-weight: 700;padding: 0.7em;" type="submit" value=">> Send Message" /> -->
+           <input type="submit" style="background-color: #DB4A37; padding:0 0 0 0;" href="/gallery/" class="inline_button scrolly" value="Send Message"/>
         </div>
       
     </form>
 
   <br>
-<ul class="icons">
+<!-- <ul class="icons">
                 {{ range .Site.Params.social }}
                 <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
                 {{ end }}
-              </ul>
+              </ul> -->
 </div>
 
   </div>
@@ -661,7 +664,7 @@
 <div id="footer">
 
   <!-- Copyright -->
-  <ul style="color: black;"class="copyright">
+  <ul class="copyright">
     <li>&copy; {{ .Site.Params.copyright }}</li><li>Design: Disha Manocha</li><li>Powered by <a href="https://gohugo.io/">Hugo</a></li>
   </ul>
 

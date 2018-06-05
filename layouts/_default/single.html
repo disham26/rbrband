@@ -98,8 +98,9 @@
       <div class="4u 12u$(mobile)">
         {{ range .Site.Params.Gallery.Videos }} 
          <article class="item">
-    <iframe width="194" height="320" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        <header>
-      <h3>{{ .title }}</h3>
+    <iframe width="194" height="320" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        
+  <header>
+      <caption>{{ .title }}</caption>
     </header>
   </article>
 
@@ -112,7 +113,7 @@
 
           <a href="{{ .url }}" class="image fit"><img src="../{{ .source }}" alt="{{ .alt }}" /></a>
           <header>
-            <h3>{{ .title }}</h3>
+            <caption>{{ .title }}</caption>
 
           </header>
         </article>
@@ -124,7 +125,7 @@
         <article class="item">
           <a href="{{ .url }}" class="image fit"><img src="../{{ .source }}" alt="{{ .alt }}" /></a>
           <header>
-            <h3>{{ .title }}</h3>
+            <caption>{{ .title }}</caption>
           </header>
         </article>
         {{ end }}

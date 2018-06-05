@@ -103,46 +103,39 @@ url = "https://www.youtube.com/embed/uHuB-meZnC8"
 imageurl = ""
 id = "uHuB-meZnC8"
 
+[[params.collab.gigs]]
+title = "Love Mashup"
+url = "https://www.youtube.com/embed/uHuB-meZnC8"
+imageurl = ""
+id = "uHuB-meZnC8"
 
 
 
+[[params.individual.shows.jkvm]]
+title = "Episode 50"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1054655078007088%2F&show_text=0&width=180"
+
 
 [[params.individual.shows.jkvm]]
-title = "Episode1"
-url = "https://www.youtube.com/embed/MQYQwj3TM50"
-id = "MQYQwj3TM50"
+title = "Episode 49"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1053558484783414%2F&show_text=0&width=180"
+
+
 [[params.individual.shows.jkvm]]
-title = "Episode 2"
-url = "https://www.youtube.com/embed/Njy4M6cmAq8"
-id="Njy4M6cmAq8"
+title = "Episode 48"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1052509001555029%2F&show_text=0&width=180"
+
 [[params.individual.shows.jkvm]]
-title = "Episode 3"
-url = "https://www.youtube.com/embed/APFupfYWcb8"
-id = "APFupfYWcb8"
+title = "Episode 47"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1050884941717435%2F&show_text=0&width=267"
+
+
 [[params.individual.shows.jkvm]]
-title = "Episode 4"
-url = "https://www.youtube.com/embed/sC0qCaUwaxs"
-id="sC0qCaUwaxs"
-[[params.individual.shows.jkvm]]
-title = "Episode 5"
-url = "https://www.youtube.com/embed/bVY3gaP14OA"
-id = "bVY3gaP14OA"
-[[params.individual.shows.jkvm]]
-title = "Episode 6"
-url = "https://www.youtube.com/embed/gMJzQhiqKEI"
-id="gMJzQhiqKEI"
-[[params.individual.shows.jkvm]]
-title = "Episode 7"
-url = "https://www.youtube.com/embed/LbE_ifbWv58"
-id="LbE_ifbWv58"
-[[params.individual.shows.jkvm]]
-title = "Episode 8"
-url = "https://www.youtube.com/embed/Tu04t5j9CkI"
-id="Tu04t5j9CkI"
-[[params.individual.shows.jkvm]]
-title = "Episode9"
-url = "https://www.youtube.com/embed/KDsFcaOBw5M"
-id="KDsFcaOBw5M"
+title = "Episode 46"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1049851335154129%2F&show_text=0&width=267"
+
+
+
 
 
 
