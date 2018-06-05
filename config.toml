@@ -209,20 +209,20 @@ icon_size="1"
 
 [[params.venues]]
 name="Crowne Plaza"
-source="img/crowne_plaza.png"
+source="img/CP.jpeg"
 
 [[params.venues]]
-name="Crowne Plaza"
-source="img/crowne_plaza.png"
+name="Bayleaf Bistro"
+source="img/bayleaf.jpg"
 
 [[params.venues]]
-name="Crowne Plaza"
-source="img/crowne_plaza.png"
+name="South Avenue Mall"
+source="img/SAM.png"
 
 [[params.venues]]
-name="Crowne Plaza"
-source="img/crowne_plaza.png"
+name="The Great India Place Mall"
+source="img/GIP.jpeg"
 
 [[params.venues]]
-name="Crowne Plaza"
-source="img/crowne_plaza.png"
+name="BMC Software"
+source="img/bmc.png"

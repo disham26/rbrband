@@ -1785,9 +1785,10 @@ width:50%;
 	h3 {
 		font-family: 'Dosis', sans-serif;
 		font-size: 24px;
-		letter-spacing: 0.2em;
+		padding: 0 4em 0 4em;
+		letter-spacing: 0.1em;
 		/*padding: 0 0em 0em 0em;*/
-		text-align: justify;
+		text-align: center;
 		-moz-text-align-last: center;
      	text-align-last: center;
      	color:#777;
@@ -1941,14 +1942,15 @@ padding-bottom: 1em;}
 		}
 
 		.image.avatar48 {
-			width: 48px;
+			width: 110px;
 			height: 48px;
 			background: #f00;
 		}
 
 			.image.avatar48 img {
-				width: 48px;
+				width: 98px;
 				height: 48px;
+				float:left;
 			}
 
 		.image.fit {
@@ -2080,7 +2082,7 @@ form input[type="submit"]{
 		form textarea:focus {
 			box-shadow: 0 0 2px 1px #8ebebc;
 			background: #fff;
-			
+
 		}
 
 	form input[type="text"],
@@ -2549,6 +2551,10 @@ form input[type="submit"]{
 
 			#main {
 				/*margin-left: 18%;*/
+			}
+
+			#contact_wrapper{
+				padding:0 4em 0 4em;
 			}
 
 	}

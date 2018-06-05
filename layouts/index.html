@@ -46,8 +46,16 @@
 <!-- <button oncli/*ck="topFunction()" id="myBtn" title="Go to top">Top</button>
  -->  <!-- Header -->
 
-     <span class="icon fa-chevron-circle-up scrolly" id="myBtn" href="#top" 
-     style="opacity:0.7;font-size:60px;color:#222729;text-shadow:2px 2px 4px #000000;"></span>
+    <!--  <span class="icon fa-caret-up scrolly" id="myBtn" href="#top" 
+     style="opacity:0.7;font-size:60px;color:#222729;text-shadow:2px 2px 4px #000000;"></span> -->
+
+      <span class="icon fa-forward scrolly" id="myBtn" href="#top" style="-webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    opacity: 0.7;
+    font-size: 36px;"></span>
     <!--  <a >Intro </a> -->
 
   <div id="header">
@@ -56,7 +64,7 @@
 
       <!-- Logo -->
       <div id="logo">
-        <span class="image avatar48"><img src="img/my_dp.jpg" alt="" /></span>
+        <img class="image avatar48" src="img/watermark_image.ico" alt="" />
         <h1 style="padding:0;text-align-last: right;"id="title">{{ .Site.Params.name }}</h1>
         <p>{{ .Site.Params.description }}</p>
       </div>
@@ -260,12 +268,12 @@
 
 {{ end }}
 {{ if .Site.Params.Collab }}
-<div id="collab" width=100% style="padding-top: 1em; background-image: url(img/collab_background.png)">
+<div id="collab" width=100% style="padding-top: 1em; background-image: url(img/IntroImageMaroon.jpg)">
 {{ if .Site.Params.Collab.Gigs }}
 <!-- Gigs --> <div>
                    <h3 style="color: white;">Collab <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Gigs</h3>
                   
-                  <p style="color:white;font-weight: 100;opacity: 0.5;">Performed at various venues in cities like Pune, Ahmedabad, Ratlam, Jabalpur and NOIDA</p>
+                  <p style="color:white;font-weight: 100;">Performed at various venues in cities like Pune, Ahmedabad, Ratlam, Jabalpur and NOIDA</p>
                   <div class="pn-ProductNav_WrapperCG">
                     
                     <nav id="pnProductNavCG" class="pn-ProductNav dragscrollCG">
@@ -419,10 +427,9 @@
 <br>
 {{ end }}
 {{ if .Site.Params.Venues }}
-<div id="collab" width=100% style="background-image: url(img/collab_background.png)">
+<div id="collab" width=100% style="background-image: url(img/IntroImageMaroon.jpg)">
  <header>
-  <h2 style="color: white; letter-spacing: 0.25em;">RBRBAND <span style="color:black;font-weight: 1000"; > 
-  was here</span></h2>
+  <h2 style="color: white;">RBRband was here</h2>
 </header>
   <div class="tabular">
  <ul id="horizontal-list" style="color: #7d172f;">
@@ -431,7 +438,7 @@
   {{ range .Site.Params.Venues }} 
 
   <li id="details_mobile" style="display: inline; padding-right: 1em;">
-    <img src="{{ .source }}"  width="150" height="90" border="0" alt="Null" /><br>
+    <img src="{{ .source }}" style="color: black;" width="150" height="90" border="0" alt="Null" /><br>
    <!--  <b style="text-align-last: center;font-weight: 100;font-size: 1em;">{{ .name }}</b> --></li>
 
 {{ end}}
@@ -493,7 +500,7 @@
 </div>
  </div>
   </ul>
-  <h3 id="contact_subheader" style="color: white;text-align-last: left;">What can I do for you?</h3>
+  <h3 id="contact_subheader" style="color: #212728;text-align-last: left;">What can I do for you?</h3>
   
 
     <form method="POST" action="https://formspree.io/prasang@rbrband.in">
