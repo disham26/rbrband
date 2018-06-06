@@ -6,10 +6,13 @@ title = "RBRband Records"
 copyright = "RBRband Records"
 description = "Vocalist, Sound Engineer"
 name = "Prasang Misra"
-individual_gigs_description = "Performed at various venues in cities like Pune, Ahmedabad, Ratlam, Jabalpur and NOIDA"
+individual_gigs_description = "'Versatile' just like a RBRband, we are multipurpose.  Be it a Sunday brunch, a wedding party, a pub, we've done it all."
+
 individual_shows_description = "Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records."
-individual_sessions_description = ""
-collab_gigs_description = ""
+
+individual_sessions_description = "Not limited to covers or mash-ups, we bring to you our original freshly brewed music from a highly professional RBRband Studio. From soft romantic to the power ballads, we've got'em all"
+
+collab_gigs_description = "Co-creation, Collaboration, Communication and Catalysing Music are some of our beliefs. Do you believe in growing together too? Get in touch"
 collab_shows_description = ""
 collab_sessions_description = ""
 
@@ -189,22 +192,77 @@ url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.faceboo
 
 
 [[params.services]]
-name= "Singing"
-description = "Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records."
-icon= "fa-microphone"
-icon_size="1.1"
+name = "Performance"
+icon = "img/microphone.png"
+description = "With plethora of experience in Solo and band gigs at cafes, pubs and corporate event we understand the pulse of the crowd."
+	
+	[params.services.performance1]
+	name=""
+   	[[params.services.performance1.list]]
+    name="Solo Singing - 1 pc"
+   	[[params.services.performance1.list]]
+   	name="Singer and guitarist - 2 pc"
+   	[[params.services.performance1.list]]
+   	name="Singer and MIDI piano - 1 pc" 
+	[[params.services.performance1.list]]
+   	name="Corporate event Singing"
+
+  		[params.services.performance2]
+		name="Genres"
+   		[[params.services.performance2.list]]
+    	name="Bollywood"
+   		[[params.services.performance2.list]]
+   		name="Soft Romantic"
+   
+
+
+
 
 [[params.services]]
-name= "Music Production"
-description = "Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records."
-icon= "fa-headphones"
-icon_size="1"
+name = "Music Production"
+icon = "/img/equalizer.png"
+description = "With ever evolving Music tech it's tough to keep up with modern music tastes, but don't you worry, don't you worry child... see heaven's got RBRBand for YOU"
+	
+	[params.services.performance1]
+	name=""
+   	[[params.services.performance1.list]]
+    name="Single track production"
+   	[[params.services.performance1.list]]
+   	name="Mixing"
+   	[[params.services.performance1.list]]
+   	name="Mastering" 
+
+
 
 [[params.services]]
-name= "Cant think of any"
-description = "Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records."
-icon= "fa-headphones"
-icon_size="1"
+name = "Lyrics and Composition"
+icon = "/img/music.png"
+description = "At the loss of words after looking at our work? Well that happens, lucky for you we always have Lyrics for all occasions."
+	
+	[params.services.performance1]
+	name=""
+   	[[params.services.performance1.list]]
+    name="Song writing"
+   	[[params.services.performance1.list]]
+   	name="Tune composition"
+   	[[params.services.performance1.list]]
+   	name="Arrangement"
+   	[[params.services.performance1.list]]
+   	name="Production"
+
+
+[[params.services]]
+name="Recording Studio"
+icon = "/img/headphones.png"
+description="Yes, we have a studio. Ok, a Home Studio, why else would we add 'Records' to our name? So fellow musicians, let's get that song off your list, which you've always dreamt of recording."
+[[params.services.performance1.list]]
+name="Multi-track recording"
+[[params.services.performance1.list]]
+name="Audio Mixing"
+
+
+
+
 
 
 [[params.venues]]

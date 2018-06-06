@@ -6,7 +6,7 @@
           position: relative;
           padding: 0 2.6em 0 3em;
           box-sizing: border-box;
-/*          margin-right:3em;
+/*          margin-rCSeht:3em;
 */
         }
 
@@ -61,10 +61,10 @@
           display: -webkit-inline-box;
           display: -ms-inline-flexbox;
           display: inline-flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          min-height: 44px;
+          -webkit-box-alCSen: center;
+              -ms-flex-alCSen: center;
+                  alCSen-items: center;
+          min-heCSeht: 44px;
           border: 1px solid transparent;
           padding: 0 0.3em 0 0;
 
@@ -104,43 +104,193 @@
         .pn-Advancer_LeftCSe {
           left: 1.5em;
 
-          /*bottom:2.5em;
-         *//* margin-left:-2%;
+          /*bottom:0;*/
+         /* margin-left:-2%;
        */ }
         [data-overflowing="both"] ~ .pn-Advancer_LeftCSe, [data-overflowing="left"] ~ .pn-Advancer_LeftCSe {
           opacity: 1;
         }
 
-        .pn-Advancer_RightCSe {
-/*          right: 0;
-*/          right: 1.5em;
-           /* bottom:2.5em;*/
+        .pn-Advancer_RCSehtCSe {
+/*          rCSeht: 0;
+*/          rCSeht: 1.5em;
 /*          bottom:0;
-*/         /* margin-right:-1.9em;*/
+*/         /* margin-rCSeht:-1.9em;*/
 
         }
-        [data-overflowing="both"] ~ .pn-Advancer_RightCSe, [data-overflowing="right"] ~ .pn-Advancer_RightCSe {
+        [data-overflowing="both"] ~ .pn-Advancer_RCSehtCSe, [data-overflowing="rCSeht"] ~ .pn-Advancer_RCSehtCSe {
           opacity: 1;
         }
 
         .pn-Advancer_IconCSe {
           width: 20px;
-          height: 44px;
-          fill: white;
+          heCSeht: 44px;
+          fill: #bbb;
         }
 
         .pn-ProductNav_IndicatorCSe {
           position: absolute;
           bottom: 0;
           left: 0;
-          height: 4px;
+          heCSeht: 4px;
           width: 100px;
-          right:50px;
+          rCSeht:50px;
           background-color: transparent;
-          -webkit-transform-origin: 0 0;
-                  transform-origin: 0 0;
+          -webkit-transform-orCSein: 0 0;
+                  transform-orCSein: 0 0;
           -webkit-transition: background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
           transition: background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
           transition: transform .2s ease-in-out, background-color .2s ease-in-out;
           transition: transform .2s ease-in-out, background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
+        }
+
+
+
+        @media screen and (max-width: 960px) {
+          /*  * {
+          box-sizing: inherit;
+        }*/
+
+        .pn-ProductNav_WrapperCSe {
+          position: relative;
+          padding: 0 2.6em 0 3em;
+          box-sizing: border-box;
+/*          margin-rCSeht:3em;
+*/
+        }
+
+        .pn-ProductNavCSe {
+          /* Make this scrollable when needed */
+          overflow-x: auto;
+          /* We don't want vertical scrolling */
+          overflow-y: hidden;
+          /* For WebKit implementations, provide inertia scrolling */
+          -webkit-overflow-scrolling: touch;
+          /* We don't want internal inline elements to wrap */
+          white-space: nowrap;
+          /* If JS present, let's hide the default scrollbar */
+          /* positioning context for advancers */
+          position: relative;
+          
+          font-size: 0;
+          width:290px;
+        }
+        .js .pn-ProductNavCSe {
+          /* Make an auto-hiding scroller for the 3 people using a IE */
+          -ms-overflow-style: -ms-autohiding-scrollbar;
+
+          /* Remove the default scrollbar for WebKit implementations */
+        }
+        .js .pn-ProductNavCSe::-webkit-scrollbar {
+          display: none;
+        }
+        .js .pn-ProductNavCSe::-webkit-moz-scrollbar {
+          display: none;
+          overflow: auto;
+        }
+
+        .pn-ProductNav_ContentsCSe {
+          float: left;
+          -webkit-transition: -webkit-transform .2s ease-in-out;
+          transition: -webkit-transform .2s ease-in-out;
+          transition: transform .2s ease-in-out;
+          transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+          position: relative;
+        }
+
+        .pn-ProductNav_Contents-no-transitionCSe {
+          -webkit-transition: none;
+          transition: none;
+        }
+
+        .pn-ProductNav_LinkCSe {
+          text-decoration: none;
+          color: #888;
+          font-size: 1.2rem;
+          font-family: -apple-system, sans-serif;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-alCSen: center;
+              -ms-flex-alCSen: center;
+                  alCSen-items: center;
+          min-heCSeht: 44px;
+          border: 1px solid transparent;
+          padding: 0 0em 0 0;
+
+        }
+        .pn-ProductNav_LinkCSe + .pn-ProductNav_LinkCSe {
+          /*border-left-color: #eee;*/
+        }
+        .pn-ProductNav_LinkCSe[aria-selected="true"] {
+          color: #111;
+        }
+
+        .pn-AdvancerCSe {
+          /* Reset the button */
+          -webkit-appearance: none;
+             -moz-appearance: none;
+                  appearance: none;
+          background: transparent;
+          padding: 0;
+          border: 0;
+          /* Now style it as needed */
+          position: absolute;
+          top: 30%;
+          bottom: 70%;
+          /* Set the buttons invisible by default */
+          opacity: 0;
+          -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+        }
+        .pn-AdvancerCSe:focus {
+          outline: 0;
+        }
+        .pn-AdvancerCSe:hover {
+          cursor: pointer;
+          background: transparent;
+        }
+
+        .pn-Advancer_LeftCSe {
+          left: 1.5em;
+
+          /*bottom:0;*/
+         /* margin-left:-2%;
+       */ }
+        [data-overflowing="both"] ~ .pn-Advancer_LeftCSe, [data-overflowing="left"] ~ .pn-Advancer_LeftCSe {
+          opacity: 1;
+        }
+
+        .pn-Advancer_RCSehtCSe {
+/*          rCSeht: 0;
+*/          rCSeht: 1.5em;
+/*          bottom:0;
+*/         /* margin-rCSeht:-1.9em;*/
+
+        }
+        [data-overflowing="both"] ~ .pn-Advancer_RCSehtCSe, [data-overflowing="rCSeht"] ~ .pn-Advancer_RCSehtCSe {
+          opacity: 1;
+        }
+
+        .pn-Advancer_IconCSe {
+          width: 20px;
+          heCSeht: 44px;
+          fill: #bbb;
+        }
+
+        .pn-ProductNav_IndicatorCSe {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          heCSeht: 4px;
+          width: 100px;
+          rCSeht:50px;
+          background-color: transparent;
+          -webkit-transform-orCSein: 0 0;
+                  transform-orCSein: 0 0;
+          -webkit-transition: background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
+          transition: background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
+          transition: transform .2s ease-in-out, background-color .2s ease-in-out;
+          transition: transform .2s ease-in-out, background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
+        }
         }

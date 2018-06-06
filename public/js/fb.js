@@ -18,9 +18,3 @@
         });
     });
 })();
-function sizeEmbed() {
-    var imgHeight = $('.bbfb-thumb').height(); //Find thumbnail height
-    $('.bbfb-video').css('height', imgHeight); //Set that as the height of the parent div
-}
-sizeEmbed(); //Call it on page load
-$(window).resize(sizeEmbed); //Call it again if the window is resized

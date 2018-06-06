@@ -7,6 +7,8 @@
         max-width: 100%;
         background: #000;
         margin: 5px;
+        width: 320px;
+        height: 180px;
     }
     
     .youtube-player iframe {
@@ -51,4 +53,19 @@
         position: absolute;
         background: url("../img/youtube_red.png") no-repeat;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 960px) {
+         .youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        /* Use 75% for 4:3 videos */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 0px;
+        width: 250px;
+        height: 141px;
+    }
     }

@@ -6,7 +6,7 @@
           position: relative;
           padding: 0 2.6em 0 3em;
           box-sizing: border-box;
-/*          margin-right:3em;
+/*          margin-rCShht:3em;
 */
         }
 
@@ -61,10 +61,10 @@
           display: -webkit-inline-box;
           display: -ms-inline-flexbox;
           display: inline-flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          min-height: 44px;
+          -webkit-box-alCShn: center;
+              -ms-flex-alCShn: center;
+                  alCShn-items: center;
+          min-heCShht: 44px;
           border: 1px solid transparent;
           padding: 0 0.3em 0 0;
 
@@ -104,42 +104,193 @@
         .pn-Advancer_LeftCSh {
           left: 1.5em;
 
-          bottom:8em;
+          /*bottom:0;*/
          /* margin-left:-2%;
        */ }
         [data-overflowing="both"] ~ .pn-Advancer_LeftCSh, [data-overflowing="left"] ~ .pn-Advancer_LeftCSh {
           opacity: 1;
         }
 
-        .pn-Advancer_RightCSh {
-/*          right: 0;
-*/          right: 1.5em;
-          bottom:8em;
-        /* margin-right:-1.9em;*/
+        .pn-Advancer_RCShhtCSh {
+/*          rCShht: 0;
+*/          rCShht: 1.5em;
+/*          bottom:0;
+*/         /* margin-rCShht:-1.9em;*/
 
         }
-        [data-overflowing="both"] ~ .pn-Advancer_RightCSh, [data-overflowing="right"] ~ .pn-Advancer_RightCSh {
+        [data-overflowing="both"] ~ .pn-Advancer_RCShhtCSh, [data-overflowing="rCShht"] ~ .pn-Advancer_RCShhtCSh {
           opacity: 1;
         }
 
         .pn-Advancer_IconCSh {
           width: 20px;
-          height: 44px;
-          fill: white;
+          heCShht: 44px;
+          fill: #bbb;
         }
 
         .pn-ProductNav_IndicatorCSh {
           position: absolute;
           bottom: 0;
           left: 0;
-          height: 4px;
+          heCShht: 4px;
           width: 100px;
-          right:50px;
+          rCShht:50px;
           background-color: transparent;
-          -webkit-transform-origin: 0 0;
-                  transform-origin: 0 0;
+          -webkit-transform-orCShin: 0 0;
+                  transform-orCShin: 0 0;
           -webkit-transition: background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
           transition: background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
           transition: transform .2s ease-in-out, background-color .2s ease-in-out;
           transition: transform .2s ease-in-out, background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
+        }
+
+
+
+        @media screen and (max-width: 960px) {
+          /*  * {
+          box-sizing: inherit;
+        }*/
+
+        .pn-ProductNav_WrapperCSh {
+          position: relative;
+          padding: 0 2.6em 0 3em;
+          box-sizing: border-box;
+/*          margin-rCShht:3em;
+*/
+        }
+
+        .pn-ProductNavCSh {
+          /* Make this scrollable when needed */
+          overflow-x: auto;
+          /* We don't want vertical scrolling */
+          overflow-y: hidden;
+          /* For WebKit implementations, provide inertia scrolling */
+          -webkit-overflow-scrolling: touch;
+          /* We don't want internal inline elements to wrap */
+          white-space: nowrap;
+          /* If JS present, let's hide the default scrollbar */
+          /* positioning context for advancers */
+          position: relative;
+          
+          font-size: 0;
+          width:290px;
+        }
+        .js .pn-ProductNavCSh {
+          /* Make an auto-hiding scroller for the 3 people using a IE */
+          -ms-overflow-style: -ms-autohiding-scrollbar;
+
+          /* Remove the default scrollbar for WebKit implementations */
+        }
+        .js .pn-ProductNavCSh::-webkit-scrollbar {
+          display: none;
+        }
+        .js .pn-ProductNavCSh::-webkit-moz-scrollbar {
+          display: none;
+          overflow: auto;
+        }
+
+        .pn-ProductNav_ContentsCSh {
+          float: left;
+          -webkit-transition: -webkit-transform .2s ease-in-out;
+          transition: -webkit-transform .2s ease-in-out;
+          transition: transform .2s ease-in-out;
+          transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+          position: relative;
+        }
+
+        .pn-ProductNav_Contents-no-transitionCSh {
+          -webkit-transition: none;
+          transition: none;
+        }
+
+        .pn-ProductNav_LinkCSh {
+          text-decoration: none;
+          color: #888;
+          font-size: 1.2rem;
+          font-family: -apple-system, sans-serif;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-alCShn: center;
+              -ms-flex-alCShn: center;
+                  alCShn-items: center;
+          min-heCShht: 44px;
+          border: 1px solid transparent;
+          padding: 0 0em 0 0;
+
+        }
+        .pn-ProductNav_LinkCSh + .pn-ProductNav_LinkCSh {
+          /*border-left-color: #eee;*/
+        }
+        .pn-ProductNav_LinkCSh[aria-selected="true"] {
+          color: #111;
+        }
+
+        .pn-AdvancerCSh {
+          /* Reset the button */
+          -webkit-appearance: none;
+             -moz-appearance: none;
+                  appearance: none;
+          background: transparent;
+          padding: 0;
+          border: 0;
+          /* Now style it as needed */
+          position: absolute;
+          top: 30%;
+          bottom: 70%;
+          /* Set the buttons invisible by default */
+          opacity: 0;
+          -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+        }
+        .pn-AdvancerCSh:focus {
+          outline: 0;
+        }
+        .pn-AdvancerCSh:hover {
+          cursor: pointer;
+          background: transparent;
+        }
+
+        .pn-Advancer_LeftCSh {
+          left: 1.5em;
+
+          /*bottom:0;*/
+         /* margin-left:-2%;
+       */ }
+        [data-overflowing="both"] ~ .pn-Advancer_LeftCSh, [data-overflowing="left"] ~ .pn-Advancer_LeftCSh {
+          opacity: 1;
+        }
+
+        .pn-Advancer_RCShhtCSh {
+/*          rCShht: 0;
+*/          rCShht: 1.5em;
+/*          bottom:0;
+*/         /* margin-rCShht:-1.9em;*/
+
+        }
+        [data-overflowing="both"] ~ .pn-Advancer_RCShhtCSh, [data-overflowing="rCShht"] ~ .pn-Advancer_RCShhtCSh {
+          opacity: 1;
+        }
+
+        .pn-Advancer_IconCSh {
+          width: 20px;
+          heCShht: 44px;
+          fill: #bbb;
+        }
+
+        .pn-ProductNav_IndicatorCSh {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          heCShht: 4px;
+          width: 100px;
+          rCShht:50px;
+          background-color: transparent;
+          -webkit-transform-orCShin: 0 0;
+                  transform-orCShin: 0 0;
+          -webkit-transition: background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
+          transition: background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
+          transition: transform .2s ease-in-out, background-color .2s ease-in-out;
+          transition: transform .2s ease-in-out, background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
+        }
         }

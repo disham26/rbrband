@@ -1,7 +1,7 @@
 var SETTINGSISe = {
             navBarTravellingISe: false,
             navBarTravelDirectionISe: "",
-             navBarTravelDistanceISe: 150
+             navBarTravelDistanceISe: 250
         }
 
         var colours = {
@@ -78,7 +78,7 @@ var SETTINGSISe = {
                 // Find how far this panel has been scrolled
                 var availableScrollLeftISe = pnProductNavISe.scrollLeft;
                 // If the space available is less than two lots of our desired distance, just move the whole amount
-                // otherwise, move by the amount in the settings
+                // otherwISe, move by the amount in the settings
                 if (availableScrollLeftISe < SETTINGSISe.navBarTravelDistanceISe * 2) {
                     pnProductNavContentsISe.style.transform = "translateX(" + availableScrollLeftISe + "px)";
                 } else {
@@ -108,8 +108,9 @@ var SETTINGSISe = {
                 // Now we know how much space we have available to scroll
                 var availableScrollRightISe = Math.floor(navBarRightEdgeISe - navBarScrollerRightEdgeISe);
                 // If the space available is less than two lots of our desired distance, just move the whole amount
-                // otherwise, move by the amount in the settings
+                // otherwISe, move by the amount in the settings
                 if (availableScrollRightISe < SETTINGSISe.navBarTravelDistanceISe * 2) {
+                    
                     pnProductNavContentsISe.style.transform = "translateX(-" + availableScrollRightISe + "px)";
                 } else {
                     pnProductNavContentsISe.style.transform = "translateX(-" + SETTINGSISe.navBarTravelDistanceISe + "px)";

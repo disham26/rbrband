@@ -49,13 +49,15 @@
     <!--  <span class="icon fa-caret-up scrolly" id="myBtn" href="#top" 
      style="opacity:0.7;font-size:60px;color:#222729;text-shadow:2px 2px 4px #000000;"></span> -->
 
-      <span class="icon fa-forward scrolly" id="myBtn" href="#top" style="-webkit-transform: rotate(270deg);
+  <!--     <span class="icon fa-forward scrolly" id="myBtn" href="#top" style="-webkit-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
     -o-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
     opacity: 0.7;
-    font-size: 36px;"></span>
+    font-size: 36px;"></span> -->
+
+    <img src="img/up-arrow.png" class="scrolly" id="myBtn" href="#top">
     <!--  <a >Intro </a> -->
 
   <div id="header">
@@ -64,8 +66,8 @@
 
       <!-- Logo -->
       <div id="logo">
-        <img class="image avatar48" src="img/watermark_image.ico" alt="" />
-        <h1 style="padding:0;text-align-last: right;"id="title">{{ .Site.Params.name }}</h1>
+        <img class="image avatar48" src="img/Logo_Image.jpg" alt="" />
+        <h1 style="padding:0;text-align-last: right;" id="title"><strong>{{ .Site.Params.name }}</strong></h1>
         <p>{{ .Site.Params.description }}</p>
       </div>
 
@@ -120,17 +122,18 @@
               <div class="container">
 
                 <header>
-                  <h1 class="alt" style="color: white;text-align: center;"><strong>Hi! I'm Prasang, <br>
-                  Welcome to my website </a>.</h1>
-                  <p>Hope you find something interesting here<br />
-                  and book me for your show</p>
+                  <h1 class="alt" style="color: white;text-align: center;"><strong>RBRband Records </strong>
+                  <br>
+                  <span style="font-size: 30px;font-weight: 300;"> feat. </span>
+                  <br> <strong>Prasang Misra</strong>
+                </h1>
+                  <p style="opacity: 0.9; font-weight:1000;padding:0 3em 0 3em;">Music is not meant to be kept in closed studios and unheard albums, <br>It's supposed to be stretched with our boundaries,<br> just like the RBRband.</p>
                   </strong>
                 
                 </header>
 
                 <footer>
-                  <a style="border-color: white;border-style: solid;border-width: 1px; opacity: 0.8;  
-                  background-color: #DB4A37; padding:0 0 0 0; width:170px;height:45px;font-size: 18px; text-align: center;" href="#portfolio" class="inline_button scrolly">My Portfolio</a>
+                  <button style="font-size: 20px;" href="#contact" class="scrolly">Contact</button>
                 </footer>
 
               </div>
@@ -146,7 +149,7 @@
 
                 <!-- <p2>Some basic portfolio</p2> -->
 {{if .Site.Params.Individual }}
-<div id="individual">
+<div  style="padding-top: 1em;" id="individual">
 <!--Individual -->               <!--  <h3>Individual</h3> -->
 {{if .Site.Params.Individual.Gigs }}
 <!-- Gigs -->                <div>
@@ -162,7 +165,7 @@
 {{ range .Site.Params.Individual.Gigs }} 
 <article class="pn-ProductNav_LinkIG" aria-selected="true">  
   <article class="item">
-  <div class="youtube-player" id={{.id}} style="width: 320px; height: 180px;">
+  <div class="youtube-player" id={{.id}}>
     
   </div>
   <!--   <iframe width="320" height="180" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>      
@@ -182,19 +185,21 @@
 <span id="pnIndicatorIG" class="pn-ProductNav_IndicatorIG"></span>
 </div>
 </nav>
-<button id="pnAdvancerLeftIG" name="pnAdvancerLeftIG" class="pn-AdvancerIG pn-Advancer_LeftIG" type="button">
-  <svg class="pn-Advancer_IconIG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg>
+<button style="width: 0;height: 0" id="pnAdvancerLeftIG" name="pnAdvancerLeftIG" class="pn-AdvancerIG pn-Advancer_LeftIG" type="button">
+  <!-- <svg class="pn-Advancer_IconIG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg> -->
+  <img style="width: 50px;" src="img/left-arrow.png">
 </button>
 
-<button id="pnAdvancerRightIG" name="pnAdvancerRightIG" class="pn-AdvancerIG pn-Advancer_RightIG" type="button">
-  <svg class="pn-Advancer_IconIG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" /></svg>
+<button style="width: 0;height: 0" id="pnAdvancerRightIG" name="pnAdvancerRightIG" class="pn-AdvancerIG pn-Advancer_RightIG" type="button">
+  <img style="width: 50px;" src="img/right-arrow.png">
+
 </button>
 </div>
 
 </div>
 {{ end }}
 {{ if .Site.Params.Individual.Shows }}
-<!-- Shows -->    <div>
+<!-- Shows -->    <div style="padding-top: 1em;">
                   <h3>Individual <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Shows</h3>
           <p>{{ .Site.Params.individual_shows_description }}</p>
                     <div class="pn-ProductNav_WrapperISh">                    
@@ -231,9 +236,9 @@
 </div>
 {{ end }}
 {{if .Site.Params.Individual.Sessions }}
-<!-- Sessions -->                <div>
-    <h3>Individual <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Sessions and Compositions</h3>
-  <p>{{.Site.Params.individual_sessions_description}}</p>
+<!-- Sessions -->                <div style="padding-top: 1em;">
+    <h3>Individual <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Compositions</h3>
+  <p>{{ .Site.Params.individual_sessions_description }}</p>
                   <div class="pn-ProductNav_WrapperISe">
                     
                     <nav id="pnProductNavISe" class="pn-ProductNavISe dragscrollISe">
@@ -241,7 +246,7 @@
 {{ range .Site.Params.Individual.Sessions }} 
 <article class="pn-ProductNav_LinkISe" aria-selected="true">  
   <article class="item">
-   <div class="youtube-player" id={{.id}} style="width: 320px; height: 180px;">
+   <div class="youtube-player" id={{.id}}>
     
   </div>                     <header>
       <caption>{{ .title }}</caption>
@@ -268,12 +273,12 @@
 
 {{ end }}
 {{ if .Site.Params.Collab }}
-<div id="collab" width=100% style="padding-top: 1em; background-image: url(img/IntroImageMaroon.jpg)">
+<div id="collab" width=100% style="padding-top: 2em; background-image: url(img/IntroImageMaroon.jpg)">
 {{ if .Site.Params.Collab.Gigs }}
-<!-- Gigs --> <div>
+<!-- Gigs --> <div style="padding-top: 1em;">
                    <h3 style="color: white;">Collab <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Gigs</h3>
                   
-                  <p style="color:white;font-weight: 100;">Performed at various venues in cities like Pune, Ahmedabad, Ratlam, Jabalpur and NOIDA</p>
+                  <p style="color:white;font-weight: 100;">{{.Site.Params.collab_gigs_description}}</p>
                   <div class="pn-ProductNav_WrapperCG">
                     
                     <nav id="pnProductNavCG" class="pn-ProductNav dragscrollCG">
@@ -284,7 +289,7 @@
 {{ range .Site.Params.Collab.Gigs }} 
 <article class="pn-ProductNav_LinkCG" aria-selected="true">  
   <article class="item">
-    <div class="youtube-player" id={{.id}} style="width: 320px; height: 180px;">
+    <div class="youtube-player" id={{.id}}>
     
   </div>                       
   <header style="color: white;">
@@ -313,10 +318,10 @@
 {{ end }}
 
 {{ if .Site.Params.Collab.Shows.JKVM }}
-<!-- Shows -->                <div>
+<!-- Shows -->                <div style="padding-top: 1em;">
                     <h3 style="color: white;">Collab>> Shows</h3>
                   
-                 <p style="color:white;font-weight: 100;opacity: 0.5;">Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records.</p>
+                 <p style="color:white;font-weight: 100;opacity: 0.5;">{{.Site.Params.collab_shows_description}}</p>
                   <div class="pn-ProductNav_WrapperCSh">
                     
                     <nav id="pnProductNavCSh" class="pn-ProductNav dragscrollCSh">
@@ -355,10 +360,10 @@
 {{ end }}
 
 {{ if .Site.Params.Collab.Sessions }}
-<!-- Sessions -->                <div>
+<!-- Sessions -->                <div style="padding-top: 1em;">
                     <h3 style="color: white;">Collab>> Sessions and Compositions</h3>
                   
-                <p style="color:white;font-weight: 100;opacity: 0.5;">Janta Ki Vishesh Maang is a popular FB live show hosted by Prasang where people can send in their song requests and they are covered live on Facebook. With 1000+ views on every single video, it is one of the most interesting and enticing projects undertaken by RBRband records.</p>
+                <p style="color:white;font-weight: 100;opacity: 0.5;">{{.Site.Params.collab_sessions_description}}</p>
                   <div class="pn-ProductNav_WrapperCSe">
                     
                     <nav id="pnProductNavCSe" class="pn-ProductNavCSe dragscrollCSe">
@@ -366,7 +371,7 @@
 {{ range .Site.Params.Collab.Sessions }} 
 <article class="pn-ProductNav_LinkCSe" aria-selected="true">  
   <article class="item">
-    <div class="youtube-player" id={{.id}} style="width: 320px; height: 180px;">
+    <div class="youtube-player" id={{.id}}>
     
   </div>                    
   <header style="color: white;">
@@ -409,17 +414,54 @@
 
 {{ range .Site.Params.Services }} 
 
-<div>
+<div style="padding-top: 1em">
 
 
       <div id="service_section" style="text-align: center;"class="skel-layers-ignoreHref service_section">
        
-          <h3 style="float: center;">{{ .name }}</h3>
+
+
+          <h3 style="float: center;">{{ .name }} <span><img width=50px src={{.icon}}></span></h3>
       </div>
       
-      <p>{{ .description }}</p>
-       <footer style="margin-top: 1em;">
-      <a style="background-color: #DB4A37; padding:0 0 0 0;" href="/gallery/" class="inline_button scrolly">View Gallery</a>
+      <p>{{ .description}}</p>
+      <div id="contact_wrapper">
+           <div id="contact_left">
+           <ul style="float: left;text-align: left;margin-right:20%;margin-bottom: 0;">
+            {{ if .performance1.name}}
+            <li><strong style="color: black;margin-left: 3em;"> {{ .performance1.name }}</strong></li>
+            {{end}}
+            {{ range .performance1.list}}
+             <li>
+               <p style="margin-bottom: 0.1em;margin-left: 0;margin-right: 0">{{ .name }}</p>
+             </li>
+             {{end}}
+           </ul>
+         </div>
+         <div id="contact_right">
+           <ul style="float: right;text-align: right;">
+            <li><strong style="color: black;margin-left: 3em;"> {{ .performance2.name }}</strong></li>
+            {{ range .performance2.list}}
+             <li>
+               <p style="margin-bottom: 0.1em;margin-left: 0;margin-right: 0">{{ .name }}</p>
+             </li>
+             {{end}}
+           </ul>
+</div>
+      </div>
+      
+       <footer style="margin-top: 0em;">
+      <!-- <a style="background-color: #DB4A37; padding:0 0 0 0;" href="/gallery/" class="inline_button scrolly">View Gallery</a> -->
+           
+
+     <!-- <a style="border-color: #DB4A37;border-style: solid;border-width: 1px; margin:1em; color:#DB4A37;
+                  background-color: transparent;  width:250px;height:45px;font-size: 18px; text-align: inherit;" href="/gallery/" class="inline_button scrolly">View Gallery</a> -->
+            <button style="font-size: 20px;border-color: #DB4A37;border-style: solid;border-width: 1px; margin:1em; color:#DB4A37;
+                  background-color: transparent;  width:250px;height:45px;font-size: 18px; text-align: inherit;" href="/gallery/" class="scrolly">View Gallery</button>
+             
+            <button style="font-size: 20px;" href="#contact" class="scrolly">Contact</button>
+
+
                 </footer>
     </div>
     
@@ -427,7 +469,7 @@
 <br>
 {{ end }}
 {{ if .Site.Params.Venues }}
-<div id="collab" width=100% style="background-image: url(img/IntroImageMaroon.jpg)">
+<div id="collab" width=100% style="padding-top: 2em;background-image: url(img/IntroImageMaroon.jpg)">
  <header>
   <h2 style="color: white;">RBRband was here</h2>
 </header>
@@ -488,19 +530,19 @@
 <div class="tabular">
  <ul id="horizontal-list" style="color: #DB4A37;">
 
-  <div id="details_wrapper" style="padding-right: 4em;padding-left: 4em;">
+  <div id="details_wrapper">
     
-  <li id="details_mobile" position: relative; style="float: left;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1.2em; line-height: 1em;" class="icon fa-mobile"></span><h2 style="font-size: 20px;">+91-7698189874</h2></li>
+  <li id="details_mobile" position: relative; style="float: left;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1.2em; line-height: 1em;" class="icon fa-mobile"></span><a href="tel:+91-7698-189-874" style="font-size: 20px;">+91-7698189874</a></li>
 
 
-  <li id="details_email" position: relative; ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-envelope"></span><h2 style="font-size: 20px;">prasang@rbrband.in</h2></li>
+  <li id="details_email" position: relative; ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-envelope"></span><a href="mailto:prasang@rbrband.in" style="font-size: 20px;">prasang@rbrband.in</a></li>
 
 
-  <li id="details_videos" position: relative; style="float: right;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-video-camera"></span><h2 style="font-size: 20px;">More Videos</h2></li>
+  <li id="details_videos" position: relative; style="float: right;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-video-camera"></span><a href="/gallery/" style="font-size: 20px;">More Videos</a></li>
 </div>
  </div>
   </ul>
-  <h3 id="contact_subheader" style="color: #212728;text-align-last: left;">What can I do for you?</h3>
+  <h3 id="contact_subheader" style="color: #212728;text-align-last: left; padding-left: 4em; letter-spacing: 0.25px;">What can I do for you?</h3>
   
 
     <form method="POST" action="https://formspree.io/prasang@rbrband.in">
@@ -692,6 +734,7 @@
 <script src="/js/scrollISe.js"></script>
 <script src="/js/scrollISh.js"></script>
 <script>
+  $(document.body).on('touchmove', scrollFunction);
   window.onscroll = function() {scrollFunction()};
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
