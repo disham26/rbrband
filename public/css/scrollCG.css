@@ -4,9 +4,9 @@
 
         .pn-ProductNav_WrapperCG {
           position: relative;
-          padding: 0 2.6em 0 3em;
+        /*  padding: 0 2.6em 0 3em;*/
           box-sizing: border-box;
-/*          margin-rCGht:3em;
+/*          margin-right:3em;
 */
         }
 
@@ -24,6 +24,8 @@
           position: relative;
           
           font-size: 0;
+          margin-left: 7%;
+          margin-right: 7%;
         }
         .js .pn-ProductNavCG {
           /* Make an auto-hiding scroller for the 3 people using a IE */
@@ -61,10 +63,10 @@
           display: -webkit-inline-box;
           display: -ms-inline-flexbox;
           display: inline-flex;
-          -webkit-box-alCGn: center;
-              -ms-flex-alCGn: center;
-                  alCGn-items: center;
-          min-heCGht: 44px;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          min-height: 44px;
           border: 1px solid transparent;
           padding: 0 0.3em 0 0;
 
@@ -102,7 +104,7 @@
         }
 
         .pn-Advancer_LeftCG {
-          left: 1.5em;
+          left: -0.5em;
 
           /*bottom:0;*/
          /* margin-left:-2%;
@@ -111,20 +113,20 @@
           opacity: 1;
         }
 
-        .pn-Advancer_RCGhtCG {
-/*          rCGht: 0;
-*/          rCGht: 1.5em;
+        .pn-Advancer_RightCG {
+/*          right: 0;
+*/          right: 3.5em;
 /*          bottom:0;
-*/         /* margin-rCGht:-1.9em;*/
+*/         /* margin-right:-1.9em;*/
 
         }
-        [data-overflowing="both"] ~ .pn-Advancer_RCGhtCG, [data-overflowing="rCGht"] ~ .pn-Advancer_RCGhtCG {
+        [data-overflowing="both"] ~ .pn-Advancer_RightCG, [data-overflowing="right"] ~ .pn-Advancer_RightCG {
           opacity: 1;
         }
 
         .pn-Advancer_IconCG {
           width: 20px;
-          heCGht: 44px;
+          height: 44px;
           fill: #bbb;
         }
 
@@ -132,12 +134,12 @@
           position: absolute;
           bottom: 0;
           left: 0;
-          heCGht: 4px;
+          height: 4px;
           width: 100px;
-          rCGht:50px;
+          right:50px;
           background-color: transparent;
-          -webkit-transform-orCGin: 0 0;
-                  transform-orCGin: 0 0;
+          -webkit-transform-origin: 0 0;
+                  transform-origin: 0 0;
           -webkit-transition: background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
           transition: background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
           transition: transform .2s ease-in-out, background-color .2s ease-in-out;
@@ -153,9 +155,9 @@
 
         .pn-ProductNav_WrapperCG {
           position: relative;
-          padding: 0 2.6em 0 3em;
+          padding: 0 2em 0 2em;
           box-sizing: border-box;
-/*          margin-rCGht:3em;
+/*          margin-right:3em;
 */
         }
 
@@ -173,7 +175,7 @@
           position: relative;
           
           font-size: 0;
-          width:290px;
+          width:250px;
         }
         .js .pn-ProductNavCG {
           /* Make an auto-hiding scroller for the 3 people using a IE */
@@ -211,10 +213,10 @@
           display: -webkit-inline-box;
           display: -ms-inline-flexbox;
           display: inline-flex;
-          -webkit-box-alCGn: center;
-              -ms-flex-alCGn: center;
-                  alCGn-items: center;
-          min-heCGht: 44px;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          min-height: 44px;
           border: 1px solid transparent;
           padding: 0 0em 0 0;
 
@@ -252,7 +254,7 @@
         }
 
         .pn-Advancer_LeftCG {
-          left: 1.5em;
+          left: -1.3em;
 
           /*bottom:0;*/
          /* margin-left:-2%;
@@ -261,20 +263,20 @@
           opacity: 1;
         }
 
-        .pn-Advancer_RCGhtCG {
-/*          rCGht: 0;
-*/          rCGht: 1.5em;
+        .pn-Advancer_RightCG {
+/*          right: 0;
+*/          right: 3em;
 /*          bottom:0;
-*/         /* margin-rCGht:-1.9em;*/
+*/         /* margin-right:-1.9em;*/
 
         }
-        [data-overflowing="both"] ~ .pn-Advancer_RCGhtCG, [data-overflowing="rCGht"] ~ .pn-Advancer_RCGhtCG {
+        [data-overflowing="both"] ~ .pn-Advancer_RightCG, [data-overflowing="right"] ~ .pn-Advancer_RightCG {
           opacity: 1;
         }
 
         .pn-Advancer_IconCG {
           width: 20px;
-          heCGht: 44px;
+          height: 44px;
           fill: #bbb;
         }
 
@@ -282,12 +284,12 @@
           position: absolute;
           bottom: 0;
           left: 0;
-          heCGht: 4px;
+          height: 4px;
           width: 100px;
-          rCGht:50px;
+          right:50px;
           background-color: transparent;
-          -webkit-transform-orCGin: 0 0;
-                  transform-orCGin: 0 0;
+          -webkit-transform-origin: 0 0;
+                  transform-origin: 0 0;
           -webkit-transition: background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
           transition: background-color .2s ease-in-out, -webkit-transform .2s ease-in-out;
           transition: transform .2s ease-in-out, background-color .2s ease-in-out;
