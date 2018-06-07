@@ -1,7 +1,7 @@
 var SETTINGSCSh = {
             navBarTravellingCSh: false,
             navBarTravelDirectionCSh: "",
-             navBarTravelDistanceCSh: 150
+             navBarTravelDistanceCSh: 335
         }
 
         var colours = {

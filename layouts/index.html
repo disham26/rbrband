@@ -132,7 +132,7 @@
                 
                 </header>
 
-                <footer>
+                <footer style="margin: 0.5em 0 0 0;">
                   <button style="font-size: 20px;" href="#contact" class="scrolly">Contact</button>
                 </footer>
 
@@ -433,45 +433,36 @@
        
 
 
-          <h3 style="float: center;">{{ .name }} <span><img width=50px src={{.icon}}></span></h3>
+          <h3 style="float: center;"><span><img style="margin-right: 0.5em;" width=25px src={{.icon}}></span>{{ .name }} </h3>
       </div>
       
       <p>{{ .description}}</p>
-      <div id="contact_wrapper">
-           <div id="contact_left">
-           <ul style="float: left;text-align: left;margin-right:20%;margin-bottom: 0;">
-            {{ if .performance1.name}}
-            <li><strong style="color: black;margin-left: 3em;"> {{ .performance1.name }}</strong></li>
-            {{end}}
-            {{ range .performance1.list}}
+     <!--  <footer id="contact_wrapper"> -->
+           <div style="width:80%;margin: 0 auto;margin-bottom: 1em;">
+           <ul id="double" style="width:auto;text-align:center;display:list-item;margin-bottom: 0;">
+             {{ range .performance1.list}}
              <li>
-               <p style="margin-bottom: 0.1em;margin-left: 0;margin-right: 0">{{ .name }}</p>
+               <p style="font-weight: 500;opacity:0.75;color: #212728; margin-bottom: 0.1em;margin-left: 0.5em;margin-right: 0">{{ .name }}</p>
              </li>
              {{end}}
            </ul>
          </div>
-         <div id="contact_right">
-           <ul style="float: right;text-align: right;">
-            <li><strong style="color: black;margin-left: 3em;"> {{ .performance2.name }}</strong></li>
-            {{ range .performance2.list}}
-             <li>
-               <p style="margin-bottom: 0.1em;margin-left: 0;margin-right: 0">{{ .name }}</p>
-             </li>
-             {{end}}
-           </ul>
-</div>
-      </div>
+         
+    <!--   </footer> -->
       
-       <footer style="margin-top: 0em;">
+      
       <!-- <a style="background-color: #DB4A37; padding:0 0 0 0;" href="/gallery/" class="inline_button scrolly">View Gallery</a> -->
            
 
      <!-- <a style="border-color: #DB4A37;border-style: solid;border-width: 1px; margin:1em; color:#DB4A37;
                   background-color: transparent;  width:250px;height:45px;font-size: 18px; text-align: inherit;" href="/gallery/" class="inline_button scrolly">View Gallery</a> -->
-            <button style="font-size: 20px;border-color: #DB4A37;border-style: solid;border-width: 1px; margin:1em; color:#DB4A37;
-                  background-color: transparent;  width:250px;height:45px;font-size: 18px; text-align: inherit;" href="/gallery/" class="scrolly">View Gallery</button>
-             
-            <button style="font-size: 20px;" href="#contact" class="scrolly">Contact</button>
+            <footer style="margin-top: 0em;">
+           <a href="/gallery/"> <button style="font-size: 20px;border-color: #DB4A37;border-style: solid;border-width: 1px; margin:1em; color:#DB4A37;
+                  background-color: transparent;  width:250px;height:45px;font-size: 18px; text-align: inherit;">View Gallery</button>
+             </a>
+           <a href="#contact"><button style="font-size: 20px;">Contact</button></a>
+<!--             <button style="font-size: 20px;" href="#contact" class="scrolly">Contact</button>
+ -->      
 
 
                 </footer>
@@ -480,8 +471,9 @@
    
 <br>
 {{ end }}
+
 {{ if .Site.Params.Venues }}
-<div id="collab" width=100% style="padding-top: 2em;background-image: url(img/IntroImageMaroon.jpg)">
+<div width=100% style="padding-top: 2em;background-image: url(img/IntroImageMaroon.jpg)">
  <header>
   <h2 style="color: white;">RBRband was here</h2>
 </header>
@@ -532,78 +524,62 @@
 
 <!-- Contact -->
 <section id="contact" class="five">
-  <div class="container">
-    <!-- <h2 style="color: white;">Contact</h2> -->
-        <header>
-        <h2 style="color: #212728;">Let's get to business</h2>
-</header>
-    <div  style="padding-bottom: 2em;">
-    
-<div class="tabular">
- <ul id="horizontal-list" style="color: #DB4A37;">
-
-  <div id="details_wrapper">
-    
-  <li id="details_mobile" position: relative; style="float: left;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1.2em; line-height: 1em;" class="icon fa-mobile"></span><a href="tel:+91-7698-189-874" style="font-size: 20px;">+91-7698189874</a></li>
-
-
-  <li id="details_email" position: relative; ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-envelope"></span><a href="mailto:prasang@rbrband.in" style="font-size: 20px;">prasang@rbrband.in</a></li>
-
-
-  <li id="details_videos" position: relative; style="float: right;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-video-camera"></span><a href="/gallery/" style="font-size: 20px;">More Videos</a></li>
-</div>
- </div>
-  </ul>
-  <h3 id="contact_subheader" style="color: #212728;text-align-last: left; padding-left: 4em; letter-spacing: 0.25px;">What can I do for you?</h3>
-  
-
-    <form method="POST" action="https://formspree.io/prasang@rbrband.in">
-     
-        <div id="contact_wrapper">
-        <div id="contact_left">
-        <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput" >
-          <input type="text" name="name" placeholder="Name*" class="formInputType" required />
-        </div>
-        <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
-          <input type="email" name="email" placeholder="E-mail*" required class="formInputType"/>
-        </div>
-        <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
-          <input type="text" name="nature" placeholder="Nature of work" class="formInputType" />
-        </div>
-        </div>
-
-        <div id="contact_right">
-        <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight" >
-          <input type="text" name="org" placeholder="Organization/Venue" class="formInputType" />
-        </div>
-        <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight">
-          <input type="text" name="email" placeholder="Phone Number*" required class="formInputType" />
-        </div>       
-        <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight">
-          <input type="text" name="budget" placeholder="Budget" class="formInputType" />
-        </div>
-        </div>
+   <div class="container">
+   <!-- <h2 style="color: white;">Contact</h2> -->
+   <header>
+      <h2 style="color: #212728;">Let's get to business</h2>
+   </header>
+   <div  style="padding-bottom: 2em;">
+      <div class="tabular">
+         <ul id="horizontal-list" style="color: #DB4A37;">
+            <div id="details_wrapper">
+               <li id="details_mobile" position: relative; style="float: left;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1.2em; line-height: 1em;" class="icon fa-mobile"></span><a href="tel:+91-7698-189-874" style="font-size: 20px;">+91-7698189874</a></li>
+               <li id="details_email" position: relative; ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-envelope"></span><a href="mailto:prasang@rbrband.in" style="font-size: 20px;">prasang@rbrband.in</a></li>
+               <li id="details_videos" position: relative; style="float: right;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-video-camera"></span><a href="/gallery/" style="font-size: 20px;">More Videos</a></li>
+            </div>
       </div>
-        <div id="contact_message"  class="12u$">
-          <textarea name="message" placeholder="Drop a message"></textarea>
-        </div>
-        <br>
-        <div id="send_message" class="6u$ 12u$(mobile)">
-          <!-- <input style="background-color: #7d172f;color: white;font-weight: 700;padding: 0.7em;" type="submit" value=">> Send Message" /> -->
-           <input type="submit" style="background-color: #DB4A37; padding:0 0 0 0;" href="/gallery/" class="inline_button scrolly" value="Send Message"/>
-        </div>
-      
-    </form>
 
-  <br>
-<!-- <ul class="icons">
-                {{ range .Site.Params.social }}
-                <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
-                {{ end }}
-              </ul> -->
-</div>
+      </ul>
+    </div>
 
-  </div>
+      <h3 id="contact_subheader" style="color: #212728;text-align-last: left; padding-left: 4em; letter-spacing: 0.25px;">What can I do for you?</h3>
+      <form method="POST" action="https://formspree.io/prasang@rbrband.in">
+         <div id="contact_wrapper">
+            <div id="contact_left">
+               <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput" >
+                  <input type="text" name="name" placeholder="Name*" class="formInputType" required />
+               </div>
+               <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
+                  <input type="email" name="email" placeholder="E-mail*" required class="formInputType"/>
+               </div>
+               <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
+                  <input type="text" name="nature" placeholder="Nature of work" class="formInputType" />
+               </div>
+            </div>
+            <div id="contact_right">
+               <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight" >
+                  <input type="text" name="org" placeholder="Organization/Venue" class="formInputType" />
+               </div>
+               <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight">
+                  <input type="text" name="email" placeholder="Phone Number*" required class="formInputType" />
+               </div>
+               <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight">
+                  <input type="text" name="budget" placeholder="Budget" class="formInputType" />
+               </div>
+            </div>
+         </div>
+         <div id="contact_message"  class="12u$">
+            <textarea name="message" placeholder="Drop a message"></textarea>
+         </div>
+         <br>
+         <div id="send_message" class="6u$ 12u$(mobile)">
+            <!-- <input style="background-color: #7d172f;color: white;font-weight: 700;padding: 0.7em;" type="submit" value=">> Send Message" /> -->
+            <input type="submit" style="background-color: #DB4A37; padding:0 0 0 0;" href="/gallery/" class="inline_button scrolly" value="Send Message"/>
+         </div>
+      </form>
+      <br>
+   </div>
+ </div>
 </section>
 
 
@@ -722,11 +698,11 @@
 </div>
 
 <!-- Footer -->
-<div id="footer">
+<div id="footer" style="background-color: #212728;opacity:1;">
 
   <!-- Copyright -->
   <ul class="copyright">
-    <li>&copy; {{ .Site.Params.copyright }}</li><li>Design: Disha Manocha</li><li>Powered by <a href="https://gohugo.io/">Hugo</a></li>
+    <li>&copy; {{ .Site.Params.copyright }}</li><li>Designed by Disha Manocha</li>
   </ul>
 
 </div>

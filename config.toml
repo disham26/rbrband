@@ -204,15 +204,12 @@ description = "With plethora of experience in Solo and band gigs at cafes, pubs 
    	name="Singer and guitarist - 2 pc"
    	[[params.services.performance1.list]]
    	name="Singer and MIDI piano - 1 pc" 
-	[[params.services.performance1.list]]
+	  [[params.services.performance1.list]]
    	name="Corporate event Singing"
-
-  		[params.services.performance2]
-		name="Genres"
-   		[[params.services.performance2.list]]
-    	name="Bollywood"
-   		[[params.services.performance2.list]]
-   		name="Soft Romantic"
+ 		[[params.services.performance1.list]]
+   	name="Bollywood"
+ 		[[params.services.performance1.list]]
+ 		name="Soft Romantic"
    
 
 

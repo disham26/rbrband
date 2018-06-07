@@ -1758,7 +1758,7 @@ width:50%;
 		/*font-size: 1.5em;*/
 		font-family: 'Pangolin', cursive;
 		font-size: 42px;
-        padding: 7%  0 1% 0;
+        padding: 3%  0 1% 0;
         text-align: center;
 		-moz-text-align-last: center;
      	text-align-last: center;
@@ -1824,7 +1824,7 @@ width:50%;
 	}*/
 
 		header > p {
-			margin: 1em 0 0 0;
+			margin: 0.5em 0 0 0;
 		}
 
 	footer {
@@ -1887,7 +1887,21 @@ width:50%;
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
 	}
-
+	ul{
+	margin-bottom:20px;
+	overflow:hidden;
+}
+	/*li{
+	line-height:1.5em;
+	float:left;
+	display:inline;
+}*/
+	#double li	{ 
+width:33.333%;
+		line-height:1.5em;
+	float:left;
+	display:inline;
+	}
 	li {
 		/*padding-right: 1em;
 		padding-left: 0.5em;*/
@@ -2729,6 +2743,15 @@ width:50%;
 				    height: 100%;
 
 			}
+			button {
+	margin:0em;
+}
+#double li	{ 
+width:100%;
+		line-height:1.5em;
+	float:left;
+	display:inline;
+	}
 /*.service_section {
 			padding-left:31%;
 			font-size: 1em;
@@ -2957,7 +2980,9 @@ width:50%;
 			.container {
 			/*	padding: 0 15px 0 15px;*/
 			}
-
+button {
+	margin:0em;
+}
 		/* List */
 
 			ul.icons a {

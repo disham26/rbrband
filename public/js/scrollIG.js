@@ -1,7 +1,7 @@
 var SETTINGSIG = {
             navBarTravellingIG: false,
             navBarTravelDirectionIG: "",
-            navBarTravelDistanceIG: 132,
+            navBarTravelDistanceIG: 335,
         }
 
         var colours = {

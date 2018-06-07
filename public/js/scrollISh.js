@@ -1,7 +1,7 @@
 var SETTINGSISh = {
             navBarTravellingISh: false,
             navBarTravelDirectionISh: "",
-             navBarTravelDistanceISh: 150
+             navBarTravelDistanceISh: 335
         }
 
         var colours = {

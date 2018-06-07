@@ -1,7 +1,7 @@
 var SETTINGSCG = {
             navBarTravellingCG: false,
             navBarTravelDirectionCG: "",
-             navBarTravelDistanceCG: 150
+             navBarTravelDistanceCG: 335
         }
 
         var colours = {

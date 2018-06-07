@@ -1,7 +1,7 @@
 var SETTINGSCSe = {
             navBarTravellingCSe: false,
             navBarTravelDirectionCSe: "",
-             navBarTravelDistanceCSe: 150
+             navBarTravelDistanceCSe: 335
         }
 
         var colours = {
