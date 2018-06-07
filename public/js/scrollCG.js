@@ -178,7 +178,7 @@ var SETTINGSCG = {
             var contentMetrics = content.getBoundingClientRect();
             var contentMetricsRight = Math.floor(contentMetrics.right);
             var contentMetricsLeft = Math.floor(contentMetrics.left);
-             if (containerMetricsLeft > contentMetricsLeft && containerMetricsRight < contentMetricsRight) {
+             if (containerMetricsLeft > contentMetricsLeft && (containerMetricsRight+1) < contentMetricsRight) {
                 return "both";
             } else if (contentMetricsLeft < containerMetricsLeft) {
                 return "left";

@@ -159,6 +159,7 @@ var SETTINGSIG = {
 
         // var count = 0;
         function moveIndicatorIG(item, color) {
+            console.log('Inside moveIndicatorIG');
             var textPosition = item.getBoundingClientRect();
             var container = pnProductNavContentsIG.getBoundingClientRect().left;
             var distance = textPosition.left - container;
@@ -179,13 +180,22 @@ var SETTINGSIG = {
             var contentMetrics = content.getBoundingClientRect();
             var contentMetricsRight = Math.floor(contentMetrics.right);
             var contentMetricsLeft = Math.floor(contentMetrics.left);
-             if (containerMetricsLeft > contentMetricsLeft && containerMetricsRight < contentMetricsRight) {
+            console.log('Hi, I am being called');
+             if (containerMetricsLeft > contentMetricsLeft && (containerMetricsRight+1) < contentMetricsRight) {
+                 console.log('containermetricsRight is'+containerMetricsRight);
+                console.log('contentMetricsRight is'+contentMetricsRight);
+                console.log("Its both");
                 return "both";
             } else if (contentMetricsLeft < containerMetricsLeft) {
+                 console.log('containermetricsRight is'+containerMetricsRight);
+                console.log('contentMetricsRight is'+contentMetricsRight);
+                console.log("Its left");
                 return "left";
             } else if (contentMetricsRight > containerMetricsRight) {
+                console.log('Its right');
                 return "right";
             } else {
+                console.log('Its none');
                 return "none";
             }
         }

@@ -178,7 +178,10 @@ var SETTINGSCSh = {
             var contentMetrics = content.getBoundingClientRect();
             var contentMetricsRight = Math.floor(contentMetrics.right);
             var contentMetricsLeft = Math.floor(contentMetrics.left);
-             if (containerMetricsLeft > contentMetricsLeft && containerMetricsRight < contentMetricsRight) {
+             if (containerMetricsLeft > contentMetricsLeft && (containerMetricsRight+2) < contentMetricsRight) {
+                  console.log('containermetricsRight is'+containerMetricsRight);
+                console.log('contentMetricsRight is'+contentMetricsRight);
+                console.log("Its both");
                 return "both";
             } else if (contentMetricsLeft < containerMetricsLeft) {
                 return "left";

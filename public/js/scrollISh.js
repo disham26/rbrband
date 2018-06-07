@@ -178,11 +178,14 @@ var SETTINGSISh = {
             var contentMetrics = content.getBoundingClientRect();
             var contentMetricsRight = Math.floor(contentMetrics.right);
             var contentMetricsLeft = Math.floor(contentMetrics.left);
-             if (containerMetricsLeft > contentMetricsLeft && containerMetricsRight < contentMetricsRight) {
+             if (containerMetricsLeft > contentMetricsLeft && (containerMetricsRight) < contentMetricsRight) {
+               
                 return "both";
             } else if (contentMetricsLeft < containerMetricsLeft) {
+              
                 return "left";
             } else if (contentMetricsRight > containerMetricsRight) {
+              
                 return "right";
             } else {
                 return "none";
