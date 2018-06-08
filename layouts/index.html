@@ -11,6 +11,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+
   <link rel="stylesheet" href="/css/youtube.css" />
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/scroll.css" />
@@ -20,6 +21,7 @@
   <link rel="stylesheet" href="/css/scrollCG.css" />
   <link rel="stylesheet" href="/css/scrollCSe.css" />
   <link rel="stylesheet" href="/css/scrollCSh.css" />
+  <link rel="stylesheet" href="/css/form_container.css" />
  <style>
   #myBtn {
   display: none;
@@ -543,40 +545,55 @@
     </div>
 
       <h3 id="contact_subheader" style="color: #212728;text-align-last: left; padding-left: 4em; letter-spacing: 0.25px;">What can I do for you?</h3>
+  <div class="container_form">   
       <form method="POST" action="https://formspree.io/prasang@rbrband.in">
-         <div id="contact_wrapper">
+         <div id="contact_wrapper" class="form_container">
             <div id="contact_left">
                <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput" >
-                  <input type="text" name="name" placeholder="Name*" class="formInputType" required />
+                  <input type="text" name="name"  class="formInputType" required />
+                  <label>Name*</label>
                </div>
                <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
-                  <input type="email" name="email" placeholder="E-mail*" required class="formInputType"/>
+                  <input type="email" name="email"  required class="formInputType"/>
+                    <label>Email*</label>
+
                </div>
                <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
-                  <input type="text" name="nature" placeholder="Nature of work" class="formInputType" />
+                  <input type="text" name="nature" class="formInputType " />
+                  <label>Nature of work</label>
+
                </div>
             </div>
             <div id="contact_right">
                <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight" >
-                  <input type="text" name="org" placeholder="Organization/Venue" class="formInputType" />
+                  <input type="text" name="org" class="formInputType " />
+                  <label>Organization/Venue</label>
+
                </div>
                <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight">
-                  <input type="text" name="email" placeholder="Phone Number*" required class="formInputType" />
+                  <input type="text" name="email" required class="formInputType" />
+                  <label>Phone Number*</label>
+
                </div>
                <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight">
-                  <input type="text" name="budget" placeholder="Budget" class="formInputType" />
+                  <input type="text" name="budget" class="formInputType" />
+                  <label>Budget</label>
+
                </div>
             </div>
          </div>
-         <div id="contact_message"  class="12u$">
-            <textarea name="message" placeholder="Drop a message"></textarea>
+         <div id="contact_message" >
+            <input type="textarea" name="message" style="width:100%;" />
+                  <label style="padding:0 4em 0 4em;">Drop a message</label>
+
          </div>
          <br>
-         <div id="send_message" class="6u$ 12u$(mobile)">
+         <!-- <div id="send_message"> -->
             <!-- <input style="background-color: #7d172f;color: white;font-weight: 700;padding: 0.7em;" type="submit" value=">> Send Message" /> -->
-            <input type="submit" style="background-color: #DB4A37; padding:0 0 0 0;" href="/gallery/" class="inline_button scrolly" value="Send Message"/>
-         </div>
+            <input type="submit" style="background-color: #DB4A37;display: inline-block;float:none;" href="/gallery/" class="inline_button" value="Send Message"/>
+       <!--   </div> -->
       </form>
+    </div>
       <br>
    </div>
  </div>

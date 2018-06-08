@@ -138,11 +138,11 @@ width:50%;
 	padding: 0 4em 0em 4em;
 	width:100%;
 }
-#send_message{
+/*#send_message{
 	text-align: center;
 	padding: 0 10em 0em 10em;
 	width:100%;
-}
+}*/
 .formInput{
 	/*margin-right: 2em;*/
 /*	width:84%;*/
@@ -1950,6 +1950,10 @@ padding-left: 2em;
 padding-bottom: 1em;}
 
 }
+#send_message{
+	width:100%;
+	padding-bottom: 2em;
+}
 
 
 
@@ -2105,7 +2109,7 @@ background: rgba(255, 255, 255, 0.75);
 		form input[type="submit"]:focus,
 		form select:focus,
 		form textarea:focus {
-			box-shadow: 0 0 2px 1px #8ebebc;
+			/*box-shadow: 0 0 2px 1px #8ebebc;*/
 			background: #fff;
 
 		}
@@ -2201,7 +2205,7 @@ background: rgba(255, 255, 255, 0.75);
 		border-color: #DB4A37;
 		letter-spacing: 0.1em;
 		line-height: 1.1em;
-		margin:1em;
+		/*margin:1em;*/
 		font-size: 16px;
 		font-weight: 600;
 		cursor: pointer;
@@ -2648,7 +2652,7 @@ width:50%;
 }
 #send_message{
 	text-align: center;
-	padding: 0 10em 0em 10em;
+	padding: 0 4em 3em 4em;
 	width:100%;
 }
 .formInput{
@@ -2659,7 +2663,7 @@ width:50%;
 }
 .formInputRight{
 	/*padding-right: 4em;*/
-	padding-left: 1em;
+	/*padding-left: 1em;*/
 }
 
 			body, input, textarea, select {
