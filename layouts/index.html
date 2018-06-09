@@ -91,7 +91,8 @@
                  <ul>
 
                   <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro </span></a></li>
-                  <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+                  <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Solo Work</span></a></li>
+                  <li><a href="#collab" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Collabs</span></a></li>
                   <li><a href="#services" id="services-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Services</span></a></li>
                  <!--  <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li> -->
                   <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
@@ -129,7 +130,7 @@
                   <span style="font-size: 30px;font-weight: 300;"> feat. </span>
                   <br> <strong>Prasang Misra</strong>
                 </h1>
-                  <p style="opacity: 0.9; font-weight:1000;padding:0 3em 0 3em;">Music is not meant to be kept in closed studios and unheard albums, <br>It's supposed to be stretched with our boundaries,<br> just like the RBRband.</p>
+                  <p style="padding:0 3em 0 3em;">Music is not meant to be kept in closed studios and unheard albums, <br>It's supposed to be stretched with our boundaries,<br> just like the RBRband.</p>
                   </strong>
                 
                 </header>
@@ -146,7 +147,7 @@
               <div class="container">
 
                 <header>
-                  <h2>Portfolio</h2>
+                  <h2>Solo Work</h2>
                 </header>
 
                 <!-- <p2>Some basic portfolio</p2> -->
@@ -155,7 +156,7 @@
 <!--Individual -->               <!--  <h3>Individual</h3> -->
 {{if .Site.Params.Individual.Gigs }}
 <!-- Gigs -->                <div>
-                  <h3>Individual <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Gigs</h3>
+                  <h3><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Gigs</h3>
                   
                   <p>{{ .Site.Params.individual_gigs_description }}</p>
                   <div class="pn-ProductNav_WrapperIG">
@@ -202,7 +203,7 @@
 {{ end }}
 {{ if .Site.Params.Individual.Shows }}
 <!-- Shows -->    <div style="padding-top: 1em;">
-                  <h3>Individual <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Shows</h3>
+                  <h3><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Shows</h3>
           <p>{{ .Site.Params.individual_shows_description }}</p>
                     <div class="pn-ProductNav_WrapperISh">                    
                     <nav id="pnProductNavISh" class="pn-ProductNavISh dragscrollISh">
@@ -241,7 +242,7 @@
 {{ end }}
 {{if .Site.Params.Individual.Sessions }}
 <!-- Sessions -->                <div style="padding-top: 1em;">
-    <h3>Individual <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Compositions</h3>
+    <h3><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Compositions</h3>
   <p>{{ .Site.Params.individual_sessions_description }}</p>
                   <div class="pn-ProductNav_WrapperISe">
                     
@@ -280,10 +281,11 @@
 
 {{ end }}
 {{ if .Site.Params.Collab }}
-<div id="collab" width=100% style="padding-top: 2em; background-image: url(img/IntroImageMaroon.jpg)">
+<div id="collab" width=100% style="padding-top: 2em; background-image: url(img/Collab_back.png)">
 {{ if .Site.Params.Collab.Gigs }}
 <!-- Gigs --> <div style="padding-top: 1em;">
-                   <h3 style="color: white;">Collab <span style="color:#DB4A37; font-size: 18px;opacity: 0.7;" class="icon fa-forward"></span> Gigs</h3>
+  <h2 style="color: white;">Collab </h2>
+                   <h3 style="color: white;"><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Gigs</h3>
                   
                   <p style="color:white;font-weight: 100;">{{.Site.Params.collab_gigs_description}}</p>
                   <div class="pn-ProductNav_WrapperCG">
@@ -326,26 +328,22 @@
 </div>
 {{ end }}
 
-{{ if .Site.Params.Collab.Shows.JKVM }}
-<!-- Shows -->                <div style="padding-top: 1em;">
-                    <h3 style="color: white;">Collab>> Shows</h3>
-                  
-                 <p style="color:white;font-weight: 100;opacity: 0.5;">{{.Site.Params.collab_shows_description}}</p>
-                  <div class="pn-ProductNav_WrapperCSh">
-                    
-                    <nav id="pnProductNavCSh" class="pn-ProductNav dragscrollCSh">
+{{ if .Site.Params.Collab.Shows }}
+<!-- Shows -->    <div style="padding-top: 1em;">
+                  <h3 style="color: white;"><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Shows</h3>
+          <p>{{ .Site.Params.collab_shows_description }}</p>
+                    <div class="pn-ProductNav_WrapperCSh">                    
+                    <nav id="pnProductNavCSh" class="pn-ProductNavCSh dragscrollCSh">
                       <div id="pnProductNavContentsCSh" class="pn-ProductNav_ContentsCSh">
 <!-- <a href="#" class="pn-ProductNav_Link" aria-selected="true">Chairs</a>
 -->
-
 {{ range .Site.Params.Collab.Shows.JKVM }} 
 <article class="pn-ProductNav_LinkCSh" aria-selected="true">  
   <article class="item">
-    <div class="youtube-player" id={{.id}} style="width: 320px; height: 569px;">
-    
-  </div>                      
-  <header style="color: white;">
-      <caption style="color:white">{{ .title }}</caption>
+  
+ <iframe src={{.url}} width="180" height="320" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                            <header>
+      <caption>{{ .title }}</caption>
     </header>
   </article>
 </article>
@@ -369,12 +367,11 @@
 
 </div>
 {{ end }}
-
 {{ if .Site.Params.Collab.Sessions }}
 <!-- Sessions -->                <div style="padding-top: 1em;">
                     <h3 style="color: white;">Collab>> Sessions and Compositions</h3>
                   
-                <p style="color:white;font-weight: 100;opacity: 0.5;">{{.Site.Params.collab_sessions_description}}</p>
+                <p style="color:white;font-weight: 100;">{{.Site.Params.collab_sessions_description}}</p>
                   <div class="pn-ProductNav_WrapperCSe">
                     
                     <nav id="pnProductNavCSe" class="pn-ProductNavCSe dragscrollCSe">
@@ -424,7 +421,6 @@
       <h2>Services</h2>
     </header>
 
-    <caption>Here we will describe the list of services we provide</caption>
 
 {{ range .Site.Params.Services }} 
 
@@ -462,7 +458,7 @@
            <a href="/gallery/"> <button style="font-size: 20px;border-color: #DB4A37;border-style: solid;border-width: 1px; margin:1em; color:#DB4A37;
                   background-color: transparent;  width:250px;height:45px;font-size: 18px; text-align: inherit;">View Gallery</button>
              </a>
-           <button onclick="location.href='#contact'" style="font-size: 20px;">Contact</button>
+      <a href="#contact" class="scrolly"><button href="#contact" onclick="location.href='#contact'" class="scrolly" style="font-size: 20px;">Contact</button></a>
 <!--             <button style="font-size: 20px;" href="#contact" class="scrolly">Contact</button>
  -->      
 
@@ -582,15 +578,19 @@
                </div>
             </div>
          </div>
-         <div id="contact_message" >
-            <input type="textarea" name="message" style="width:100%;" />
+         <div id="contact_message">
+
+            <textarea name="message" style="width:100%;"></textarea>
                   <label style="padding:0 4em 0 4em;">Drop a message</label>
 
          </div>
+        
+         
+         
          <br>
          <!-- <div id="send_message"> -->
             <!-- <input style="background-color: #7d172f;color: white;font-weight: 700;padding: 0.7em;" type="submit" value=">> Send Message" /> -->
-            <input type="submit" style="background-color: #DB4A37;display: inline-block;float:none;" href="/gallery/" class="inline_button" value="Send Message"/>
+            <input type="submit" style="background-color: #DB4A37;display: inline-block;float:none;" class="inline_button" value="Send Message"/>
        <!--   </div> -->
       </form>
     </div>

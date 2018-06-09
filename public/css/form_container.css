@@ -10,7 +10,7 @@
 	color: rgb(66,133,244);
 	letter-spacing: 2px;
 }
-.container_form input
+.container_form input,textarea
 {
 	padding: 5px;
 	margin-bottom: 30px;
@@ -48,16 +48,17 @@
 	left: 0;
 	transition: .5s;
 }
-.container_form input:focus ~label
+.container_form input:focus ~label,textarea:focus ~label
 /*,.container_form input:valid ~label
 */{
 	left: 0;
-	top: -20px;
+	/*top: -20px;*/
+	transform: translateY(-20px) translateX(-1px) scale(0.9);
 	color: #DB4A37;
 	font-size: 12px;
 	font-weight: bold;
 }
-.container_form input:focus
+.container_form input:focus,textarea:focus
 /*,.container_form input:valid
 */{
 border-bottom: 2px solid #888;
@@ -67,5 +68,5 @@ border-bottom: 2px solid #888;
 	top: 12px;
 	color: rgb(216, 15, 15);
     font-size: 15px;
-    font-family: Helvetica;
+    font-family: inherit;
 }

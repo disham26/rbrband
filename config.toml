@@ -78,23 +78,20 @@ link = "#"
 medium = "email"
 
 
-
-
 [[params.individual.gigs]]
 title = "Enna Sona"
 url = "https://www.youtube.com/embed/IrfZ3fC5NWo"
 id = "IrfZ3fC5NWo"
 imageurl = ""
+
+
+
 [[params.individual.gigs]]
 title = "Gulaabi Aakhein"
 url = "https://www.youtube.com/embed/0jK6wxLgiIc"
 id = "0jK6wxLgiIc"
 imageurl = ""
-[[params.individual.gigs]]
-title = "Haareya"
-url = "https://www.youtube.com/embed/Y8pIj4kIheI"
-id = "Y8pIj4kIheI"
-imageurl = ""
+
 [[params.individual.gigs]]
 title = "Fitoor"
 url = "https://www.youtube.com/embed/J6GacoGTGDA"
@@ -112,7 +109,11 @@ url = "https://www.youtube.com/embed/uHuB-meZnC8"
 imageurl = ""
 id = "uHuB-meZnC8"
 
-
+[[params.collab.gigs]]
+title = "Haareya"
+url = "https://www.youtube.com/embed/Y8pIj4kIheI"
+id = "Y8pIj4kIheI"
+imageurl = ""
 
 [[params.individual.shows.jkvm]]
 title = "Episode 50"
@@ -140,7 +141,18 @@ url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.faceboo
 
 
 
+[[params.collab.shows.jkvm]]
+title = "Holi Mashup"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1004132996392630%2F&show_text=0&width=267"
 
+
+[[params.collab.shows.jkvm]]
+title = "Ghazab Ka Hai Din"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1005275986278331%2F&show_text=0&width=267"
+
+[[params.collab.shows.jkvm]]
+title = "Main Jahaan Rahu"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F997131737092756%2F&show_text=0&width=267"
 
 
 
@@ -160,6 +172,14 @@ id="lYK1tC-xJbk"
 title = "O Maajhi Re Cover"
 url = "https://www.youtube.com/embed/PdI-lLu17UU"
 id="PdI-lLu17UU"
+
+[[params.individual.sessions]]
+title = "9 Se 12 Power Ballad"
+id = "SoundCloud345752804"
+
+[[params.individual.sessions]]
+title = "Chhookar Mere Mann Ko"
+id = "SoundCloud382024121"
 
 
 
