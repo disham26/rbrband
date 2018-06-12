@@ -65,9 +65,11 @@
 
         <!-- Logo -->
         <div id="logo">
+          <a href="#top" id="top-link" class="skel-layers-ignoreHref scrolly">
           <img class="image avatar48" src="img/Logo_Image.jpg" alt="" />
           <h1 style="padding:0;text-align-last: right;" id="title"><strong>{{ .Site.Params.name }}</strong></h1>
           <p>{{ .Site.Params.description }}</p>
+        </a>
         </div>
 
         <!-- Nav -->
@@ -87,7 +89,7 @@
                  -->
                  <ul>
 
-                  <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro </span></a></li>
+                 <!--  <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro </span></a></li> -->
                   <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Solo Work</span></a></li>
                   <li><a href="#collab" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Collabs</span></a></li>
                   <li><a href="#services" id="services-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Services</span></a></li>
@@ -127,7 +129,7 @@
                     <span style="font-size: 30px;font-weight: 300;"> feat. </span>
                     <br> <strong>Prasang Misra</strong>
                   </h1>
-                  <p style="padding:0 3em 0 3em;">Music is not meant to be kept in closed studios and unheard albums, <br>It's supposed to be stretched with our boundaries,<br> just like the RBRband.</p>
+                  <p style="padding:0 3em 1em 3em;">Music is not meant to be kept in closed studios and unheard albums, <br>It's supposed to be stretched with our boundaries,<br> just like the RBRband.</p>
                 </strong>
                 
               </header>
@@ -153,21 +155,22 @@
                 <!--Individual -->               <!--  <h3>Individual</h3> -->
                 {{if .Site.Params.Individual.Gigs }}
                 <!-- Gigs -->                <div>
-                  <h3><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Gigs</h3>
-                  
-                  <p>{{ .Site.Params.individual_gigs_description }}</p>
-                  <div class="pn-ProductNav_WrapperIG">
+                 <h3 style="float: center;"><span><img style="margin-right: 0.5em;" width=30px src="/img/sologig.png"></span>Gigs </h3>
 
 
-                    <nav id="pnProductNavIG" class="pn-ProductNavIG dragscrollIG">
-                      <div id="pnProductNavContentsIG" class="pn-ProductNav_ContentsIG">
+                 <p>{{ .Site.Params.individual_gigs_description }}</p>
+                 <div class="pn-ProductNav_WrapperIG">
 
-                        {{ range .Site.Params.Individual.Gigs }} 
-                        <article class="pn-ProductNav_LinkIG" aria-selected="true">  
-                          <article class="item">
-                            <div class="youtube-player" id={{.id}}>
 
-                            </div>
+                  <nav id="pnProductNavIG" class="pn-ProductNavIG dragscrollIG">
+                    <div id="pnProductNavContentsIG" class="pn-ProductNav_ContentsIG">
+
+                      {{ range .Site.Params.Individual.Gigs }} 
+                      <article class="pn-ProductNav_LinkIG" aria-selected="true">  
+                        <article class="item">
+                          <div class="youtube-player" id={{.id}}>
+
+                          </div>
   <!--   <iframe width="320" height="180" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>      
   </iframe> -->
   <header>
@@ -200,7 +203,7 @@
 {{ end }}
 {{ if .Site.Params.Individual.Shows }}
 <!-- Shows -->    <div style="padding-top: 1em;">
-  <h3><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Shows</h3>
+  <h3 style="float: center;"><span><img style="margin-right: 0.5em;" width=30px src="/img/soloshow.png"></span>Shows </h3>
   <p>{{ .Site.Params.individual_shows_description }}</p>
   <div class="pn-ProductNav_WrapperISh">                    
     <nav id="pnProductNavISh" class="pn-ProductNavISh dragscrollISh">
@@ -239,7 +242,10 @@
 {{ end }}
 {{if .Site.Params.Individual.Sessions }}
 <!-- Sessions -->                <div style="padding-top: 1em;">
-  <h3><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Compositions</h3>
+
+  <h3 style="float: center;"><span><img style="margin-right: 0.5em;" width=30px src="/img/soloComp.png"></span>Compositions </h3>
+
+
   <p>{{ .Site.Params.individual_sessions_description }}</p>
   <div class="pn-ProductNav_WrapperISe">
 
@@ -281,16 +287,16 @@
 <div id="collab" width=100% style="padding-top: 2em; 
 /*background-image: url(img/Collab_back.png);
 */background-color: #212728;">
-  {{ if .Site.Params.Collab.Gigs }}
-  <!-- Gigs --> <div style="padding-top: 1em;">
-    <h2 style="color: white;">Collab </h2>
-    <h3 style="color: white;"><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Gigs</h3>
+{{ if .Site.Params.Collab.Gigs }}
+<!-- Gigs --> <div style="padding-top: 1em;">
+  <h2 style="color: white;">Collab </h2>
+  <h3 style="float: center;color:white;"><span><img style="margin-right: 0.5em;" width=30px src="/img/collabgig.png"></span>Gigs </h3>
 
-    <p style="color:white;font-weight: 100;">{{.Site.Params.collab_gigs_description}}</p>
-    <div class="pn-ProductNav_WrapperCG">
+  <p style="color:white;font-weight: 100;">{{.Site.Params.collab_gigs_description}}</p>
+  <div class="pn-ProductNav_WrapperCG">
 
-      <nav id="pnProductNavCG" class="pn-ProductNavCG dragscrollCG">
-        <div id="pnProductNavContentsCG" class="pn-ProductNav_ContentsCG">
+    <nav id="pnProductNavCG" class="pn-ProductNavCG dragscrollCG">
+      <div id="pnProductNavContentsCG" class="pn-ProductNav_ContentsCG">
 <!-- <a href="#" class="pn-ProductNav_Link" aria-selected="true">Chairs</a>
 -->
 
@@ -328,7 +334,7 @@
 
 {{ if .Site.Params.Collab.Shows }}
 <!-- Shows -->    <div style="padding-top: 1em;">
-  <h3 style="color: white;"><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Online Shows</h3>
+  <h3 style="float: center;color:white;"><span><img style="margin-right: 0.5em;" width=30px src="/img/collabshows.png"></span>Online Shows </h3>
   <p>{{ .Site.Params.collab_shows_description }}</p>
   <div class="pn-ProductNav_WrapperCSh">                    
     <nav id="pnProductNavCSh" class="pn-ProductNavCSh dragscrollCSh">
@@ -367,7 +373,8 @@
 {{ end }}
 {{ if .Site.Params.Collab.Sessions }}
 <!-- Sessions -->                <div style="padding-top: 1em;">
-  <h3 style="color: white;">Collab>> Sessions and Compositions</h3>
+
+  <h3 style="float: center;color:white;"><span><img style="margin-right: 0.5em;" width=30px src="/img/collabshows.png"></span>Sessions and Compositions</h3>
 
   <p style="color:white;font-weight: 100;">{{.Site.Params.collab_sessions_description}}</p>
   <div class="pn-ProductNav_WrapperCSe">
@@ -407,7 +414,8 @@
 
 {{ if .Site.Params.Collab.Radio }}
 <!-- Sessions -->                <div style="padding-top: 1em;">
-  <h3 style="color: white;">Radio Shows</h3>
+  <h3 style="float: center;color:white;"><span><img style="margin-right: 0.5em;" width=30px src="/img/Radioshow.png"></span>Radio Shows</h3>
+
 
   <p style="color:white;font-weight: 100;">{{.Site.Params.collab_sessions_description}}</p>
   <div class="pn-ProductNav_WrapperCSe">
@@ -509,8 +517,10 @@
 {{ end }}
 
 {{ if .Site.Params.Venues }}
-<div width=100% style="padding-top: 2em;background-image: url(img/IntroImageMaroon.jpg)">
- <header>
+<div width=100% style="padding-top: 2em;
+/*background-image: url(img/IntroImageMaroon.jpg);
+*/background-color: #212728;">
+<header>
   <h2 style="color: white;">RBRband was here</h2>
 </header>
 <div class="tabular">
@@ -565,7 +575,7 @@
    <header>
     <h2 style="color: #212728;">Let's get to business</h2>
   </header>
-  <div  style="padding-bottom: 2em;">
+  <div  style="padding-bottom: 1.5em;">
     <div class="tabular">
      <ul id="horizontal-list" style="color: #DB4A37;">
       <div id="details_wrapper">
@@ -578,7 +588,7 @@
  </ul>
 </div>
 
-<h3 id="contact_subheader" style="color: #212728;text-align-last: left; padding-left: 4em; letter-spacing: 0.25px;">What can I do for you?</h3>
+<h3 id="contact_subheader" style="color: #212728;text-align: left; text-align-last: center; font-size: 24px;padding-bottom: 1.5em; padding-left: 3em;">What can I do for you?</h3>
 <div class="container_form">   
   <form method="POST" action="https://formspree.io/prasang@rbrband.in">
    <div id="contact_wrapper" class="form_container">
