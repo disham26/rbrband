@@ -12,144 +12,200 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
   <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/youtube.css" />
+
   <style>
   #myBtn {
-  display: none;
-  color:red;
-  position: fixed;
-  bottom: 0.2em;
-  right: 0.2em;
-  z-index: 99;
-  font-size: 3em;
-  outline: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
+    display: none;
+    color:red;
+    position: fixed;
+    bottom: 0.2em;
+    right: 0.2em;
+    z-index: 99;
+    font-size: 3em;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
 </style> 
 </head>
 <body>
-	<span class="icon fa-chevron-circle-up scrolly" id="myBtn" href="#gallery" 
-     style="opacity:0.7;font-size:60px;color:#222729;text-shadow:2px 2px 4px #000000;"></span>
-       <div id="header">
+ <img src="../img/up-arrow.png" class="scrolly" id="myBtn" href="#top">
 
-    <div class="top">
+ <div id="header">
 
-      <!-- Logo -->
-      <div id="logo">
-        <span class="image avatar48"><img src="../img/my_dp.jpg" alt="" /></span>
-        <h1 style="padding:0;text-align-last: right;"id="title">{{ .Site.Params.name }}</h1>
-        <p>{{ .Site.Params.description }}</p>
-      </div>
+  <div class="top">
 
-      <!-- Nav -->
-      <nav id="nav">
-           
-                 <ul>
+    <!-- Logo -->
+    <div id="logo">
+      <span class="image avatar48"><img src="../img/Logo_Image.jpg" alt="" /></span>
+      <h1 style="padding:0;text-align-last: right;"id="title">{{ .Site.Params.name }}</h1>
+      <p>{{ .Site.Params.description }}</p>
+    </div>
 
-                  <li><a href="../#top" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro </span></a></li>
-                  <li><a href="../#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-                  <li><a href="../#services" id="services-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Services</span></a></li>
-                 <!--  <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li> -->
-                  <li><a href="../#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-                  <!-- <li><a href="#media" id="media-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper-o">Media Coverage</span></a></li> -->
-                  <li><a href="#gallery" id="top-link" class="skel-layers-ignoreHref active"><span class="icon fa-image before">Gallery</span></a></li>
-                <!--   <li><a href="#events" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar">Events</span></a></li> -->
-                </ul>
-              </nav>
+    <!-- Nav -->
+    <nav id="nav">
 
-            </div>
+     <ul>
 
-            <div class="bottom">
+      <li><a href="../#top" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro </span></a></li>
+      <li><a href="../#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Solo Work</span></a></li>
+      <li><a href="../#collab" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Collabs</span></a></li>
+      <li><a href="../#services" id="services-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Services</span></a></li>
+      <!--  <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li> -->
+      <li><a href="../#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+      <!-- <li><a href="#media" id="media-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper-o">Media Coverage</span></a></li> -->
+      <li><a href="#gallery" id="top-link" class="skel-layers-ignoreHref active"><span class="icon fa-image before">Gallery</span></a></li>
+      <!--   <li><a href="#events" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar">Events</span></a></li> -->
+    </ul>
+  </nav>
 
-              <!-- Social Icons -->
-              <ul class="icons">
-                {{ range .Site.Params.social }}
-                <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
-                {{ end }}
-              </ul>
+</div>
 
-            </div>
+<div class="bottom">
 
-          </div>
+  <!-- Social Icons -->
+  <ul class="icons">
+    {{ range .Site.Params.social }}
+    <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+    {{ end }}
+  </ul>
 
+</div>
 
+</div>
 
+<div id="main">
 
-           <div id="main">
+ <section id="top" class="one dark cover galleryCover">
+  <div class="container">
 
-   <section id="top" class="one dark cover galleryCover">
-              <div class="container">
+  </div>
+</section>
 
-              </div>
-            </section>
-
-  <section id="gallery" class="seven">
+<section id="gallery" class="seven">
   <div class="container">
 
     <header>
       <h2>Gallery</h2>
     </header>
 
-    <p>Images showing how people go crazy when I perform</p>
- 
-        
+    <p>Entire work so far</p>
 
-    <div class="row">
-      <div class="4u 12u$(mobile)">
-        {{ range .Site.Params.Gallery.Videos }} 
-         <article class="item">
-    <iframe width="194" height="320" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        
+
+
+    
+    <div id="service_section" style="text-align: center;"class="skel-layers-ignoreHref service_section">
+
+     <div style="width:90%;margin: 0 auto;margin-bottom: 1em;">
+
+<!--     All youtube
+--><ul id="double" style="width:auto;text-align:center;display:list-item;margin-bottom: 0;">
+ {{ range .Site.Params.Gallery.Youtube}}
+ <li>
+   <article class="item">
+    <div class="youtube-player" id={{.id}}>
+
+    </div>
+  <!--   <iframe width="320" height="180" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>      
+  </iframe> -->
   <header>
+    <caption>{{ .title }}</caption>
+  </header>
+
+
+
+</article>
+</li>
+{{end}}
+</ul>
+
+
+
+
+<!-- All Facebook -->
+
+
+<ul id="double" style="width:auto;text-align:center;display:list-item;margin-bottom: 0;">
+ {{ range .Site.Params.Gallery.Facebook}}
+ <li>
+   <article class="item">
+
+     <iframe src={{.url}} width="180" height="320" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+     <header>
       <caption>{{ .title }}</caption>
     </header>
   </article>
+</li>
+{{end}}
+</ul>
 
-        {{ end }}
-      </div>
 
-      <div class="4u 12u$(mobile)">
-        {{ range .Site.Params.portfolio2 }} 
-        <article class="item">
 
-          <a href="{{ .url }}" class="image fit"><img src="../{{ .source }}" alt="{{ .alt }}" /></a>
-          <header>
-            <caption>{{ .title }}</caption>
+<!-- All SoundCloud -->
+<ul id="double" style="width:auto;text-align:center;display:list-item;margin-bottom: 0;">
+ {{ range .Site.Params.Gallery.Soundcloud}}
+ <li>
+   <article class="item">
+    <div class="youtube-player" id={{.id}}>
 
-          </header>
-        </article>
-        {{ end }}
-      </div>
-
-      <div class="4u 12u$(mobile)">
-        {{ range .Site.Params.portfolio3 }} 
-        <article class="item">
-          <a href="{{ .url }}" class="image fit"><img src="../{{ .source }}" alt="{{ .alt }}" /></a>
-          <header>
-            <caption>{{ .title }}</caption>
-          </header>
-        </article>
-        {{ end }}
-      </div>
     </div>
+  <!--   <iframe width="320" height="180" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>      
+  </iframe> -->
+  <header>
+    <caption>{{ .title }}</caption>
+  </header>
 
 
-  </div>
+
+</article>
+</li>
+{{end}}
+</ul>
+
+<!-- All Google Drive -->
+<ul id="double" style="width:auto;text-align:center;display:list-item;margin-bottom: 0;">
+ {{ range .Site.Params.Gallery.Drive}}
+ <li>
+   <article class="item">
+    <div class="youtube-player" id={{.id}}>
+
+    </div>
+  <!--   <iframe width="320" height="180" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>      
+  </iframe> -->
+  <header>
+    <caption>{{ .title }}</caption>
+  </header>
+
+
+
+</article>
+</li>
+{{end}}
+</ul>
+</div>
+
+<br>
+
+</div>
 </section>
-           </div>
-           <script src="/js/jquery.min.js"></script>
+</div>
+<script src="/js/jquery.min.js"></script>
 <script src="/js/jquery.scrolly.min.js"></script>
 <script src="/js/jquery.scrollzer.min.js"></script>
 <script src="/js/skel.min.js"></script>
 <script src="/js/util.js"></script>
 <script src="/js/main.js"></script>
+<script src="/js/youtube.js"></script>
+
 <script>
   window.onscroll = function() {scrollFunction()};
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
+      document.getElementById("myBtn").style.display = "block";
     } else {
-        document.getElementById("myBtn").style.display = "none";
+      document.getElementById("myBtn").style.display = "none";
     }
-}
+  }
 </script>
 </body>

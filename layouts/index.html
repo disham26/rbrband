@@ -22,31 +22,28 @@
   <link rel="stylesheet" href="/css/scrollCSe.css" />
   <link rel="stylesheet" href="/css/scrollCSh.css" />
   <link rel="stylesheet" href="/css/form_container.css" />
- <style>
+  <style>
   #myBtn {
-  display: none;
-  color:red;
-  position: fixed;
-  bottom: 0.2em;
-  right: 0.2em;
-  z-index: 99;
-  font-size: 3em;
-/*  border: none;
-*/  outline: none;
-/*background-color: red;
-*/ /*color: white;*/
-  cursor: pointer;
-  border-radius: 4px;
-}
+    display: none;
+    color:red;
+    position: fixed;
+    bottom: 0.2em;
+    right: 0.2em;
+    z-index: 99;
+    font-size: 3em;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
 </style> 
-  <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
-  <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
 </head>
 <body>
 <!-- 
- -->
+-->
 <!-- <button oncli/*ck="topFunction()" id="myBtn" title="Go to top">Top</button>
- -->  <!-- Header -->
+-->  <!-- Header -->
 
     <!--  <span class="icon fa-caret-up scrolly" id="myBtn" href="#top" 
      style="opacity:0.7;font-size:60px;color:#222729;text-shadow:2px 2px 4px #000000;"></span> -->
@@ -62,19 +59,19 @@
     <img src="img/up-arrow.png" class="scrolly" id="myBtn" href="#top">
     <!--  <a >Intro </a> -->
 
-  <div id="header">
+    <div id="header">
 
-    <div class="top">
+      <div class="top">
 
-      <!-- Logo -->
-      <div id="logo">
-        <img class="image avatar48" src="img/Logo_Image.jpg" alt="" />
-        <h1 style="padding:0;text-align-last: right;" id="title"><strong>{{ .Site.Params.name }}</strong></h1>
-        <p>{{ .Site.Params.description }}</p>
-      </div>
+        <!-- Logo -->
+        <div id="logo">
+          <img class="image avatar48" src="img/Logo_Image.jpg" alt="" />
+          <h1 style="padding:0;text-align-last: right;" id="title"><strong>{{ .Site.Params.name }}</strong></h1>
+          <p>{{ .Site.Params.description }}</p>
+        </div>
 
-      <!-- Nav -->
-      <nav id="nav">
+        <!-- Nav -->
+        <nav id="nav">
               <!--
 
                 Prologue's nav expects links in one of two formats:
@@ -94,11 +91,11 @@
                   <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Solo Work</span></a></li>
                   <li><a href="#collab" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Collabs</span></a></li>
                   <li><a href="#services" id="services-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Services</span></a></li>
-                 <!--  <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li> -->
+                  <!--  <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li> -->
                   <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-                <!--   <li><a href="#media" id="media-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper-o">Media Coverage</span></a></li> -->
+                  <!--   <li><a href="#media" id="media-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper-o">Media Coverage</span></a></li> -->
                   <li><a href="/gallery/" id="gallery-link" class="skel-layers-ignoreHref"><span class="icon fa-image">Gallery</span></a></li>
-                <!--   <li><a href="#events" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar">Events</span></a></li> -->
+                  <!--   <li><a href="#events" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar">Events</span></a></li> -->
                 </ul>
               </nav>
 
@@ -126,60 +123,60 @@
 
                 <header>
                   <h1 class="alt" style="color: white;text-align: center;"><strong>RBRband Records </strong>
-                  <br>
-                  <span style="font-size: 30px;font-weight: 300;"> feat. </span>
-                  <br> <strong>Prasang Misra</strong>
-                </h1>
+                    <br>
+                    <span style="font-size: 30px;font-weight: 300;"> feat. </span>
+                    <br> <strong>Prasang Misra</strong>
+                  </h1>
                   <p style="padding:0 3em 0 3em;">Music is not meant to be kept in closed studios and unheard albums, <br>It's supposed to be stretched with our boundaries,<br> just like the RBRband.</p>
-                  </strong>
+                </strong>
                 
-                </header>
+              </header>
 
-                <footer style="margin: 0.5em 0 0 0;">
-                  <button style="font-size: 20px;" href="#contact" class="scrolly">Contact</button>
-                </footer>
+              <footer style="margin: 0.5em 0 0 0;">
+                <button style="font-size: 20px;" href="#contact" class="scrolly">Contact</button>
+              </footer>
 
-              </div>
-            </section>
+            </div>
+          </section>
 
-            <!-- Portfolio -->
-            <section id="portfolio" class="two">
-              <div class="container">
+          <!-- Portfolio -->
+          <section id="portfolio" class="two">
+            <div class="container">
 
-                <header>
-                  <h2>Solo Work</h2>
-                </header>
+              <header>
+                <h2>Solo Work</h2>
+              </header>
 
-                <!-- <p2>Some basic portfolio</p2> -->
-{{if .Site.Params.Individual }}
-<div  style="padding-top: 1em;" id="individual">
-<!--Individual -->               <!--  <h3>Individual</h3> -->
-{{if .Site.Params.Individual.Gigs }}
-<!-- Gigs -->                <div>
+              <!-- <p2>Some basic portfolio</p2> -->
+              {{if .Site.Params.Individual }}
+              <div  style="padding-top: 1em;" id="individual">
+                <!--Individual -->               <!--  <h3>Individual</h3> -->
+                {{if .Site.Params.Individual.Gigs }}
+                <!-- Gigs -->                <div>
                   <h3><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Gigs</h3>
                   
                   <p>{{ .Site.Params.individual_gigs_description }}</p>
                   <div class="pn-ProductNav_WrapperIG">
-                                      
+
 
                     <nav id="pnProductNavIG" class="pn-ProductNavIG dragscrollIG">
                       <div id="pnProductNavContentsIG" class="pn-ProductNav_ContentsIG">
-  
-{{ range .Site.Params.Individual.Gigs }} 
-<article class="pn-ProductNav_LinkIG" aria-selected="true">  
-  <article class="item">
-  <div class="youtube-player" id={{.id}}>
-    
-  </div>
+
+                        {{ range .Site.Params.Individual.Gigs }} 
+                        <article class="pn-ProductNav_LinkIG" aria-selected="true">  
+                          <article class="item">
+                            <div class="youtube-player" id={{.id}}>
+
+                            </div>
   <!--   <iframe width="320" height="180" src={{.url}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>      
-    </iframe> -->
-    <header>
-      <caption>{{ .title }}</caption>
-    </header>
+  </iframe> -->
+  <header>
+    <caption>{{ .title }}</caption>
+  </header>
 
 
 
-  </article>
+</article>
 </article>
 {{ end }}
 
@@ -203,22 +200,22 @@
 {{ end }}
 {{ if .Site.Params.Individual.Shows }}
 <!-- Shows -->    <div style="padding-top: 1em;">
-                  <h3><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Shows</h3>
-          <p>{{ .Site.Params.individual_shows_description }}</p>
-                    <div class="pn-ProductNav_WrapperISh">                    
-                    <nav id="pnProductNavISh" class="pn-ProductNavISh dragscrollISh">
-                      <div id="pnProductNavContentsISh" class="pn-ProductNav_ContentsISh">
+  <h3><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Shows</h3>
+  <p>{{ .Site.Params.individual_shows_description }}</p>
+  <div class="pn-ProductNav_WrapperISh">                    
+    <nav id="pnProductNavISh" class="pn-ProductNavISh dragscrollISh">
+      <div id="pnProductNavContentsISh" class="pn-ProductNav_ContentsISh">
 <!-- <a href="#" class="pn-ProductNav_Link" aria-selected="true">Chairs</a>
 -->
 {{ range .Site.Params.Individual.Shows.JKVM }} 
 <article class="pn-ProductNav_LinkISh" aria-selected="true">  
   <article class="item">
-  
- <iframe src={{.url}} width="180" height="320" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-                            <header>
-      <caption>{{ .title }}</caption>
-    </header>
-  </article>
+
+   <iframe src={{.url}} width="180" height="320" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+   <header>
+    <caption>{{ .title }}</caption>
+  </header>
+</article>
 </article>
 {{ end }}
 
@@ -242,35 +239,35 @@
 {{ end }}
 {{if .Site.Params.Individual.Sessions }}
 <!-- Sessions -->                <div style="padding-top: 1em;">
-    <h3><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Compositions</h3>
+  <h3><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Compositions</h3>
   <p>{{ .Site.Params.individual_sessions_description }}</p>
-                  <div class="pn-ProductNav_WrapperISe">
-                    
-                    <nav id="pnProductNavISe" class="pn-ProductNavISe dragscrollISe">
-                      <div id="pnProductNavContentsISe" class="pn-ProductNav_ContentsISe">
-{{ range .Site.Params.Individual.Sessions }} 
-<article class="pn-ProductNav_LinkISe" aria-selected="true">  
-  <article class="item">
-   <div class="youtube-player" id={{.id}}>
-    
-  </div>                     <header>
-      <caption>{{ .title }}</caption>
-    </header>
-  </article>
-</article>
-{{ end }}
-<span id="pnIndicatorISe" class="pn-ProductNav_IndicatorISe"></span>
-</div>
-</nav>
-<div id="pnAdvancerLeftISe" name="pnAdvancerLeftISe" class="pn-AdvancerISe pn-Advancer_LeftISe" type="button">
-  <!-- <svg class="pn-Advancer_IconIG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg> -->
-  <img style="width: 80%;" src="img/left-arrow.png">
-</div>
+  <div class="pn-ProductNav_WrapperISe">
 
-<div id="pnAdvancerRightISe" name="pnAdvancerRightISe" class="pn-AdvancerISe pn-Advancer_RightISe" type="button">
-  <img style="width: 80%;" src="img/right-arrow.png">
+    <nav id="pnProductNavISe" class="pn-ProductNavISe dragscrollISe">
+      <div id="pnProductNavContentsISe" class="pn-ProductNav_ContentsISe">
+        {{ range .Site.Params.Individual.Sessions }} 
+        <article class="pn-ProductNav_LinkISe" aria-selected="true">  
+          <article class="item">
+           <div class="youtube-player" id={{.id}}>
 
-</div>
+           </div>                     <header>
+            <caption>{{ .title }}</caption>
+          </header>
+        </article>
+      </article>
+      {{ end }}
+      <span id="pnIndicatorISe" class="pn-ProductNav_IndicatorISe"></span>
+    </div>
+  </nav>
+  <div id="pnAdvancerLeftISe" name="pnAdvancerLeftISe" class="pn-AdvancerISe pn-Advancer_LeftISe" type="button">
+    <!-- <svg class="pn-Advancer_IconIG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg> -->
+    <img style="width: 80%;" src="img/left-arrow.png">
+  </div>
+
+  <div id="pnAdvancerRightISe" name="pnAdvancerRightISe" class="pn-AdvancerISe pn-Advancer_RightISe" type="button">
+    <img style="width: 80%;" src="img/right-arrow.png">
+
+  </div>
 </div>
 
 </div>
@@ -282,16 +279,16 @@
 {{ end }}
 {{ if .Site.Params.Collab }}
 <div id="collab" width=100% style="padding-top: 2em; background-image: url(img/Collab_back.png)">
-{{ if .Site.Params.Collab.Gigs }}
-<!-- Gigs --> <div style="padding-top: 1em;">
-  <h2 style="color: white;">Collab </h2>
-                   <h3 style="color: white;"><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Gigs</h3>
-                  
-                  <p style="color:white;font-weight: 100;">{{.Site.Params.collab_gigs_description}}</p>
-                  <div class="pn-ProductNav_WrapperCG">
-                    
-                    <nav id="pnProductNavCG" class="pn-ProductNavCG dragscrollCG">
-                      <div id="pnProductNavContentsCG" class="pn-ProductNav_ContentsCG">
+  {{ if .Site.Params.Collab.Gigs }}
+  <!-- Gigs --> <div style="padding-top: 1em;">
+    <h2 style="color: white;">Collab </h2>
+    <h3 style="color: white;"><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Gigs</h3>
+
+    <p style="color:white;font-weight: 100;">{{.Site.Params.collab_gigs_description}}</p>
+    <div class="pn-ProductNav_WrapperCG">
+
+      <nav id="pnProductNavCG" class="pn-ProductNavCG dragscrollCG">
+        <div id="pnProductNavContentsCG" class="pn-ProductNav_ContentsCG">
 <!-- <a href="#" class="pn-ProductNav_Link" aria-selected="true">Chairs</a>
 -->
 
@@ -299,9 +296,9 @@
 <article class="pn-ProductNav_LinkCG" aria-selected="true">  
   <article class="item">
     <div class="youtube-player" id={{.id}}>
-    
-  </div>                       
-  <header style="color: white;">
+
+    </div>                       
+    <header style="color: white;">
       <caption>{{ .title }}
       </caption>
     </header>
@@ -310,17 +307,16 @@
 {{ end }}
 
 
-
 <span id="pnIndicatorCG" class="pn-ProductNav_IndicatorCG"></span>
 </div>
 </nav>
 <div id="pnAdvancerLeftCG" name="pnAdvancerLeftCG" class="pn-AdvancerCG pn-Advancer_LeftCG" type="button">
   <!-- <svg class="pn-Advancer_IconIG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg> -->
-  <img style="width: 80%;" src="img/left-arrow.png">
+  <img style="width: 80%;" src="img/left-arrowBlack.png">
 </div>
 
 <div id="pnAdvancerRightCG" name="pnAdvancerRightCG" class="pn-AdvancerCG pn-Advancer_RightCG" type="button">
-  <img style="width: 80%;" src="img/right-arrow.png">
+  <img style="width: 80%;" src="img/right-arrowBlack.png">
 
 </div>
 </div>
@@ -330,22 +326,22 @@
 
 {{ if .Site.Params.Collab.Shows }}
 <!-- Shows -->    <div style="padding-top: 1em;">
-                  <h3 style="color: white;"><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Shows</h3>
-          <p>{{ .Site.Params.collab_shows_description }}</p>
-                    <div class="pn-ProductNav_WrapperCSh">                    
-                    <nav id="pnProductNavCSh" class="pn-ProductNavCSh dragscrollCSh">
-                      <div id="pnProductNavContentsCSh" class="pn-ProductNav_ContentsCSh">
+  <h3 style="color: white;"><span style="color:#DB4A37; font-size: 18px;" class="icon fa-forward"></span> Online Shows</h3>
+  <p>{{ .Site.Params.collab_shows_description }}</p>
+  <div class="pn-ProductNav_WrapperCSh">                    
+    <nav id="pnProductNavCSh" class="pn-ProductNavCSh dragscrollCSh">
+      <div id="pnProductNavContentsCSh" class="pn-ProductNav_ContentsCSh">
 <!-- <a href="#" class="pn-ProductNav_Link" aria-selected="true">Chairs</a>
 -->
 {{ range .Site.Params.Collab.Shows.JKVM }} 
 <article class="pn-ProductNav_LinkCSh" aria-selected="true">  
   <article class="item">
-  
- <iframe src={{.url}} width="180" height="320" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-                            <header>
-      <caption>{{ .title }}</caption>
-    </header>
-  </article>
+
+   <iframe src={{.url}} width="180" height="320" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+   <header>
+    <caption>{{ .title }}</caption>
+  </header>
+</article>
 </article>
 {{ end }}
 
@@ -356,11 +352,11 @@
 </nav>
 <div id="pnAdvancerLeftCSh" name="pnAdvancerLeftCSh" class="pn-AdvancerCSh pn-Advancer_LeftCSh" type="button">
   <!-- <svg class="pn-Advancer_IconIG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg> -->
-  <img style="width: 80%;" src="img/left-arrow.png">
+  <img style="width: 80%;" src="img/left-arrowBlack.png">
 </div>
 
 <div id="pnAdvancerRightCSh" name="pnAdvancerRightCSh" class="pn-AdvancerCSh pn-Advancer_RightCSh" type="button">
-  <img style="width: 80%;" src="img/right-arrow.png">
+  <img style="width: 80%;" src="img/right-arrowBlack.png">
 
 </div>
 </div>
@@ -369,38 +365,78 @@
 {{ end }}
 {{ if .Site.Params.Collab.Sessions }}
 <!-- Sessions -->                <div style="padding-top: 1em;">
-                    <h3 style="color: white;">Collab>> Sessions and Compositions</h3>
-                  
-                <p style="color:white;font-weight: 100;">{{.Site.Params.collab_sessions_description}}</p>
-                  <div class="pn-ProductNav_WrapperCSe">
-                    
-                    <nav id="pnProductNavCSe" class="pn-ProductNavCSe dragscrollCSe">
-                      <div id="pnProductNavContentsCSe" class="pn-ProductNav_ContentsCSe">
-{{ range .Site.Params.Collab.Sessions }} 
-<article class="pn-ProductNav_LinkCSe" aria-selected="true">  
-  <article class="item">
-    <div class="youtube-player" id={{.id}}>
-    
-  </div>                    
-  <header style="color: white;">
-      <caption style="color:white">{{ .title }}</caption>
-    </header>
-  </article>
-</article>
+  <h3 style="color: white;">Collab>> Sessions and Compositions</h3>
+
+  <p style="color:white;font-weight: 100;">{{.Site.Params.collab_sessions_description}}</p>
+  <div class="pn-ProductNav_WrapperCSe">
+
+    <nav id="pnProductNavCSe" class="pn-ProductNavCSe dragscrollCSe">
+      <div id="pnProductNavContentsCSe" class="pn-ProductNav_ContentsCSe">
+        {{ range .Site.Params.Collab.Sessions }} 
+        <article class="pn-ProductNav_LinkCSe" aria-selected="true">  
+          <article class="item">
+            <div class="youtube-player" id={{.id}}>
+
+            </div>                    
+            <header style="color: white;">
+              <caption style="color:white">{{ .title }}</caption>
+            </header>
+          </article>
+        </article>
+        {{ end }}
+        <span id="pnIndicatorCSe" class="pn-ProductNav_IndicatorCSe"></span>
+      </div>
+    </nav>
+    <div id="pnAdvancerLeftCSe" name="pnAdvancerLeftCSe" class="pn-AdvancerCSe pn-Advancer_LeftCSe" type="button">
+      <!-- <svg class="pn-Advancer_IconIG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg> -->
+      <img style="width: 80%;" src="img/left-arrowBlack.png">
+    </div>
+
+    <div id="pnAdvancerRightCSe" name="pnAdvancerRightCSe" class="pn-AdvancerCSe pn-Advancer_RightCSe" type="button">
+      <img style="width: 80%;" src="img/right-arrowBlack.png">
+
+    </div>
+  </div>
+
+</div>
 {{ end }}
-<span id="pnIndicatorCSe" class="pn-ProductNav_IndicatorCSe"></span>
-</div>
-</nav>
-<div id="pnAdvancerLeftCSe" name="pnAdvancerLeftCSe" class="pn-AdvancerCSe pn-Advancer_LeftCSe" type="button">
-  <!-- <svg class="pn-Advancer_IconIG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg> -->
-  <img style="width: 80%;" src="img/left-arrow.png">
-</div>
 
-<div id="pnAdvancerRightCSe" name="pnAdvancerRightCSe" class="pn-AdvancerCSe pn-Advancer_RightCSe" type="button">
-  <img style="width: 80%;" src="img/right-arrow.png">
 
-</div>
-</div>
+
+{{ if .Site.Params.Collab.Radio }}
+<!-- Sessions -->                <div style="padding-top: 1em;">
+  <h3 style="color: white;">Radio Shows</h3>
+
+  <p style="color:white;font-weight: 100;">{{.Site.Params.collab_sessions_description}}</p>
+  <div class="pn-ProductNav_WrapperCSe">
+
+    <nav id="pnProductNavCSe" class="pn-ProductNavCSe dragscrollCSe">
+      <div id="pnProductNavContentsCSe" class="pn-ProductNav_ContentsCSe">
+        {{ range .Site.Params.Collab.Radio }} 
+        <article class="pn-ProductNav_LinkCSe" aria-selected="true">  
+          <article class="item">
+            <div class="youtube-player" id={{.id}}>
+
+            </div>                    
+            <header style="color: white;">
+              <caption style="color:white">{{ .title }}</caption>
+            </header>
+          </article>
+        </article>
+        {{ end }}
+        <span id="pnIndicatorCSe" class="pn-ProductNav_IndicatorCSe"></span>
+      </div>
+    </nav>
+    <div id="pnAdvancerLeftCSe" name="pnAdvancerLeftCSe" class="pn-AdvancerCSe pn-Advancer_LeftCSe" type="button">
+      <!-- <svg class="pn-Advancer_IconIG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" /></svg> -->
+      <img style="width: 80%;" src="img/left-arrowBlack.png">
+    </div>
+
+    <div id="pnAdvancerRightCSe" name="pnAdvancerRightCSe" class="pn-AdvancerCSe pn-Advancer_RightCSe" type="button">
+      <img style="width: 80%;" src="img/right-arrowBlack.png">
+
+    </div>
+  </div>
 
 </div>
 {{ end }}
@@ -422,51 +458,51 @@
     </header>
 
 
-{{ range .Site.Params.Services }} 
+    {{ range .Site.Params.Services }} 
 
-<div style="padding-top: 1em">
+    <div style="padding-top: 1em">
 
 
       <div id="service_section" style="text-align: center;"class="skel-layers-ignoreHref service_section">
-       
 
 
-          <h3 style="float: center;"><span><img style="margin-right: 0.5em;" width=25px src={{.icon}}></span>{{ .name }} </h3>
+
+        <h3 style="float: center;"><span><img style="margin-right: 0.5em;" width=25px src={{.icon}}></span>{{ .name }} </h3>
       </div>
       
       <p>{{ .description}}</p>
-     <!--  <footer id="contact_wrapper"> -->
-           <div style="width:80%;margin: 0 auto;margin-bottom: 1em;">
-           <ul id="double" style="width:auto;text-align:center;display:list-item;margin-bottom: 0;">
-             {{ range .performance1.list}}
-             <li>
-               <p style="font-weight: 500;opacity:0.75;color: #212728; margin-bottom: 0.1em;margin-left: 0.5em;margin-right: 0">{{ .name }}</p>
-             </li>
-             {{end}}
-           </ul>
-         </div>
-         
-    <!--   </footer> -->
-      
-      
-      <!-- <a style="background-color: #DB4A37; padding:0 0 0 0;" href="/gallery/" class="inline_button scrolly">View Gallery</a> -->
-           
+      <!--  <footer id="contact_wrapper"> -->
+       <div style="width:80%;margin: 0 auto;margin-bottom: 1em;">
+         <ul id="double" style="width:auto;text-align:center;display:list-item;margin-bottom: 0;">
+           {{ range .performance1.list}}
+           <li>
+             <p style="font-weight: 500;opacity:0.75;color: #212728; margin-bottom: 0.1em;margin-left: 0.5em;margin-right: 0">{{ .name }}</p>
+           </li>
+           {{end}}
+         </ul>
+       </div>
+
+       <!--   </footer> -->
+
+
+       <!-- <a style="background-color: #DB4A37; padding:0 0 0 0;" href="/gallery/" class="inline_button scrolly">View Gallery</a> -->
+
 
      <!-- <a style="border-color: #DB4A37;border-style: solid;border-width: 1px; margin:1em; color:#DB4A37;
-                  background-color: transparent;  width:250px;height:45px;font-size: 18px; text-align: inherit;" href="/gallery/" class="inline_button scrolly">View Gallery</a> -->
-            <footer style="margin-top: 0em;">
-           <a href="/gallery/"> <button style="font-size: 20px;border-color: #DB4A37;border-style: solid;border-width: 1px; margin:1em; color:#DB4A37;
-                  background-color: transparent;  width:250px;height:45px;font-size: 18px; text-align: inherit;">View Gallery</button>
-             </a>
-      <a href="#contact" class="scrolly"><button href="#contact" onclick="location.href='#contact'" class="scrolly" style="font-size: 20px;">Contact</button></a>
+      background-color: transparent;  width:250px;height:45px;font-size: 18px; text-align: inherit;" href="/gallery/" class="inline_button scrolly">View Gallery</a> -->
+      <footer style="margin-top: 0em;">
+       <a href="/gallery/"> <button style="font-size: 20px;border-color: #DB4A37;border-style: solid;border-width: 1px; margin:1em; color:#DB4A37;
+       background-color: transparent;  width:250px;height:45px;font-size: 18px; text-align: inherit;">View Gallery</button>
+     </a>
+     <a href="#contact" class="scrolly"><button href="#contact" onclick="location.href='#contact'" class="scrolly" style="font-size: 20px;">Contact</button></a>
 <!--             <button style="font-size: 20px;" href="#contact" class="scrolly">Contact</button>
- -->      
+-->      
 
 
-                </footer>
-    </div>
-    
-   
+</footer>
+</div>
+
+
 <br>
 {{ end }}
 
@@ -475,21 +511,21 @@
  <header>
   <h2 style="color: white;">RBRband was here</h2>
 </header>
-  <div class="tabular">
+<div class="tabular">
  <ul id="horizontal-list" style="color: #7d172f;">
 
   <div id="details_wrapper">
-  {{ range .Site.Params.Venues }} 
+    {{ range .Site.Params.Venues }} 
 
-  <li id="details_mobile" style="display: inline; padding-right: 1em;">
-    <img src="{{ .source }}" style="color: black;" width="150" height="90" border="0" alt="Null" /><br>
-   <!--  <b style="text-align-last: center;font-weight: 100;font-size: 1em;">{{ .name }}</b> --></li>
+    <li id="details_mobile" style="display: inline; padding-right: 1em;">
+      <img src="{{ .source }}" style="color: black;" width="150" height="90" border="0" alt="Null" /><br>
+      <!--  <b style="text-align-last: center;font-weight: 100;font-size: 1em;">{{ .name }}</b> --></li>
 
-{{ end}}
-  
-</div>
+      {{ end}}
 
- </div>
+    </div>
+
+  </div>
 
 </div>
 {{ end }}
@@ -515,88 +551,88 @@
 
   </div>
 </section>
- -->
+-->
 
 
 
 
 <!-- Contact -->
 <section id="contact" class="five">
-   <div class="container">
+ <div class="container">
    <!-- <h2 style="color: white;">Contact</h2> -->
    <header>
-      <h2 style="color: #212728;">Let's get to business</h2>
-   </header>
-   <div  style="padding-bottom: 2em;">
-      <div class="tabular">
-         <ul id="horizontal-list" style="color: #DB4A37;">
-            <div id="details_wrapper">
-               <li id="details_mobile" position: relative; style="float: left;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1.2em; line-height: 1em;" class="icon fa-mobile"></span><a href="tel:+91-7698-189-874" style="font-size: 20px;">+91-7698189874</a></li>
-               <li id="details_email" position: relative; ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-envelope"></span><a href="mailto:prasang@rbrband.in" style="font-size: 20px;">prasang@rbrband.in</a></li>
-               <li id="details_videos" position: relative; style="float: right;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-video-camera"></span><a href="/gallery/" style="font-size: 20px;">More Videos</a></li>
-            </div>
-      </div>
-
-      </ul>
-    </div>
-
-      <h3 id="contact_subheader" style="color: #212728;text-align-last: left; padding-left: 4em; letter-spacing: 0.25px;">What can I do for you?</h3>
-  <div class="container_form">   
-      <form method="POST" action="https://formspree.io/prasang@rbrband.in">
-         <div id="contact_wrapper" class="form_container">
-            <div id="contact_left">
-               <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput" >
-                  <input type="text" name="name"  class="formInputType" required />
-                  <label>Name*</label>
-               </div>
-               <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
-                  <input type="email" name="email"  required class="formInputType"/>
-                    <label>Email*</label>
-
-               </div>
-               <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
-                  <input type="text" name="nature" class="formInputType " />
-                  <label>Nature of work</label>
-
-               </div>
-            </div>
-            <div id="contact_right">
-               <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight" >
-                  <input type="text" name="org" class="formInputType " />
-                  <label>Organization/Venue</label>
-
-               </div>
-               <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight">
-                  <input type="text" name="email" required class="formInputType" />
-                  <label>Phone Number*</label>
-
-               </div>
-               <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight">
-                  <input type="text" name="budget" class="formInputType" />
-                  <label>Budget</label>
-
-               </div>
-            </div>
-         </div>
-         <div id="contact_message">
-
-            <textarea name="message" style="width:100%;"></textarea>
-                  <label style="padding:0 4em 0 4em;">Drop a message</label>
-
-         </div>
-        
-         
-         
-         <br>
-         <!-- <div id="send_message"> -->
-            <!-- <input style="background-color: #7d172f;color: white;font-weight: 700;padding: 0.7em;" type="submit" value=">> Send Message" /> -->
-            <input type="submit" style="background-color: #DB4A37;display: inline-block;float:none;" class="inline_button" value="Send Message"/>
-       <!--   </div> -->
-      </form>
-    </div>
-      <br>
+    <h2 style="color: #212728;">Let's get to business</h2>
+  </header>
+  <div  style="padding-bottom: 2em;">
+    <div class="tabular">
+     <ul id="horizontal-list" style="color: #DB4A37;">
+      <div id="details_wrapper">
+       <li id="details_mobile" position: relative; style="float: left;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1.2em; line-height: 1em;" class="icon fa-mobile"></span><a href="tel:+91-7698-189-874" style="font-size: 20px;">+91-7698189874</a></li>
+       <li id="details_email" position: relative; ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-envelope"></span><a href="mailto:prasang@rbrband.in" style="font-size: 20px;">prasang@rbrband.in</a></li>
+       <li id="details_videos" position: relative; style="float: right;" ><span style="color:#DB4A37;padding-right: 0.5em;font-size: 1em;" class="icon fa-video-camera"></span><a href="/gallery/" style="font-size: 20px;">More Videos</a></li>
+     </div>
    </div>
- </div>
+
+ </ul>
+</div>
+
+<h3 id="contact_subheader" style="color: #212728;text-align-last: left; padding-left: 4em; letter-spacing: 0.25px;">What can I do for you?</h3>
+<div class="container_form">   
+  <form method="POST" action="https://formspree.io/prasang@rbrband.in">
+   <div id="contact_wrapper" class="form_container">
+    <div id="contact_left">
+     <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput" >
+      <input type="text" name="name"  class="formInputType" required />
+      <label>Name*</label>
+    </div>
+    <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
+      <input type="email" name="email"  required class="formInputType"/>
+      <label>Email*</label>
+
+    </div>
+    <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInput">
+      <input type="text" name="nature" class="formInputType " />
+      <label>Nature of work</label>
+
+    </div>
+  </div>
+  <div id="contact_right">
+   <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight" >
+    <input type="text" name="org" class="formInputType " />
+    <label>Organization/Venue</label>
+
+  </div>
+  <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight">
+    <input type="text" name="email" required class="formInputType" />
+    <label>Phone Number*</label>
+
+  </div>
+  <div style="padding-bottom: 1em;" class="6u$ 12u$(mobile) formInputRight">
+    <input type="text" name="budget" class="formInputType" />
+    <label>Budget</label>
+
+  </div>
+</div>
+</div>
+<div id="contact_message">
+
+  <textarea name="message" style="width:100%;"></textarea>
+  <label style="padding:0 4em 0 4em;">Drop a message</label>
+
+</div>
+
+
+
+<br>
+<!-- <div id="send_message"> -->
+  <!-- <input style="background-color: #7d172f;color: white;font-weight: 700;padding: 0.7em;" type="submit" value=">> Send Message" /> -->
+  <input type="submit" style="background-color: #DB4A37;display: inline-block;float:none;" class="inline_button" value="Send Message"/>
+  <!--   </div> -->
+</form>
+</div>
+<br>
+</div>
+</div>
 </section>
 
 
@@ -653,7 +689,7 @@
 
   </div>
 </section>
- -->
+-->
 
 
 
@@ -743,11 +779,11 @@
   window.onscroll = function() {scrollFunction()};
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
+      document.getElementById("myBtn").style.display = "block";
     } else {
-        document.getElementById("myBtn").style.display = "none";
+      document.getElementById("myBtn").style.display = "none";
     }
-}
+  }
 </script>
 
 

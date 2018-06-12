@@ -20,41 +20,8 @@ services_singing_description = ""
 services_music_production_description = ""
 services_other_description = ""
 
-[[params.portfolio1]]
-alt = ""
-source = "img/pic02.jpg"
-title = "Safar Cover"
-url = "#"
-[[params.portfolio1]]
-alt = ""
-source = "img/pic03.jpg"
-title = "Rhoncus Semper"
-url = "#"
-[[params.portfolio2]]
-alt = ""
-source = "img/pic04.jpg"
-title = "Magna Nullam"
-url = "#"
-[[params.portfolio2]]
-alt = ""
-source = "img/pic05.jpg"
-title = "Natoque Vitae"
-url = "#"
-[[params.portfolio3]]
-alt = ""
-source = "img/pic06.jpg"
-title = "Dolor Penatibus"
-url = "#"
-[[params.portfolio3]]
-alt = ""
-source = "img/pic07.jpg"
-title = "Orci Convallis"
-url = "#"
 
-
-
-
-
+# Social Section, links of all the social handles
 
 [[params.social]]
 icon = "twitter"
@@ -78,46 +45,53 @@ link = "#"
 medium = "email"
 
 
+# Solo Work section, GIGS
+
+
 [[params.individual.gigs]]
 title = "Enna Sona"
-url = "https://www.youtube.com/embed/IrfZ3fC5NWo"
 id = "IrfZ3fC5NWo"
-imageurl = ""
-
-
 
 [[params.individual.gigs]]
 title = "Gulaabi Aakhein"
-url = "https://www.youtube.com/embed/0jK6wxLgiIc"
 id = "0jK6wxLgiIc"
-imageurl = ""
+
 
 [[params.individual.gigs]]
-title = "Fitoor"
-url = "https://www.youtube.com/embed/J6GacoGTGDA"
-id = "J6GacoGTGDA"
-imageurl = ""
+title="Pehla Nasha"
+id="Google1hwHiPPaVhGy4jN6L-Mxg_aerwx1TrLQxHQ"
+
 [[params.individual.gigs]]
-title = "Love Mashup"
-url = "https://www.youtube.com/embed/uHuB-meZnC8"
-imageurl = ""
-id = "uHuB-meZnC8"
+title="Bol Do Na Zara"
+id="Google1gv5JVRdVsgsIF75HRcjypWslcD6iNhpSCg"
 
-[[params.collab.gigs]]
-title = "Love Mashup"
-url = "https://www.youtube.com/embed/uHuB-meZnC8"
-imageurl = ""
-id = "uHuB-meZnC8"
 
-[[params.collab.gigs]]
-title = "Haareya"
-url = "https://www.youtube.com/embed/Y8pIj4kIheI"
-id = "Y8pIj4kIheI"
-imageurl = ""
+
+# Solo Section, Shows
+
+
+[[params.individual.shows.jkvm]]
+title="Ek Din Bik Jaayega"
+url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1020134004792529%2F&show_text=0&width=180"
+
+[[params.individual.shows.jkvm]]
+title="Main Rang Sharbaton Ka"
+url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1006981952774401%2F&show_text=0&width=267"
+
+
+[[params.individual.shows.jkvm]]
+title="Dil Chahta Hai"
+url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fprasangmisra%2Fvideos%2F10213989843795149%2F&show_text=0&width=180"
+
+
+[[params.individual.shows.jkvm]]
+title = "Tanha Dil + O Maajhi Re"
+url ="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1046245168848079%2F&show_text=0&width=180"
 
 [[params.individual.shows.jkvm]]
 title = "Episode 50"
 url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1054655078007088%2F&show_text=0&width=180"
+
 
 
 [[params.individual.shows.jkvm]]
@@ -131,47 +105,36 @@ url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.faceboo
 
 [[params.individual.shows.jkvm]]
 title = "Episode 47"
-url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1050884941717435%2F&show_text=0&width=267"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1050884941717435%2F&show_text=0&width=180"
 
 
 [[params.individual.shows.jkvm]]
 title = "Episode 46"
-url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1049851335154129%2F&show_text=0&width=267"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1049851335154129%2F&show_text=0&width=180"
 
 
-
-
-[[params.collab.shows.jkvm]]
-title = "Holi Mashup"
-url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1004132996392630%2F&show_text=0&width=267"
-
-
-[[params.collab.shows.jkvm]]
-title = "Ghazab Ka Hai Din"
-url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1005275986278331%2F&show_text=0&width=267"
-
-[[params.collab.shows.jkvm]]
-title = "Main Jahaan Rahu"
-url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F997131737092756%2F&show_text=0&width=267"
-
+# Solo Section, Compositions
 
 
 [[params.individual.sessions]]
 title = "9 Se 12 Power Ballad"
-url = "https://www.youtube.com/embed/ft-_F_kGAtA"
 id="ft-_F_kGAtA"
+
+
 [[params.individual.sessions]]
 title = "Safar Cover"
-url = "https://www.youtube.com/embed/1SA6c7UCcr0"
 id="1SA6c7UCcr0"
+
+
 [[params.individual.sessions]]
-title = "Hawaayein Whistle Mashup"
-url = "https://www.youtube.com/embed/lYK1tC-xJbk"
-id="lYK1tC-xJbk"
+title = "MobiKwik Jingle"
+id="SoundCloud293865830"
+
+
 [[params.individual.sessions]]
 title = "O Maajhi Re Cover"
-url = "https://www.youtube.com/embed/PdI-lLu17UU"
-id="PdI-lLu17UU"
+id="SoundCloud154307817"
+
 
 [[params.individual.sessions]]
 title = "9 Se 12 Power Ballad"
@@ -181,56 +144,96 @@ id = "SoundCloud345752804"
 title = "Chhookar Mere Mann Ko"
 id = "SoundCloud382024121"
 
+[[params.individual.sessions]]
+title = "Hawaayein Whistle Mashup"
+id="lYK1tC-xJbk"
 
 
 
 
+# Collab Section, Gigs
+
+[[params.collab.gigs]]
+title = "Love Mashup"
+id = "uHuB-meZnC8"
+
+[[params.collab.gigs]]
+title = "Haareya"
+id = "Y8pIj4kIheI"
+
+[[params.collab.gigs]]
+title="Bang Bang"
+id="Google1lPx4hqCeZbrmCfCi9DYk87K7MXCSIXXdfQ"
+
+[[params.collab.gigs]]
+title="Dil Chahta Hai"
+id="Google1Vl0Xs58PnJii-GIisHrJIxpeNaI6cBo4LQ"
+
+[[params.collab.gigs]]
+title="Paani Da Rang"
+id="Google1ZxMTgrwdX4yC7ygp0bBgwhdK0FoSOugWOQ"
 
 
-[[params.gallery.pictures]]
-title = "BMC"
-url1 = "https://photos.google.com/share/AF1QipOLKYqzKzThxkqVDKEAqyeLjgb_WBiELgu5IFbj5UXDIqOC_pOMaPgyzPFCRyKDCg?key=OWpDNzh4OVc2QTNBYTRoU1NBbXJTQ1JabjJ1NmJ3&source=ctrlq.org"
-url = "https://lh3.googleusercontent.com/dvMewqqRxav1-gSmTe8wqPjKzOkbRCkSThXGKYzbs2Q_esXxuYrukj6bD1TZoVPPjm57LlCpIzP3NQ742IB3t63UNh0CgjybZm3ILOzGrb508Uv0dW9Qwf0rEbyukAKVD1AibtRqF20=w2400"
 
-[[params.gallery.videos]]
-title = "Maayi Ni Meriye"
-url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1053558484783414%2F&show_text=0&width=194"
-
-[[params.gallery.videos]]
-title = "Maayi Ni Meriye1"
-url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1053558484783414%2F&show_text=0&width=194"
+# Collab Section, Shows
 
 
+[[params.collab.shows.jkvm]]
+title = "Holi Mashup"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1004132996392630%2F&show_text=0&width=180"
+
+
+[[params.collab.shows.jkvm]]
+title = "Ghazab Ka Hai Din"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1005275986278331%2F&show_text=0&width=180"
+
+[[params.collab.shows.jkvm]]
+title = "Main Jahaan Rahu"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F997131737092756%2F&show_text=0&width=180"
+
+
+# Collab Section, Radio
+
+[[params.collab.radio]]
+title = "Neele Neele Ambar-Radio Mirchi"
+id="SoundCloud136835178"
+
+[[params.collab.radio]]
+title = "Maeri - Radio Mirchi"
+id = "SoundCloud136835194"
+
+[[params.collab.radio]]
+title = "Mitwa - Radio Mirchi"
+id = "SoundCloud136835188"
+
+[[params.collab.radio]]
+title = "Mashup - Radio Mirchi"
+id = "SoundCloud136835197"
 
 
 
-
-
-
-
-
-
+# Services Section
 
 [[params.services]]
 name = "Performance"
 icon = "img/microphone.png"
 description = "With plethora of experience in Solo and band gigs at cafes, pubs and corporate event we understand the pulse of the crowd."
-	
-	[params.services.performance1]
-	name=""
-   	[[params.services.performance1.list]]
-    name="Solo Singing - 1 pc"
-   	[[params.services.performance1.list]]
-   	name="Singer and guitarist - 2 pc"
-   	[[params.services.performance1.list]]
-   	name="Singer and MIDI piano - 1 pc" 
-	  [[params.services.performance1.list]]
-   	name="Corporate event Singing"
- 		[[params.services.performance1.list]]
-   	name="Bollywood"
- 		[[params.services.performance1.list]]
- 		name="Soft Romantic"
-   
+
+[params.services.performance1]
+name=""
+[[params.services.performance1.list]]
+name="Solo Singing - 1 pc"
+[[params.services.performance1.list]]
+name="Singer and guitarist - 2 pc"
+[[params.services.performance1.list]]
+name="Singer and MIDI piano - 1 pc" 
+[[params.services.performance1.list]]
+name="Corporate event Singing"
+[[params.services.performance1.list]]
+name="Bollywood"
+[[params.services.performance1.list]]
+name="Soft Romantic"
+
 
 
 
@@ -239,15 +242,15 @@ description = "With plethora of experience in Solo and band gigs at cafes, pubs 
 name = "Music Production"
 icon = "/img/equalizer.png"
 description = "With ever evolving Music tech it's tough to keep up with modern music tastes, but don't you worry, don't you worry child... see heaven's got RBRBand for YOU"
-	
-	[params.services.performance1]
-	name=""
-   	[[params.services.performance1.list]]
-    name="Single track production"
-   	[[params.services.performance1.list]]
-   	name="Mixing"
-   	[[params.services.performance1.list]]
-   	name="Mastering" 
+
+[params.services.performance1]
+name=""
+[[params.services.performance1.list]]
+name="Single track production"
+[[params.services.performance1.list]]
+name="Mixing"
+[[params.services.performance1.list]]
+name="Mastering" 
 
 
 
@@ -255,17 +258,17 @@ description = "With ever evolving Music tech it's tough to keep up with modern m
 name = "Lyrics and Composition"
 icon = "/img/music.png"
 description = "At the loss of words after looking at our work? Well that happens, lucky for you we always have Lyrics for all occasions."
-	
-	[params.services.performance1]
-	name=""
-   	[[params.services.performance1.list]]
-    name="Song writing"
-   	[[params.services.performance1.list]]
-   	name="Tune composition"
-   	[[params.services.performance1.list]]
-   	name="Arrangement"
-   	[[params.services.performance1.list]]
-   	name="Production"
+
+[params.services.performance1]
+name=""
+[[params.services.performance1.list]]
+name="Song writing"
+[[params.services.performance1.list]]
+name="Tune composition"
+[[params.services.performance1.list]]
+name="Arrangement"
+[[params.services.performance1.list]]
+name="Production"
 
 
 [[params.services]]
@@ -280,7 +283,7 @@ name="Audio Mixing"
 
 
 
-
+# Venues Section, this has all the images of venues
 
 [[params.venues]]
 name="Crowne Plaza"
@@ -301,3 +304,197 @@ source="img/GIP.jpeg"
 [[params.venues]]
 name="BMC Software"
 source="img/bmc.png"
+
+# Gallery Section, all the Youtube videos
+
+[[params.gallery.youtube]]
+title="Haareya"
+id="Y8pIj4kIheI"
+
+[[params.gallery.youtube]]
+title = "Fitoor"
+id = "J6GacoGTGDA"
+
+[[params.gallery.youtube]]
+title = "Love Mashup"
+id = "uHuB-meZnC8"
+
+
+
+[[params.gallery.youtube]]
+title = "Gulaabi Aakhein"
+id = "0jK6wxLgiIc"
+
+[[params.gallery.youtube]]
+title = "Enna Sona"
+id = "IrfZ3fC5NWo"
+
+
+[[params.gallery.youtube]]
+title="Phir Le Aya Dil"
+id="fX5_GZ9ZF0E"
+
+[[params.gallery.youtube]]
+title="Zehnaseeb"
+id="w_8-9GslG5A"
+
+[[params.gallery.youtube]]
+title="Whistle Mashup"
+id="irikCE2rsHs"
+
+[[params.gallery.youtube]]
+title="Abhi Mujhme Kahin"
+id="fzlqJoRIS2g"
+
+[[params.gallery.youtube]]
+title="Kolaveri Di Media Coverage"
+id="aIksezF6I9A"
+
+[[params.gallery.youtube]]
+title="9 se 12 Power Ballad"
+id="ft-_F_kGAtA"
+
+[[params.gallery.youtube]]
+title="Safar Cover"
+id="1SA6c7UCcr0"
+
+[[params.gallery.youtube]]
+title="Hawayein Whistle Mashup"
+id="lYK1tC-xJbk"
+
+# Gallery Section, all the Facebook videos
+
+
+[[params.gallery.facebook]]
+title="Ek Din Bik Jaayega"
+url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1020134004792529%2F&show_text=0&width=180"
+
+[[params.gallery.facebook]]
+title="Main Rang Sharbaton Ka"
+url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1006981952774401%2F&show_text=0&width=267"
+
+
+[[params.gallery.facebook]]
+title="Dil Chahta Hai"
+url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fprasangmisra%2Fvideos%2F10213989843795149%2F&show_text=0&width=180"
+
+
+[[params.gallery.facebook]]
+title = "Tanha Dil + O Maajhi Re"
+url ="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1046245168848079%2F&show_text=0&width=180"
+
+[[params.gallery.facebook]]
+title = "Episode 50"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1054655078007088%2F&show_text=0&width=180"
+
+[[params.gallery.facebook]]
+title = "Episode 49"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1053558484783414%2F&show_text=0&width=180"
+
+
+[[params.gallery.facebook]]
+title = "Episode 48"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1052509001555029%2F&show_text=0&width=180"
+
+[[params.gallery.facebook]]
+title = "Episode 47"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1050884941717435%2F&show_text=0&width=180"
+
+
+[[params.gallery.facebook]]
+title = "Episode 46"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1049851335154129%2F&show_text=0&width=180"
+
+[[params.gallery.facebook]]
+title="Teri Deewani"
+url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fprasangmisra%2Fvideos%2F10214051065285648%2F&show_text=0&width=180"
+
+
+[[params.gallery.facebook]]
+title = "Holi Mashup"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1004132996392630%2F&show_text=0&width=180"
+
+
+[[params.gallery.facebook]]
+title = "Ghazab Ka Hai Din"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F1005275986278331%2F&show_text=0&width=180"
+
+[[params.gallery.facebook]]
+title = "Main Jahaan Rahu"
+url = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frbrbandrecords%2Fvideos%2F997131737092756%2F&show_text=0&width=180"
+
+# Gallery Section, all the Soundcloud audio
+
+
+
+[[params.gallery.soundcloud]]
+title = "MobiKwik Jingle"
+id="SoundCloud293865830"
+
+
+[[params.gallery.soundcloud]]
+title = "O Maajhi Re Cover"
+id="SoundCloud154307817"
+
+
+[[params.gallery.soundcloud]]
+title = "9 Se 12 Power Ballad"
+id = "SoundCloud345752804"
+
+[[params.gallery.soundcloud]]
+title = "Chhookar Mere Mann Ko"
+id = "SoundCloud382024121"
+
+
+[[params.gallery.soundcloud]]
+title = "Neele Neele Ambar-Radio Mirchi"
+id="SoundCloud136835178"
+
+[[params.gallery.soundcloud]]
+title = "Maeri - Radio Mirchi"
+id = "SoundCloud136835194"
+
+[[params.gallery.soundcloud]]
+title = "Mitwa - Radio Mirchi"
+id = "SoundCloud136835188"
+
+[[params.gallery.soundcloud]]
+title = "Mashup - Radio Mirchi"
+id = "SoundCloud136835197"
+
+
+
+# Gallery Section, all the Google drive videos
+
+
+
+[[params.gallery.drive]]
+title = "Nazm Nazm"
+id="Google1u08YSC2bPi9sVNKNa9jNPpBqSVqC5P82yQ"
+
+
+[[params.gallery.drive]]
+title="Bang Bang"
+id="Google1lPx4hqCeZbrmCfCi9DYk87K7MXCSIXXdfQ"
+
+[[params.gallery.drive]]
+title="Dil Chahta Hai"
+id="Google1Vl0Xs58PnJii-GIisHrJIxpeNaI6cBo4LQ"
+
+[[params.gallery.drive]]
+title="Paani Da Rang"
+id="Google1ZxMTgrwdX4yC7ygp0bBgwhdK0FoSOugWOQ"
+
+
+[[params.gallery.drive]]
+title="Pehla Nasha"
+id="Google1hwHiPPaVhGy4jN6L-Mxg_aerwx1TrLQxHQ"
+
+
+[[params.gallery.drive]]
+title="Bol Do Na Zara"
+id="1gv5JVRdVsgsIF75HRcjypWslcD6iNhpSCg"
+
+[[params.gallery.drive]]
+title="Mere Saamne Vali Khidki Mein"
+id="1iBJCOvGk1yJPNKky7EPaUm9VxCrg6qH-XQ"
