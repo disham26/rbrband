@@ -13,6 +13,8 @@
   <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/youtube.css" />
+    <link rel="stylesheet" type="text/css" href="../css/flaticon.css">
+
 
   <style>
   #myBtn {
@@ -38,9 +40,11 @@
 
     <!-- Logo -->
     <div id="logo">
+      <a href="#top" id="top-link" class="skel-layers-ignoreHref scrolly">
       <span class="image avatar48"><img src="../img/Logo_Image.jpg" alt="" /></span>
       <h1 style="padding:0;text-align-last: right;"id="title">{{ .Site.Params.name }}</h1>
       <p>{{ .Site.Params.description }}</p>
+    </a>
     </div>
 
     <!-- Nav -->
@@ -48,14 +52,14 @@
 
      <ul>
 
-      <li><a href="../#top" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro </span></a></li>
-      <li><a href="../#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Solo Work</span></a></li>
-      <li><a href="../#collab" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Collabs</span></a></li>
+      <!-- <li><a href="../#top" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro </span></a></li> -->
+      <li><a href="../#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="flaticon-playlist">Solo Work</span></a></li>
+      <li><a href="../#collab" id="portfolio-link" class="skel-layers-ignoreHref"><span class="flaticon-music">Collabs</span></a></li>
       <li><a href="../#services" id="services-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Services</span></a></li>
       <!--  <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li> -->
       <li><a href="../#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
       <!-- <li><a href="#media" id="media-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper-o">Media Coverage</span></a></li> -->
-      <li><a href="#gallery" id="top-link" class="skel-layers-ignoreHref active"><span class="icon fa-image before">Gallery</span></a></li>
+      <li><a href="#gallery" id="top-link" class="skel-layers-ignoreHref active"><span class="flaticon-cinema">Gallery</span></a></li>
       <!--   <li><a href="#events" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar">Events</span></a></li> -->
     </ul>
   </nav>
