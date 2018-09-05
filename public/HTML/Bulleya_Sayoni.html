@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>Bulleya Sayoni</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 150; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+
+
+(MALE)
+[C#m]                     [A]
+Meri rooh ka parinda phadphadaaye
+[C#m]                     [A]
+Lekin sukoon ka jazeera mil na paaye
+[D]             [G#]
+Ve ki karan ve ki karan
+
+[C#m]             [A]
+Ik baar ko tajalli toh dikha de
+[C#m]                     [A]
+Jhoothi sahi magar tasalli toh dila de
+[D]             [G#]
+Ve ki karan ve ki karan
+
+
+[CHORUS]
+[C#m]
+Ranjhan de yaar bulleya
+[A]
+Sun le pukaar bulleya
+[B]
+Tu hi toh yaar bulleya
+[C#m]             [B]
+Murshid mera (murshid mera)
+
+[C#m]
+Tera mukaam kamle
+[A]
+Sarhad ke paar bulleya
+[B]
+Parvardigar bulleya
+[C#m]             [B]
+Hafiz tera (murshid mera)
+
+[C#m]
+Ranjhan de yaar bulleya
+[A]
+Sun le pukaar bulleya
+[B]
+Tu hi toh yaar bulleya
+[C#m]             [B]
+Murshid mera (murshid mera)
+
+
+[VERSE]
+[C#m]                    [B]
+Main kabul se mitti titli ki tarah muhajir hoon
+[A]                       [E]
+[E]k pal ko thehrun, pal mein udd jaun
+        [C#m]                     [B]
+Ve main ta hoon pagdandi Labhdi ae jo raah jannat di
+[A]                       [E]
+Tu mude jahaan main saath mud jaun
+
+[C#m]                     [A]
+Tere kaarwa mein shaamil hona chahun
+[C#m]                     [A]
+Kamiyan tarash ke main kaabil hona chahun
+[D]             [G#]
+Ve ki karan ve ki karan
+
+
+[CHORUS]
+[C#m]
+Ranjhan de yaar bulleya
+[A]
+Sun le pukaar bulleya
+[B]
+Tu hi toh yaar bulleya
+[C#m]             [B]
+Murshid mera (murshid mera)
+
+(FEMALE)
+
+[C#m]                      [A]
+Jis din se aashna se do ajnabi huve hain
+[B]                         [A]
+Tanhaiyon ke lamhe sab multavi huve hain
+[E]        
+Kyun aaj main mohabbat
+[A]             [G#]
+Phir ek baar karna chahun
+
+Haan…
+
+[C#m]                      [A]
+Ye dil toh dhoondhta hai inkaar ke bahane
+[B]                         [A]
+Lekin ye jism koi pabandiyan na maane
+[E]                      [A]              [G#]
+Milke tujhe, bagaawat khud se hi yaar karna chahun
+
+[C#m]                     [A] 
+Mujhme agan hai baaki aazma le
+[C#m]                   [A]
+Le kar rahi hoon khud ko main tere hawale
+[D]             [G#]
+Ve Raanjhna… Ve Raanjhna…
+
+
+(MALE)
+
+SAYONI
+
+
+Kon [Dm]morae [Bb]muhar [Dm]
+                
+Kon [Dm]morae (F)(C)muhar [Dm]
+
+Kon [Dm]morae [Bb]muhar[Dm][Bb]
+    
+Koi [F]Sanval [C]nahin [Dm]
+
+
+[Dm]Chen ik [Bb]pal [Dm]Nahin
+
+[Dm]Chen ik [Bb]pal [Dm]Nahin
+
+[Dm]Chen ik [Bb]pal [Dm]Nahin 
+
+[Dm]Aur koi [F]hal [C]Nahin [Dm]
+
+Sayonee                         Sayonee
+
+
+(MALE)
+
+[CHORUS]
+[C#m]
+Ranjhan de yaar bulleya
+[A]
+Sun le pukaar bulleya
+[B]
+Tu hi toh yaar bulleya
+[C#m]             [B]
+Murshid mera (murshid mera)
+
+[C#m]
+Tera mukaam kamle
+[A]
+Sarhad ke paar bulleya
+[B]
+Parvardigar bulleya
+[C#m]             [B]
+Hafiz tera (murshid mera)
+
+</pre></body></html>

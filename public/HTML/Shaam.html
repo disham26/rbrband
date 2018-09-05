@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>Shaam</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 500; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+
+
+
+
+
+[D]           [F#m]
+1             2
+Sham bhi koi jaise hai nadi
+[G]         [Em]       [A]
+3           4          5
+Lehar lehar jaise beh rahi hai
+[D]          [F#m]
+1            2
+Koi ankahi, koi ansuni
+[G]         [Em]       [A]
+3           4          5
+Baat dheemi dheemi keh rahi hai
+    [D]      [F#m]     [G]           [A]
+    1        2         3             5
+Kahin na kahin jaagi hui hai koi aarzoo
+    [D]      [F#m]     [G]           [A]
+    1        2         3             5
+Kahin na kahin khoye hue se hain main aur tu
+
+
+[Chorus]
+
+    [D]           [F#m] [G]
+    1             2     3
+Ke boom boom boom para para
+    [Em]     [A]
+    4        5
+Hai khaamosh dono
+    [D]           [F#m] [G]
+    1             2     3
+Ke boom boom boom para para
+    [Em]     [A]
+    4        5
+Hai madhosh dono
+    [D]               [G]
+    1                 3
+Jo gummsum gummsum hai yeh fizayein
+    [Em]                [A]
+    4                   5
+Jo kehti sunti hai yeh nigahein
+   [D]                    [G]          [Gm]
+   1                      3            6
+[G]ummsum gummsum hai yeh fizayein hai na
+
+
+[Interlude]
+
+[A]  [D]   [F#m] [G]    [Em]  [A]
+5    1     2     3      4     5
+   Ha ha ha haaa  x2
+
+
+[Verse]
+
+[D]             [F#m]
+1               2
+Suhani suhani hai yeh kahani
+[G]         [Em]    [A]
+3            4      5
+Jo khamoshi sunaati hai
+[D]             [F#m]
+1               2
+Jise tune chaha hoga woh tera
+[G]         [Em]    [A]
+3            4      5
+Mujhe woh yeh batati hai
+[D]             [F#m]
+1               2
+Main magan hoon par na jaanu
+[G]                  [A]
+3                    5
+Kab aane wala hai woh pal
+[D]               [F#m]
+1                 2
+Jab haule haule dheere dheere
+[G]                [A]
+3                  5
+Khilega dil ka yeh kamal
+
+
+[Chorus]
+
+    [D]           [F#m] [G]
+    1             2     3
+Ke boom boom boom para para
+    [Em]     [A]
+    4        5
+Hai khaamosh dono
+    [D]           [F#m] [G]
+    1             2     3
+Ke boom boom boom para para
+    [Em]     [A]
+    4        5
+Hai madhosh dono
+    [D]               [G]
+    1                 3
+Jo gummsum gummsum hai yeh fizayein
+    [Em]                [A]
+    4                   5
+Jo kehti sunti hai yeh nigahein
+   [D]                    [G]          [Gm]
+   1                      3            6
+[G]ummsum gummsum hai yeh fizayein hai na
+
+
+[Interlude]
+
+[A]  [D]   [F#m] [G]    [Em]  [A]
+5    1     2     3      4     5
+   Ha ha ha haaa  x2
+
+
+[Verse]
+
+[D]                  [F#m]
+1                    2
+Yeh kaisa samay hai, kaisa sama hai
+[G]          [Em]   [A]
+3            4      5
+Ke shaam hai pighal rahi
+[D]                       [F#m]
+1                         2
+Yeh sab kuch haseen hai, sab kuch jawan hai
+[G]         [Em]  [A]
+3           4     5
+Hai zindagi machal rahi,
+ [D]           [F#m]
+ 1             2
+jagmagati jilmilati
+ [G]            [Em]  [A]
+ 3              4     5
+Palak palak pe khwaab hai
+ [D]           [F#m]
+ 1             2
+Sun yeh hawayein gungunaye
+ [G]              [A]
+ 3                5
+Jo geet lajawab hai
+
+
+[Chorus]
+
+    [D]           [F#m] [G]
+    1             2     3
+Ke boom boom boom para para
+    [Em]     [A]
+    4        5
+Hai khaamosh dono
+    [D]           [F#m] [G]
+    1             2     3
+Ke boom boom boom para para
+    [Em]     [A]
+    4        5
+Hai madhosh dono
+    [D]               [G]
+    1                 3
+Jo gummsum gummsum hai yeh fizayein
+    [Em]                [A]
+    4                   5
+Jo kehti sunti hai yeh nigahein
+   [D]                    [G]          [Gm]
+   1                      3            6
+Gummsum gummsum hai yeh fizayein hai na
+
+
+
+
+
+
+
+
+
+
+
+</pre></body></html>

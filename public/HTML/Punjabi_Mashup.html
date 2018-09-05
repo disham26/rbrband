@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>Punjabi Mashup</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 620; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;"onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+
+{Punjabi Mashup
+BPM - 88
+CHORD	PIANO KEY 	COMPUTER KEY
+[Am]  	1 			Z
+[G]		2 			S
+[Em]    3 			X
+[F]		4			D}
+--------------------------------------------
+1. DAARU BADNAAM
+--------------------------------------------
+ni lakh tera patla jeha
+jdo tur di sitara bal khave
+morni ji tor kudiye
+hun mundiya nu hosh kitho aave
+ni naagni di aankh waaliye
+ni naagni di aankh waaliye
+ni naagni di aankh waaliye
+sab keel te tu gabru kanware
+o daaru badnaam krti
+ae ta naina terya de kaare...
+
+o pta kro kede pind di
+kudi gidhe ch karayi att jave
+
+o pta kro kede pind di
+kudi gidhe ch karayi att jave
+
+o dj da kasoor koi na
+kudi chobran te sine aag lave
+
+o dj da kasoor koi na
+kudi chobran te sine aag lave
+
+tu dilan ute kahar krdi
+tu dilan ute kahar krdi
+tu dilan ute kahar krdi
+Gaggi jind jaan tere ute ware
+o daaru badnaam krti
+ae ta naina terya de kaare
+
+
+
+
+------------------------------------
+2. DARU BAND
+------------------------------------
+Utton sikhar dopahran aa
+Kihdi laggi lottery ji
+Thodde purse ch doggy aa
+Dil vich das do ki? (x2)
+
+Kalle kalle kalle kitthe
+Challe challe challe
+Kalle kalle kalle kitthe
+Challe challe challe
+Saanu das ke jaayo zaroor
+(Das ke jaayo zaroor)
+
+Daaru peeni band karti
+Tennu vekh ke chadhe suroor
+Peg laune band karte
+Tennu vekh ke chadhe suroor
+Daaru peeni band karti
+
+Ho ho…
+
+Mehnga mascara paaya akh vich ni
+Nakhre adaavan ne plus vich ni
+Lakk tera kudiye ni patla jeha
+Shiny koka paaya hoya nak vich ni (x2)
+
+Ve mar gaye tere te naare
+Sun beauty diye sarkaare
+
+Naa’ das ke jaayo hazoor
+Das ke jaayo hazoor
+
+Daaru peeni band karti
+Tennu vekh ke chadhe suroor
+Peg laune band karte
+Tennu vekh ke chadhe suroor
+Daaru peeni band karti
+
+
+
+
+
+
+
+
+-------------------------------------------
+3. SNAPCHAT STORY
+-------------------------------------------
+Teri meri jodi wangu Snapchat story
+Kivein mukk gayi naa pata chaleya
+Teri meri story vich teri saari glory
+Main taan raawan vich aivein ruleya (x2)
+
+Vekhi naa kisey bhul ‘ch rahi
+Main takeya hai saara jag hi
+Saare karde ne timepass, Karda ni koi sacha pyar
+
+Kehda lai de tainu Jaguar
+Firaave tainu 5-Star
+Kithon labhegi ni sohniye ni
+Mere jeya dooja koi yaar (x2)
+
+Kudi tu patola, mundeyan ‘ch raula
+Gal sun meri zara hath rakh haula
+Jo vi ae tu kardi saanu ae khabar ni
+Sochi na ne sadde kole kar lengi Ola
+
+Paise di pujari duniya ae saari
+Phir vi main tere piche kitti si khawari
+Ditta tainu dil ni, ditte tere bill vi
+Pher vi tu laayi kisey hor naal yaari
+
+Vekhi naa kisey bhul ‘ch rahi
+Main takeya hai saara jag hi
+Saare karde ne timepass, Karda ni koi sacha pyar
+
+Kehda lai de tainu Jaguar
+Firaave tainu 5-Star
+Kithon labhegi ni sohniye ni
+Mere jeha dooja koi yaar (x2)
+
+
+
+
+
+----------------------------------------
+4. RAAT DI GEDI
+----------------------------------------
+Ho raat di gedi gal risk di
+Taang chhidi aa tere ishq di
+
+Ho raat di gedi gal risk di
+Taang chhidi aa tere ishq di…
+
+O jatt rauleya ‘ch ghoome balliye
+Har chowk hathyar bandh jhalliye
+Light mitran de Bullet de lishk di ho
+
+Ho raat di gedi gal risk di
+Taang chhidi aa tere ishq di
+Raat di gedi gal risk di
+Taang chhidi aa tere ishq di…
+
+Ho tere piche nitt aavaan
+Raat jaag ke langawaan
+Ni tu neendran handaawe
+Te main risk handawaan…
+
+Yaar ghumme tareyaan de chaand’ne
+Kaah ton kare hera pheri haand’ne
+Jaave dekh ke banereya ton khiskdi ho
+
+Ho raat di gedi gal risk di
+Taang chhidi aa tere ishq di
+Raat di gedi gal risk di
+Taang chhidi aa tere ishq di oye…
+
+
+------------------------------------
+5. GUITAR SIKHDA
+------------------------------------
+Enrique da hero sun sun ke
+Tenu karna pyar sikhda
+Munda jattan da ni onh balliye
+Tere karke guitar sikhda
+Tere karke guitar sikhda
+
+Jeb meri khali paisa ik vi nahi
+Tere dad wangu dad mera rich vi nahi
+Tere dad wangu dad mera rich vi nahi
+
+Tainu sach dassan lai ke paise
+Ni main yaaran ton udhar sikhda
+
+Munda jattan da ni onh balliye
+Tere karke guitar sikhda
+Tere karke guitar sikhda
+
+
+
+Hauli hauli tere dil vich vadna
+Gaa gaa ke gaane tenu khush karna
+
+
+Jaani ik din likhu tere layi
+Jidan gaane Gulzar likhda
+Jidan gaane Gulzar likhda
+
+Gaane Gulzar likhda…
+
+Munda jattan da ni onh balliye
+Tere kar ke guitar sikhda
+Tere kar ke guitar sikhda
+
+Enrique da hero sun sun ke
+Tenu karna pyar sikhda
+Munda jattan da ni onh balliye
+Tere kar ke guitar sikhda
+Tere kar ke guitar sikhda…
+
+
+------------------------------------
+6. LAHORE
+------------------------------------
+O lagdi Lahore di aa
+Jis hisaab naa’ hansdi aa
+O lagdi Punjab di aa
+Jis hisaab naa’ takdi aa
+
+O lagdi Lahore di aa
+Jis hisaab naa’ hansdi aa
+Kudi da pata karo
+Kehde pind di aa
+Kehde shehar di aa
+
+Lagdi Lahore di aa
+Jis hisaab naa’ hansdi aa
+O lagdi Punjab di aa
+Jis hisaab naa’ takdi aa
+
+Delhi da nakhra aa
+Style ohda wakhra aa
+Bombay di garmi waang
+Nature ohda athra aa
+
+London ton aayi lagdi aa
+Jis hisaab naa’ chaldi aa
+London ton aayi lagdi aa
+Jis hisaab naa’ chaldi aa
+
+Kudi da pata karo
+Kehde pind di aa
+Kehde shehar di aa
+
+O lagdi Punjab di aa
+O lagdi Lahore di aa
+
+
+Chain mera le gayi aa
+Dil vich beh gayi aa
+Bulliyan te chup ohdi
+Sab kujh keh gayi aa
+
+
+Ankhiyan naa’ goli maar di aa
+Andron pyar vi kardi aa
+Ankhiyan naa’ goli maar di aa
+Andron pyar vi kardi aa
+
+Kudi da pata karo
+Kehde pind di aa
+Kehde shehar di aa
+
+------------------------------------------------------
+7. HORN BLOW
+------------------------------------------------------
+
+Kati fati jean paake
+Brown Ray-Ban laake
+Gali teri gedi maare
+Woofer chala ke (x2)
+
+Tu ta takdi vi nahi
+Nigah rakhdi vi nahi
+Navi gaddi tainu show karda
+
+Ho mudd ke taan vekh soniye
+Munda horn blow karda
+Ho mudd ke taan vekh soniye
+Munda horn blow karda
+
+Ni hawa ch udaave gaddi nu
+Tainu vekh ke slow karda
+
+
+Tu taan manndi ni marjaaniye
+Main tan ghare tainu apna jeha keh leya
+Meri mummy ne tere vaaste
+Aaj baliye ni red chura lai leya
+
+Mera daddy paise wala
+Dress sone di sawala
+Note tere ton throw karda
+
+Ho mudd ke taan vekh soniye
+Munda horn blow karda
+Ho mudd ke taan vekh soniye
+Munda horn blow karda
+
+Ni hawa ch udaave gaddi nu
+Tainu vekh ke slow karda
+
+Kati fati jean paake
+Brown Ray-Ban laake
+Gali teri gedi maare
+Woofer chala ke (x2)
+
+----------------------------------------------------
+8. OSCAR
+----------------------------------------------------
+
+Ni aaja tenu gal dasda
+Dena ae grammy teri akh nu
+Ni aaja tenu gal dasda
+Dena ae grammy teri akh nu
+Je baby mera vass chal da
+
+Je baby mera vass chal da
+Ni main oscar dinda tere lakk nu
+Oscar dinda tere lakk nu
+Oscar dinda tere lakk nu
+Je baby mera vass chal da
+
+Sirron laike pairan tak att goriye
+Mundeya de kaddi ae vatt goriye (x2)
+
+Sadde val nazran vi rakh tu
+Je baby mera vass chal da
+Je baby mera vass chal da
+Ni main oscar dinda tere lakk nu
+Oscar dinda tere lakk nu
+Oscar dinda tere lakk nu
+Je baby mera vass chal da
+
+
+------------------------------------------------
+9. BAN JA TU MERI RANI
+------------------------------------------------
+Ban ja tu meri rani
+Tenu mahal dawa dunga
+Ban meri mehbooba
+Main tenu Taj pawa dunga
+Ban ja tu meri rani
+Tenu mahal dawa dunga
+Ban meri mehbooba
+Main tenu Taj pawa dunga
+Sun meri rani rani
+Ban meri rani rani
+Shahjahaan main tera
+Tenu Mumtaj bana dunga
+Ban ja tu meri rani
+Tenu mahal dawa dunga.
+Badan tere di khushboo
+Mainu sohn na deve ni
+Raatan nu uth uth ke
+Socha baare tere ni
+Badan tere di khushboo
+Mainu sohn na deve ni
+Raatan nu uth uth ke
+Socha baare tere ni
+Sun meri rani rani
+Ban meri rani rani
+Haan karde tu mainu
+Main duniya nu hila dunga
+Ban ja tu meri rani
+Tenu mahal dawa dunga.
+
+
+
+------------------------------------------------
+10. NAAH
+------------------------------------------------
+Oh kudi meinu kehndi
+Mainu jutti le de sohneya
+Main keha naah goriye
+Na na na naah goriye
+
+Ho kann jhumke nu
+Tarasde reh gaye sohneya
+Main keha naah goriye
+Na na na naah goriye
+
+Ikko cheez mere kol pyar baliye
+Aiven na gareeba nu tu maar sohneya
+Ikko cheez mere kol pyar baliye
+Aiven na gareeba nu tu…
+
+Saari duniya de kendi bangle pai gaye sohneya
+Main keha naah goriye
+Na na na naah goriye
+
+Oh kudi meinu kehndi
+Mainu jutti le de sohneya
+Main keha naah goriye
+Na na na naah goriye
+
+Kudi mainu kehndi
+Oh kudi mainu kehndi
+Oh kudi mainu kehndi
+
+Je tu nakhre karne aa
+Kisey hor kol kar jaani
+Mainu pyar nahi je de sakdi
+Jaa doob ke mar jaa ni
+
+O je tu karne aa haaye baby nakhre
+Kisey hor kol kar jaani
+Mainu pyar nahi je de sakdi
+Jaa doob ke mar jaa ni
+
+Kehndi mere kole
+Suit do hi reh gaye sohneya
+Main keha naah goriye
+Na na na naah goriye
+
+Oh kudi meinu kehndi
+Mainu jutti le de sohneya
+Main keha naah goriye
+Na na na naah goriye
+Oh kudi meinu kehndi…
+
+(Kudi meinu kendi!)
+
+Mera kade kade jee karda
+Ke chhad devaan tenu
+Tu kade vi khush nahi hona
+Mere ton pataa mainu (x2)
+
+Oh kehndi tere warge
+Jaani chhatti hege sohneya
+Main keha naah goriye
+Na na na naah goriye
+
+Oh kudi meinu kehndi
+Mainu jutti le de sohneya
+Main keha naah goriye
+Na na na naah goriye
+Oh kudi meinu kehndi!
+
+(Kudi meinu kendi!)
+(Kudi meinu kendi!)
+
+
+
+------------------------------------------------
+11. NA JA
+------------------------------------------------
+Ni kudiye tu alright
+Aaja ni re I won't bite
+Lage tu mainu sexy
+Tahin main jaaga all night
+
+Karave ni tu murder
+Oh bhaven hove daylight
+Jhakaas teri body
+I fell in love at first sight
+
+Kunwariya ton sohni ae te main vi aa kunwara
+Chadh di jawani hunn lutt le nazara
+Je na mainu karti ni puchna dobara
+Fer rotiyan pakayi naale mere gaane gayi
+
+Na ja, na ja. na ja mitran ton door
+Ambran ton aayi tu lagdi ae hoor
+Att tera nakhra tera ki kasoor
+Mainu vi pasand tu kardi zaroor
+
+
+Sohni badi lagdi ae
+Jad kurti bhaven kale rang di
+Thoda jeha mere nede aa kar
+Utte ae lagda nazre sab di
+
+Lakk tera hil da ae
+Jeve paani de vich hil di supni
+Tu ajj mainu roki na
+Tere kolon haan kara ke chadh ni
+
+Kunwariya ton sohni ae te main vi aa kunwara
+Chadh di jawani hunn lutt le nazara
+Je na mainu karti ni puchna dobara
+Fer rotiyan pakayi naale mere gaane gayi
+
+Na ja, na ja. na ja mitran ton door
+Ambran ton aayi tu lagdi ae hoor
+Att tera nakhra tera ki kasoor
+Mainu vi pasand tu kardi zaroor
+
+------------------------------------------------
+12. HIGH RATED GABRU
+------------------------------------------------
+
+Haye ni haye nakhra tera ni
+High rated gabru nu maare
+Haye ni munde paagal ho gaye ne
+Tere gin gin lakk de hulaare
+
+Teri tedhi tedhi takkni kamaal kar gayi
+Ankhan na ankhan na tu sawaal kar gayi
+
+Haan haan...
+Teri tedhi tedhi takkni kamaal kar gayi
+Ankhan na ankhan na tu sawaal kar gayi
+
+Daily de kinne marde ne
+Te kinne pehla tu maare
+
+Haaye ni haaye nakhra tera ni
+High rated gabru nu maare
+Haaye ni munde paagal ho gaye ne
+Tere gin gin lakk de hulaare
+
+Nakk vich paaya koka
+Kehar kamaunda aa
+Hath vich paaya chooda
+Hath vi na aunda aa
+
+Tere te shartan la la ke (baby!)
+Roz kinne ne haare
+
+Haaye ni haaye nakhra tera ni
+High rated gabru nu maare
+Haaye ni munde paagal ho gaye ne
+Tere gin gin lakk de hulaare
+
+(Hun ye nakhra...)
+
+Guru de haaye dil te
+Dimaag utte chha gayi
+Beautiful hoju je tu zindagi 'ch aa gayi
+
+Mainu hun chhed de rehnde ne
+Sab puchde ne tere baare
+
+Haaye ni haaye nakhra tera ni
+High rated gabru nu maare
+Haaye ni munde paagal ho gaye ne
+Tere gin gin lakk de hulaare
+
+
+
+
+
+
+
+
+
+
+
+
+</pre></body></html>
+

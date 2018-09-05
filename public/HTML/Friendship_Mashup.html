@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>Friendship Mashup</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 120; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+Friendship Mashup
+BPM - 88
+CHORD	PIANO KEY 	COMPUTER KEY
+G   	1 			Z
+C  		2 			S
+Em 		3 			X
+D		4			D
+Am		5			C
+G#m     6           V
+A#m     7           G
+E       8           B
+D       9           H
+
+Songs:
+1. Ye Number one yaari hai
+2. Tera Yaar Hu Main
+3. Yeh Dosti Hum Nahin Todenge
+4. Tere Jaisa Yaar Kahaan
+5. Yaaron Dosti
+
+
+-----------------------------------------------------------------
+1. Ye Number one yaari hai
+-----------------------------------------------------------------
+[D]Har aashmaan se oonchi [Cadd9]hai
+[D]Samundaron se [G] gehri
+
+[Em7] Aisi waisi dosti [Cadd9] nahin
+[Em7] Aisi waisi dosti [Cadd9] nahin
+[Am] Ye number 1 yaari [C] hai
+[Am] Ye number 1 yaari [C] hai
+[D] Ye number 1 yaari [G] hai
+
+[G] Chhaaon mein dhoop mein
+[F] Jaane kitne roop mein
+[Am] Ye tapi hai, [C] ye jali hai
+[G] Sona banke yeh mili
+[Cadd9] Galiyon se guzri hai
+[Am] Barson sanwri hai
+
+[D] Aisi waisi dosti [Cadd9] nahin
+[D] Yeh No. 1 yaari [G] hai
+[D] Yeh No. 1 yaari [G] hai
+
+-----------------------------------------------------------------
+2. Tera Yaar Hu Main
+-----------------------------------------------------------------
+[Verse]
+[G]             [C]
+Tu jo rootha toh kaun hansega
+[G]             [C]   
+Tu jo chhoota toh kaun rahega
+[G]             [C]
+Tu chup hai toh yeh darr lagta hai
+[G]             [C]
+Apna mujhko ko ab kaun kahega
+
+[Em]
+Tu hi wajah
+[D]      [Am]    [C]
+Tere bina bewajah bekar hoon main
+
+[Chorus]
+              [G]   [C]
+Tera yaar hoon main
+              [G]   [C]
+Tera yaar hoon main
+
+[Interlude]
+[G]-[Em]-[C]-[D]
+[G]-[Em]-[C]-[D]
+
+[Verse]
+[G]                       [Em]
+Aaja ladein phir khilono ke liye
+  [C]             [D]
+Tu jeete main haar jaaun
+[G]                  [Em]
+Aaja karein phir wohi shararatein
+  [C]              [D]
+Tu bhaage main maar khaaun
+
+[Em]         [D]
+Meethi si woh gaali teri
+[Am]     [C]
+Sun’ne ko taiyaar hoon main
+
+[Chorus]
+             [G]   [C]
+Tera yaar hoon main
+             [G]   [C]  
+Tera yaar hoon main
+         [G]   [Em] [G] [D]
+Tera yaar hoon
+
+-----------------------------------------------------------------
+3. Tere Jaisa Yaar Kahaan
+-----------------------------------------------------------------
+[G]
+Meri zindagi sawaari
+[G]
+Mujhko gale lagake
+ [C]
+Baitha diya falak pe
+ [D]            [G]
+Mujhe khaak se oothake
+
+[Chorus]
+[G]              [D]
+Yaara teri yaari ko
+[C]               [G]
+Maine to khuda mana
+[G]             [D]
+Yaad karegi duniya
+[C]             [G]
+Tera mera afsana
+
+[G]               [D]
+Tere jaisa yaar kahan
+[C]               [G]
+Kahan aisa yaarana
+[G]             [D]
+Yaad karegi duniya
+[C]             [G]
+Tera mera afsana
+
+-----------------------------------------------------------------
+4. Yeh Dosti Hum Nahi Todenge
+-----------------------------------------------------------------
+[G]             [C]        
+Ae meri jeet teri jeet, 
+[G]               [C]
+teri haar meri haar
+[G]
+Sun ae mere yaar
+[G]           [C]       
+Tera gham mera gham, 
+[G]                [C]
+meri jaan teri jaan
+[G]
+Aisa apna pyaar
+
+[G]               [D]    
+Jaan pe bhi khelenge, 
+               [G]
+tere liye le lenge
+[G]               [D]
+Jaan pe bhi khelenge, 
+               [G]
+tere liye le lenge
+[G]
+Sab se dushmani
+
+[G]
+Yeh dosti hum nahin todenge
+[C]            [D]    
+Todenge dam magar 
+      [G]
+tera saath na chhodenge
+
+-----------------------------------------------------------------
+5. Yaaron Dosti
+-----------------------------------------------------------------
+
+[D]         [G]      [D]            [G]     [A]    
+Yaaron, dosti bari hi haseen hai
+         [D]      [G]           [D]                   [G]   [A]  
+Ye na ho to, kya phir, bolo yeh zindagi hai
+      [Bm]        [G]    
+Koi to ho razdaar
+       [D]              Em  
+Begaraz tera ho yaar
+     [Bm]           [D]      
+Koi to ho raazdaar *
+
+[D]          [G]            [D]              [G]    [A]   
+Yaaron, mohabbat hi to bandagi hai
+         [D]      [G]         [D]                    [G]  [A]   
+Ye na ho to kya phir bolo yeh zindagi hai
+     [Bm]             [G]     
+Koi to dilbar ho yaar
+[D]                    Em   
+Jisko tujhse ho pyar
+     [Bm]             [D]     
+Koi to dilbar ho yaar *
+
+[Bm]        [F#m]          [G]                [D]    
+Teri har ek buraee pe dante woh dost
+[Bm]              [F#m]                     [G]              [D]       [G]
+[G]ham ki ho dhoop to saaya bane tera woh dost
+[G]                   [D]           [A]       
+Nache bhi woh teri khushi se
+
+[D]         [G]      [D]            [G]     [A]    
+Yaaron, dosti bari hi haseen hai
+         [D]      [G]           [D]                   [G]   [A]  
+Ye na ho to, kya phir, bolo yeh zindagi hai
+      [Bm]        [G]    
+Koi to ho razdaar
+       [D]              Em  
+Begaraz tera ho yaar
+     [Bm]           [D]      
+Koi to ho raazdaar *
+
+</pre></body></html>

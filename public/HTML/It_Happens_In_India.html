@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>It Happens Only In India</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 120; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+
+Jaahan Paanv Mein Paayal,
+Haath Mein Kangan
+Ho Maathe Pe Bindiya
+
+It Happens Only In India
+It Happens Only In India
+
+Jahaan Jung Pe Jaaye Sipaahi
+Toh Khud Sajani Tilak Lagaaye
+Aa Aa Aa Aa Aa….
+
+Muh Se Toh Kuchh Na Bole
+Chupake Chupake Nir Bahaaye
+
+Aur Ashkon Se Apane
+Likhakar Bheje Pyaar Ki Chiththiya
+It Happens Only In India
+It Happens Only In India
+
+Jahaan Din Nikale Sunkar
+Shlok Gurbaani Aur Azaan
+Jahaan Mazhab Se Uncha Hai
+Insaan Saare Ek Samaan
+Are Aanch Nahi Hai Saanch Ko
+Chaahe Dekh Le Saari Duniya
+It Happens Only In India
+It Happens Only In India
+Shabari Ke Khaake Ber
+Raam Ne Prem Ki Pratha Chalaayi
+Shabari Ke Khaake Ber
+Raam Ne Prem Ki Pratha Chalaayi
+Meera Ne Pikar Jehar Ka
+Pyaala Preet Ki Reet Nibhaayi
+Jahaan Prem Ki Dhun Pe
+Gopiyon Sang Naache Krishna Kanhaiya
+Kahin Hota Hai Re Bhaiya
+It Happens Only In India
+It Happens Only In India
+Saawan Ke Jhule Kahin Pe
+Baisaakhi Ke Mele
+Are Saawan Ke Jhule Kahin Pe
+Baisaakhi Ke Mele
+Lagata Hai Khud Kudrat
+Iss Dharati Pe Aakar Khelein
+Jahaan Maa Se Lori Sune
+Bina Bachchon Ko Na Aaye Nindiya
+It Happens Only In India
+It Happens Only In India
+Prem Kahaani Mere Desh Ki,
+Ek Se Ek Niraali
+Jahaan Sohni Ne Mahiwaal Ke
+Khaatir Apani Jaan Gawaayi
+Jahaan Raanjhe Ne
+Heer Ki Ik Pal Na Sahi Judaayi
+Aa Aa Aa Aa…
+Jahaan Sohni Ne Mahiwaal Ke
+Khaatir Apani Jaan Gawaayi
+Aur Raanjhe Ne
+Heer Ki Ik Pal Na Sahi Judaayi
+Jahaan Shirin Aur Farhaad Ke
+Ishq Mein Bahin Dudh Ki Nadiya
+It Happens Only In India - 8
+
+
+</pre></body></html>

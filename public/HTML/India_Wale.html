@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>SongScroller Template</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 120; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+[BPM 110]
+
+[B]      [E]         [B]
+Ho maane ya koi maane na
+[B]
+Yahaan apni bhi thodi adaa thoda andaaz hai
+[B]
+Aise hain chaahe waise hain
+                [E]
+Arey jo bhi hain jaise hain
+[B]
+Khud pe humein naaz hai
+
+[A]
+Jaane na humko ye zamaana
+                [B]
+Chaaho to humko aazmaana
+[B]
+Hum yaar-baaz hum jaal-saaz
+[B]
+Hum ishq-baaz dilwaale
+                        [A] 
+Kehte hain humko pyar se India waale
+[B]
+Chhu lete dil ke taar se India waale
+                        [A]
+Har jeet cheen le haar se Indiawaale
+[Bm]              [A]           [B]  
+Dushman ke chakke chhuda de hum Indiawale
+[Bm]              [A]           [B]  
+Dushman ke chakke chhuda de hum Indiawale
+
+
+
+[B]              [C#m]
+Yun toh seedhe bade..
+                                          [B]
+Kabhi chahein to hathon se lete laqeerein chura
+[B]              [C#m]
+O.. humko parwaah nahi
+                                          [B]
+Jo bhi kehta hai, kehne de jag ye bhala ya bura
+[A]              [C#m]
+Jaisi bhi marzi ho humaari
+[A]              [E]
+Karte hain aisi hoshiyaari
+[B]
+Par dil se yaar jo le pukaar
+[B]
+To jaan nisaar kar daale
+[B]                     [A]
+Kehte hain humko pyar se India wale
+[B]
+Chhu lete dil ke taar se India wale
+                          [A]
+Har jeet cheen le haar se Indiawaale
+[Bm]             [A]            [B]
+Dushman ke chakke chhuda de hum Indiaawale
+[Bm]             [A]            [B]
+Ungli pe sabko nachaa dein hum Indiawaale
+
+
+</pre></body></html>

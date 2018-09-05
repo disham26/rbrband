@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>SongScroller Template</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 320; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+Tempo-164
+Chords
+Cm 1
+A# 2
+G# 3
+Fm 4
+C 5
+F 6
+
+01-Pungi - Agent Vinod
+02-Afghan Jalebi
+03-Jumme Ki Raat
+07-Dekha na haaye re
+05-Khalnaayak
+04-Saari Ke Fall Sa
+05-Gandi Baat
+06-Chinta ta chita chita
+07-My Name is Lakhan
+11-Boyfriend Bana Le
+08-Kallu Mama
+09-Tujhko Mirchi Lagi to
+10-Ek Do Teen
+
+
+
+[Cm] [A#] [G#] [Fm] [C] [F]
+
+-------------------------------------------------------
+01-Pungi - Agent Vinod
+-------------------------------------------------------
+
+1
+bangle ke peeche hai taala, ghusu kaha se main saala..laila ki khidki khuli hai, khidki ke neeche hai naala..
+2
+khidki pe koi khada hai, laila ka taanka bhida hai..maje udati hai meri mohabbat ki 
+3        1
+booch maarke
+
+4                        2
+Oo meri jaan..Oo meri (2)jaan..
+         3            1
+..mere ko majnu bana kar..
+4                        2
+..kaha chal di..kaha chal di..
+         3            1
+..pyaar ki pungi baja kar
+
+
+
+------------------------------------------------------------
+02-Afghan Jalebi
+------------------------------------------------------------
+Verse:
+1
+Makhtool jigar (ya baba)
+1
+Qaatil hai nazar (ya baba)
+1
+Ik mehjabin (ya baba)
+1
+Ik noor-e-nabin (ya baba)
+1
+Rab ki rubaai (ya baba)
+1
+Ya hai tabaahi (ya baba)
+1
+Gardan surahi (ya baba)
+1
+Boli ilaahi (ya baba)
+1
+Afghan Jalebi
+2
+Mashooq farebi
+3 2 1
+Ghayal hai tera deewana bhai wah, bhai wah
+1 2
+Bandook dikha ke kya pyar karegi
+3 2 1
+Chehra bhi kabhi dikhana bhai wah bhai wah
+1
+Afghan Jalebi
+2
+Mashooq farebi
+3 2 1
+Ghayal hai tera deewana bhai wah, bhai wah
+1 2
+Bandook dikha dikha ke kya pyar karegi
+3 2 1
+Chehra bhi kabhi dikhana bhai wah bhai wah
+
+
+
+Verse:
+1
+O.. dekh darazi (wallah)
+1
+Banda namazi (wallah)
+1
+Khel ke baazi (wallah) Khamakha
+2 3
+Ab thehra na kisi kaam ka (wallah, wallah..)
+1
+Heer ka koi (wallah)
+2
+Sher suna ke (wallah)
+3 2
+Ghoont laga ke (wallah) jaam ka
+2 3
+Mera khan mehaz naam ka
+2
+Oye lakht-e-jigar (ya baba)
+3
+Oye noor-e-nazar (ya baba)
+2
+Ek teer hai tu (ya baba)
+3
+Main chaak jigar (ya baba)
+1 2
+Bandon se nahin to Allah se daregi
+3 2 1
+Waada to kabhi nibhana bhai wah, bhai wah
+
+Chorus:
+1 2
+Bandook dikha dikha ke kya pyar karegi
+3
+Chehra bhi kabhi dikhana bhai wah
+2 1
+bhai wah bhai wah bhai
+
+1
+Khawaja ji ki paas teri chugli karunga
+1
+Main teri chugli karunga
+1
+Haan teri chugli karunga
+1
+Angoothi mein qaid teri ungli karunga
+1
+Main teri chugli karunga
+1
+Haan teri chugli karunga (x2)
+1
+Gul-e-gulzar (ya baba)
+1
+Mere sarkar (ya baba)
+1
+Bade manshoor (ya baba)
+1
+Tere rukhsaar (ya baba)
+1
+Haaye shamsheer nigaahein
+G
+Chaabuk si adaayein
+3 2 1
+Nacheez pe na chalana bhai wah, bhai wah
+
+Chorus:
+1 2
+Bandook dikha dikha ke kya pyar karegi
+3 2 1
+Chehra bhi kabhi dikhana bhai wah, bhai wah.
+
+
+---------------------------------------------------
+03-Jumme Ki Raat
+---------------------------------------------------
+1                    2 1
+Arey jumme ki raat hai
+1
+Arey jumme ki raat hai
+1
+Chumme ki baat hai
+1
+Allah bachaaye mujhe tere waar se
+
+1 2 1
+
+1
+Jaane kya hona hai
+1
+Jaane kya khona hai
+1
+Teri jawaani toh jaadu hai tona hai
+1
+Jalwon mein aandhi hai
+1
+Aandhi mein toofaan hai
+1
+Karde na mujhko tabaah
+
+1 2 1
+
+5
+Saari ki saari hai tu golabaari
+5                     2
+Ki mushqil hai khud ko bachaana
+6 
+Maar hi na daale
+2 
+Meri jaan nikaale
+     5
+Uff Allah bachaay mujhe
+5
+Haaye tere pyaar se
+
+1 2 1
+
+1
+Arey jumme ki raat hai
+1
+Chumme ki baat hai
+1
+Allah bachaaye mujhe tere waar se
+
+1 2 1
+
+
+-----------------------------------------------------
+04-Dekha na haaye re
+-----------------------------------------------------
+C                C                 C                    F
+Dekha na haay re sochaa na haay re rakh dii nishaane pe jaan
+
+F                Bb                         C
+Kadamon men tere nikale meraa dil hai bas yahii aramaan
+[2x]
+
+C                                                            F
+Dole Dole Dole ae ae ,Dole Dole Dole ae ae , Dole Dole ae ae aae
+
+C                                   F
+Mit jaayenge mar jaayenge, kaam koi kar jaayenge
+
+Bb                           Bb       C
+Marake bhi chain na mile, to jaayenge yaaron kahaan
+[2x]
+
+Are oho ...  Huun huun huun
+
+
+
+------------------------------------------------------------
+05-Khalnayak
+------------------------------------------------------------
+
+Naayak nahi khalanaayak hai tu
+Naayak nahi khalanaayak hai tu
+Zulmi bada duhkhadaayak hai tu
+Is pyar ki tujko kya kadar
+Is pyaar ke kaha layak hai tu
+Naayak nahi khalanaayak hoon main
+Naayak nahi khalanaayak hoon main
+Zulmi bada duhkhadaayak hoon main
+Hai pyaar kya mujhako kya khabar
+Bas yaar nafarat ke laayak hoon main
+Naayak nahi khalnaayak hoon main
+
+
+------------------------------------------------------------
+06- Saari Ke Fall Sa
+------------------------------------------------------------
+
+Saree ke fall sa kabhi match kiya re
+Kabhi chhod diya dil kabhi catch kiya re (x2)
+
+Touch karke, touch karke
+Touch karke, touch karke
+Kahaan chaldi bach kar ke
+Touch karke, touch karke
+Touch karke dil se dil attach kiya re
+Kabhi chhod diya dil kabhi catch kiya re
+Saari ke fall sa kabhi match kiya re
+
+
+
+-------------------------------------------------------------
+07-Gandi Baat
+-------------------------------------------------------------
+Beedi peeke nukkad pe, wait tera kiya re
+Khaali peeli attharah (18) cup, chai bhi toh piya re
+Ho...
+Beedi peeke nukkad pe, wait tera kiya re
+Khaali peeli attharah (18) cup, chai bhi toh piya re
+Raja beta ban ke maine jab sharafat dikhaayi
+Tune bola hat mawali bhaav nahi diya re
+A B C D padh li bahut
+Thandi aahein bhar li bahut
+Achchi baatein kar li bahut
+Ab karoonga tere saath
+(Gandi baat, gandi gandi gandi gandi gandi baat)
+(Gandi baat, gandi gandi gandi gandi gandi baat)
+(Gandi baat, gandi gandi gandi gandi gandi baat)
+(Gandi baat, gandi gandi gandi gandi gandi baat)
+
+
+
+
+-------------------------------------------------------------
+08-Chinta ta chita chita
+------------------------------------------------------------
+Duniya chale pichadi
+Toh main chalu agaadi
+Sab khel jaanta hoon
+Main hoon bada khiladi
+Oh ho..
+Duniya chale pichadi
+Toh main chalu agaadi
+Sab khel jaanta hoon
+Main hoon bada khiladi
+Sumdi mein leke jaaun
+Aur sab ko main sikhaun
+Kya?
+Chinta ta ta chita chita
+Chinta ta taa..
+
+------------------------------------------------------------
+09-My Name is Lakhan
+------------------------------------------------------------
+
+Ram Pam Pam Ram Pam Pam Rampa Papam Pam Pam
+Ae Ji O Ji
+Ae Ji O Ji Lo Ji Suno Ji
+Main Hu Man Mauji
+Karta Hu Main Jo Woh Tum Bhi Karo Ji
+One To Ka Four, Four To Ka One
+My Name Is Lakhan
+My Name Is Lakhan
+Sajanon Ka Sajan
+Mera Naam Hai Lakhan
+
+------------------------------------------------------------
+10-Boyfriend Bana Le
+------------------------------------------------------------
+
+Oh, main hoon tera king, oye
+Leke aaya ring, oye
+Ban ja ni aj meri queen tu, haye
+Karan propose oye
+Tareefan roz oye
+Ki dasaa how much haseen tu, aah
+Ja o lafange
+Na ishq me le pange
+Feeling tu dil mein dabale
+Oh, Hawa Hawa Eh Hawa
+Mujhko udaale
+Aaja Aaja Tu mere
+Dil ko Churale
+Ishq wale card pe
+Naam mera likhale
+Beech me hi fasi hai
+Baat aage badhale
+Boyfriend banale
+Kisi aur ko patale
+Haye, boyfriend banale
+Nazrein tu hatale
+Mujhko fasale
+Kisi aur ko patale
+Haye, boyfriend banale
+Nazrein tu hatale
+
+------------------------------------------------------
+11-Kallu Mama
+------------------------------------------------------
+Aye Goli maar bheje mein dhichkiyon
+Ke bheja shor karta hai
+Aye goli maar bheje mein dhichkiyon
+Ke bheja shor karta hai
+Bheje ki sunega to marega Kallu
+Bheje ki sunega to marega Kallu
+Arre tu karega doosra bharega Kallu
+Mama Kallu mama, aye mama Kallu mama
+
+------------------------------------------------------
+12-Tujhko Mirchi Lagi To
+------------------------------------------------------
+Main To Raste Se Ja Raha Tha
+Main To Bhelapoori Kha Raha Tha
+Main To Ladaki Ghuma Raha Tha
+Raste Se Ja Raha Thaa, Bhelapoori Kha Raha Thaa,
+Ladaki Ghuma Raha Thaa,
+Tujhako Mirchi Lagi To Main Kya Karoon
+Tujhako Mirchi Lagi To Main Kya Karoon
+
+--------------------------------------------------------
+13-Ek Do Teen
+--------------------------------------------------------
+
+Ek do teen
+Chaar panch chhe saath
+Aath nau dus gyarah
+Baarah terah (x2)
+
+Tera karun…
+Tera karun din gin gin ke intzaar
+Aaja piya aayi bahaar (x2)
+
+
+</pre></body></html>

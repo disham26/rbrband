@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>Dekhte Dekhte Mashup</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 500; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+
+[Am]
+1
+Rajj ke rulaaya
+[F]
+2
+Rajj ke hansaya
+[Em]           [F]      [G]
+3              2        4
+Maine dil kho ke ishq kamaya
+[Am]             [F]
+1                2
+Maanga jo usne ek sitara
+[Em]            [F]      [G]
+3               2        4
+Humne zameen pe chaand bulaya
+
+
+     [Am]     [D]
+     1        5
+Jo aankhon se.. haaye
+        [Am]                 [D]
+        1                    5
+Wo jo aankhon se ik pal na ojhal huve
+        [Am]                  [D]
+        1                     5
+Wo jo aankhon se ik pal na ojhal huve
+      [G]      [Em]      [Am]
+      4        3         1   
+Laapata ho gaye dekhte dekhte
+ 
+  
+
+[[C]HORUS]
+[Am]
+1
+Sochta hoon…
+    [Am]                 [G]
+    1                    4
+Sochta hoon ke woh kitne masoom thay
+[Am]                        [G]
+1                           4
+Sochta hoon ke woh kitne masoom thay
+        [F]       [G]   [Am]
+        2         4     1
+Kya se kya ho gaye dekhte dekhte
+[Am]                          [G]
+1                             4
+Sochta hoon ke woh kitne masoom the
+        [F]       [G]     [Am]
+        2         4       1
+Kya se kya ho gaye dekhte dekhte
+
+         [Am]               [D]
+         1                  5
+Sochta hoon ke wo kitne masoom thay
+   [Am]                     [D]
+   1                        5
+Sochta hoon ke wo kitne masoom thay
+       [G]          [Em]  [Am]
+       4             3    1
+Kya se kya ho gaye dekhte dekhte
+
+[VERSE]
+[Am]                         [G]
+1                            4
+Woh jo kahte the bichdenge na hum kabhi
+        [Am]                 [G]
+        1                     4
+Woh jo kahte the bichdenge na hum kabhi
+  [F]        [G]      [Am]
+  2          4        1
+Alvida ho gaye dekhte dekhte
+[Am]
+1
+Sochta hoon…
+
+[INSTRUMENTAL]
+[Am] [Em] [Am]
+
+[VERSE]
+[Am]                    [G]
+1                       4
+Ek main ek woh, aur shaamein kayi
+         [F]                  [G]    [C]
+         2                    4       6
+Chaand roshan thay tab aasmaan mein kayi
+    [Am]                [Dm]
+    1                    7
+Ek main ek woh, aur shaamein kayi
+      [F]                [G]        [C]
+      2                  4          6 
+Chaand roshan the tab aasmaan mein kayi
+
+
+     [Am]                 [Dm] 
+     1                    7
+Yaariyon ka wo dariya utar bhi gaya
+       [F]             [G]      [Am]
+       2               4        1
+Aur haathon mein bas ret hi reh gayi
+
+
+
+     [Am]   [D]
+     1      5
+Koi puche ke.. haaye
+     [Am]              [D]
+     1                 5
+Koi puche ke humse khata kya hui
+     [Am]              [D]
+     1                 5
+Koi puche ke humse khata kya hui
+       [G]            [Em]  [Am]
+       4               3    1
+Kyun khafa ho gaye dekhte dekhte
+
+[CHORUS]
+     [Am]                   [G]
+     1                      4
+Aate jaate thhe jo saans ban ke kabhi
+      [Am]                   [G]
+      1                      4
+Aate jaate thhe jo saans ban ke kabhi
+      [F]       [G]     [Am]
+      2         4       1
+Woh hawa ho gaye dekhte dekhte
+    [F]        [G]
+    2          4
+Woh hawa ho gaye.. haaye…
+    [C]  [G]
+    6    4
+Oh ho ho…
+    [C]  [G]
+    6    4
+Oh ho ho…
+
+      [F]           [Am]
+      2             1
+Woh hawa ho gaye dekhte dekhte
+   [Am]            [F]
+   1               2
+Alvida ho gaye dekhte dekhte
+   [F]            [Am]
+   2              1
+Lapata ho gaye dekhte dekhte
+    [Am]              [F]
+    1                 2
+Kya se kya ho gaye dekhte dekhte
+
+Mere Rashke Qamar
+
+[Am]                 [F] 
+1                    2
+O baehijaabana woh saamne aa gaye,
+ [G]               [F]   [Am]
+ 4                 2     1
+aur jawaani jawaani se takra gayee
+
+
+ [Am]               [G] 
+ 1                  4
+aankh unki lari, yun meri aankh se,
+ [F]                    [G]     [Am]
+ 2                      4       1
+dekh kar yeh larayee, mazah aa gaya
+
+
+ [Am]                 [G] 
+ 1                    4
+mere rashk-e-qamar, tu ne pehli nazar,
+ [F]                  [G]      [Am]
+ 2                    4        1
+jab nazar se milayee, mazah aa gaya
+
+
+
+[Am]                 [F] 
+1                    2
+aankh mein thi haya, har mulaaqat per,
+ [G]               [F]   [Am]
+ 4                 2     1
+surkh aarid hue wasl kee baat per
+ [Am]                 [G] 
+ 1                    4     
+ussne sharma ke mere sawaalat pe,
+ [F]                  [G]      [Am]
+ 2                    4        1
+aisay gardann jhukayee, mazah aa gaya
+
+
+
+Dekhte Dekhte
+
+
+       [Am]                [D]
+       1                   5
+Jeene marne ki hum the wajah aur hum hi
+       [Am]               [D]
+       1                  5
+Jeene marne ki hum the wajah aur hum hi
+   [G]              [Em]     [Am]
+   4                3        1
+Bewajah ho gaye dekhte dekhte…
+
+
+[CHORUS]
+[Am]
+1
+Sochta hoon…
+                           [G]
+                           4
+Sochta hoon ke woh kitne masoom thay
+[Am]                        [G]
+1                           4
+Sochta hoon ke woh kitne masoom thay
+        [F]       [G]   [Am]
+        2         4     1
+Kya se kya ho gaye dekhte dekhte
+[Am]                          [G]
+1                             4
+Sochta hoon ke woh kitne masoom the
+        [F]       [G]     [Am]
+        2         4       1
+Kya se kya ho gaye dekhte dekhte
+
+
+</pre></body></html>
+
+
+
+
+
+
+

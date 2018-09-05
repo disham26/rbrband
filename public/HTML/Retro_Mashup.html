@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>Retro Mashup</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 320; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;"onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+Retro Mashup 1
+BPM - 95
+CHORD	PIANO KEY 	COMPUTER KEY
+F#  	1 			Z
+B  		2 			S
+C# 		3 			X
+D#m		4			D
+G#		5			C
+G#m     6           V
+A#m     7           G
+E       8           B
+D       9           H
+
+Songs:
+1. EK AJNABEE HASEENA SE
+2. Chaudhvin Ka Chand
+3. Kabhi Kabhi Mere Dil Mein
+4. Pyaar Deewana Hota Hai
+5. Tujhse Naraz Nahi Zindagi
+6. Kya Hua Tera Wada
+7. Ek Pyar Ka Nagma Hai
+8. Raat Kali Ek Khwab Mein Aayi
+9. Khwab Ho Tum Ya Koi Haqeeqat
+10.Samne Yeh Kaun Aaya
+11.Pal Bhar Koi Hame Pyar Karle
+12.Chala Jaata Hoon
+13.Haal Kaisa Hai Janab Ka
+14.Yeh Shaam Mastani
+15.Musafir Hoon Yaaron
+16.Chhod Do Aanchal
+
+------------------------------------------
+1. EK AJNABEE HASEENA SE
+------------------------------------------
+
+
+1            2       3      1
+Ek Ajnabi Hasina Se Yun Mulaaqat Ho Gayi
+1                  2
+Phir Kya Hua Yeh Na Poochho
+          3    2  1
+Kuch Aisi 2aat Ho Gayi
+1            2       3      1
+Ek Ajnabi Hasina Se Yun Mulaaqat Ho Gayi
+1                  2
+Phir Kya Hua Yeh Na Poochho
+          3    2  1
+Kuch Aisi 2aat Ho Gayi
+
+
+
+
+4    
+Wo Achanak Aa Gayi
+               3
+Yun Nazar Ke Saamne
+5                      1         
+Jaise Nikal Aaya Ghata Se Chaand 
+2
+Chehre Pe Zulfen
+1
+2ikhri Hui Thi
+3             1
+Din Mein Raat Ho Gayi
+1            2       3      1
+Ek Ajnabi Hasina Se Yun Mulaaqat Ho Gayi
+
+
+
+
+-----------------------------------------------
+2. Chaudhvin Ka Chand
+-----------------------------------------------
+
+      1                2         1        
+Chaudhvin ka chand ho, ya afatab ho
+3               6           	2      1
+Jo bhi ho tum, khuda ki qasam, lajavab ho
+      1     
+Chaudhvin ka chand ho
+
+1                 2         6           1     
+Zulfen hain jaise kandhe pe badal jhuke hue
+1                 2         6           1     
+Ankhen hain jaise meay ke payale bhare hue
+2                6             3         1
+Masti hai jis me pyaar ki tum, vo sharab ho
+
+
+--------------------------------------------
+3. Kabhi Kabhi Mere Dil Mein
+--------------------------------------------
+
+1                   4           3      1
+Kabhi kabhi mere dil mein khayaal aata hai
+1                   4           3      1
+Kabhi kabhi mere dil mein khayaal aata hai
+             1      4           3    2
+Ki jaise tujhko banaya gaya hai mere liye
+             1      4           3    2
+Ki jaise tujhko banaya gaya hai mere liye
+
+
+
+           1       7         3          1
+Tu abse pehle sitaaron mein bas rahi thi kahin
+           1       7         3          1
+Tu abse pehle sitaaron mein bas rahi thi kahin
+           1        4          3    2
+Tujhe zameen pe bulaya gaya hai mere liye
+           1        4          3    2
+Tujhe zameen pe bulaya gaya hai mere liye
+
+
+
+1                   4           3      1
+Kabhi kabhi mere dil mein khayaal aata hai
+        1        4            3      2
+Ki jaise bajti hain shehnaaiyaan si raahon mein
+                    4           3       2
+Suhaag raat hain ghoonghat utha raha hoon main
+                    4           3       2
+Suhaag raat hain ghoonghat utha raha hoon main
+      1          4             3     2
+Simat rahi hai tu sharma ke apni baahon mein
+      1          4             3     2
+Simat rahi hai tu sharma ke apni baahon mein
+
+
+
+
+-----------------------------------------------------
+4. Pyaar Deewana Hota Hai
+-----------------------------------------------------
+
+1       8                2
+Shamma Kahe Par Wanay Say,  Pare Chala Ja        
+3m                    8      1
+Meree Tarhaan Jal Jaye Ga,  Yahan Nahein Aaa             
+1        8            8      1
+Woh Nahein Sunta usko, Jal Jana Hota Hai
+1            8               8      1
+Har Khushi Say Har Gham Say,  2aigana Hota Hai
+
+
+1        8               8      1
+Pyar Deewana Hota Hai,    Mastana Hota Hai
+1            8               8      1
+Har Khushi Say Har Gham Say,  2aigana Hota Hai
+
+
+-------------------------------------------------
+5. Tujhse Naraz Nahi Zindagi
+-------------------------------------------------
+
+1            7 
+Jeene Ke Liye Sochaa Hi Nahi 
+2              1 
+Dard Sambhaalane Honge 
+1             7 
+Muskuraaye To, Muskuraane Ke 
+2         1 
+Karz Utarne Honge 
+2 
+Muskuraauun Kabhii To Lagataa Hai 
+3               1 
+Jaise Honthon Pe Karz Rakhaa Hai 
+1                2            2                 2
+Ho Tujhse Naaraaz Nahiin Zindagi Hairaan Hoon Main 
+1
+O... Hairaan Huun Main 
+
+
+1             2            2                 
+Tujhse Naaraaz Nahiin Zindagi Hairaan Hoon Main 
+1 
+O Hairaan Huun Main
+1         2         2                   2 
+Tere Masum Sawaalon Se Pareshaan Hoon Main 
+
+1 
+O... Pareshaan Hoon Main 
+
+
+----------------------------------------------------
+6. Kya Hua Tera Wada
+----------------------------------------------------
+           2
+Yaad hai mujhko toone kaha tha
+                 3     1
+Tumse nahin roothenge kabhi
+         2 
+Dil ki tarah se aaj mile hain
+                3       1
+Kaise bhala chhootenge kabhi
+1                          3
+Teri baahon mein beeti har shaam
+2               1  3    1
+2ewafa yeh bhi kya yaad nahin
+
+
+
+ 1  2         1
+Kya hua tera vaada 
+1   2         1
+woh kasam woh irada
+3        1
+2hoolega dil jis din tumhein
+          3                   1
+Woh din zindagi ka aakhiri din hoga
+1   2         1
+Kya hua tera vaada 
+1   2         1
+woh kasam woh irada
+3        1
+2hoolega dil jis din tumhein
+          3                    1
+Woh din zindagi ka aakhiri din hoga
+1   2        1
+Kya hua tera vaada
+
+
+
+-------------------------------------------
+7. Ek Pyar Ka Nagma Hai
+-------------------------------------------
+1              4 1  1           4 1  
+Ek pyar ka nagma hain, maujo ki ravani hain x2
+
+3           2      
+Zindagi aur kuch bhi nahin,
+3      2      1       
+Teri meri kahani hain    
+
+[Verse 1]
+ 1     3             1  
+Kuch paakar khonaa hain
+          3        1   
+Kuch khokar paana hain
+ 8                 2   4          1  
+Jeewan ka matlab to, aana aur jaana hai
+1              4 1  1        4   1  
+Do pal ke jeewan se, ek umra churani hain
+3           2      
+Zindagi aur kuch bhi nahin,
+3      2      1       
+Teri meri kahani hain
+
+
+--------------------------------------------
+8. Raat Kali Ek Khwab Mein Aayi
+--------------------------------------------
+1         2         1    8
+Raat kali ek khwaab mein ayeee 
+              1
+aur gale kaa haar hui 
+                        3m
+subaho ko jaab hum neend se jaage 
+                 1
+aankh tumhi se chaar huii 
+ 
+ 
+1          2   1
+chaahe kaho ise meri muhabbat 
+        2
+chahe hasin mein uda do 
+1                2                1
+yeh kya hua mujhe, mujhako khabar nahi 
+     3            1
+ho sake tumhi bataa do 
+1                2
+tumne kadam to rakhaa jameen par 
+3                       1
+seenen mein kyon jhankaar hui
+
+-----------------------------------------------
+9. Khwab Ho Tum Ya Koi Haqeeqat
+-----------------------------------------------
+1               2           3
+Khwaab ho tum ya koi hakikat kaun ho tum batalaao
+Der se kitani dur khadi ho, aur karib a jaao
+
+Subah pe jis tarah shaam ka ho gumaan
+Julfon men ek chehara, kuchh jaahir kuchh nihaar
+
+Dhadkanon ne suni ek sada paanw ki
+Aur dil pe laharaai anchal ki chhaanw si
+
+-----------------------------------------------------
+10. Samne Yeh Kaun Aaya
+----------------------------------------------------
+[Chorus 1] :
+1        2          1              1
+Samne yeh kaun aaya, dil mein hui hulchul?
+1          2             1      3     1
+Dekh ke bas ek hi jhalak, ho gaye hum paagal!
+1        2          1              1
+Samne yeh kaun aaya, dil mein hui hulchul?
+1          2             1      3     1
+Dekh ke bas ek hi jhalak, ho gaye hum paagal!
+      3           3           2            2
+Aray, baatein, mulakaatein, hum se bhi to hongi;
+      3         2          1           1
+Aray, hum se, ghulenge, woh aaj nahin to kal!
+1        2          1              1
+Samne yeh kaun aaya, dil mein hui hulchul?
+1          2             1      3     1
+Dekh ke bas ek hi jhalak, ho gaye hum paagal!
+
+
+[Chorus 2] :
+1            1
+La la la la...La la la la...
+2             1
+La la la la...Lal lal la...
+1            1
+La la la la...La la la la...
+2             1
+La la la la...Lal lal la...
+
+
+[Verse 1] :
+1          1       1          1
+Rehna hai yahaan to, dono hain jawaan to,
+   2        2       2     2
+2halaa duur kaise rahenge?
+2           2            2             2
+Maana woh haseen hai, to hum bhi kum naheen hain -
+    3       2       1    1
+Woh maghroor kaise rahenge?
+1          1       1          1
+Rehna hai yahaan to, dono hain jawaan to,
+   2        2       2     2
+2halaa duur kaise rahenge?
+2           2            2             2
+Maana woh haseen hai, to hum bhi kum naheen hain -
+    3       2       1    1
+Woh maghroor kaise rahenge?
+
+
+[Chorus 3] :
+   1            2
+La la la...La la la la...
+   1               3
+La la la la...La la lala...
+1        2          1              1
+Samne yeh kaun aaya, dil mein hui hulchul?
+1          2             1      3     1
+Dekh ke bas ek hi jhalak, ho gaye hum paagal!
+
+
+
+----------------------------------------------------
+11. Pal Bhar Koi Hame Pyar Karle
+---------------------------------------------------
+7                        3        2 
+Pal bhar ke liye koi humme pyaar kar le
+2       1
+Jhoota hi sahi
+
+1                         3        2 
+Pal bhar ke liye koi humme pyaar kar le, 
+3        1
+Jhoota hi sahi
+1                 3     1       
+Do din ke liye koi ikraar kar le
+1                 3   1       
+Do din ke liye koi ikraar kar le
+1
+Jhoota hi sahi
+
+
+[Chorus]
+
+1                         3        2 
+Pal bhar ke liye koi humme pyaar kar le, 
+1
+Jhoota hi sahi
+
+1
+Humne bahut tujhko chup chupke dekha 
+1
+Humne bahut tujhko chup chupke dekha 
+1
+Dil pe khichi hai tere kaajal ki rekha
+2
+Kaajal ke rekha bani laxman ki rekha
+2
+Ho Ho Ho Ho kaajal ki rekha bani laxman ki rekha
+1                 7      1
+Ram mein kyun tune rawan ko dekha
+1                 7      1
+Ram mein kyun tune rawan ko dekha
+1
+khade khidki pe . a ae ae ae ae ae
+1              9
+Khade khidki pe jogi sweekar kar le
+1
+Jhoota hi sahi
+
+
+---------------------------------------------------
+12. Chala Jaata Hoon 
+---------------------------------------------------
+1                      2
+Chala jaata hoo kisike dhun me 
+3                      1
+Dhadakate dil ke tarane liye
+
+Repeat
+
+4                   2
+Milan ki masti bhari yaado me
+4                   1
+Hajaron sapne suhane liyeee 
+..............
+ho hoooo
+4
+Chala jaata hooo
+
+
+
+
+-----------------------------------------------------------------
+13. Haal Kaisa Hai Janab Ka
+----------------------------------------------------------------
+Haal Kaisaa Hai 
+Janaab Kaa?
+Kyaa Khayaal Hai 
+Aap Kaa? 
+Tum To Machal Gaye 
+Ho Ho Ho
+Yuun Hi Fisal Gaye 
+Haa Haa Haa
+
+----------------------------------------------------------------
+14. Yeh Shaam Mastani
+----------------------------------------------------------------
+
+
+(F#)                 (D#m)             (F#)
+Ye shaam mastaanee, madahosh kiye jaaye
+               (B)            (C#)         (F#)
+mujhe dor koee khinche, teree orr liye jaaye
+(F#)                 (D#m)             (F#)
+Ye shaam mastaanee, madahosh kiye jaaye
+               (B)            (C#)         (F#)
+mujhe dor koee khinche, teree orr liye jaaye
+
+(B)               (F#)       (B)        (F#)
+Door rahatee hain too, mere paas aatee nahee
+(B)           (F#)          (B)         (F#)
+hothhon pe ye tere, kabhee pyaas aatee nahee
+(G#m)                  (C#)          (G#)    (F#) (B)  (F#)
+ayesaa lage jaisai ke too, has ke jahar koee piye jaaye
+(F#)                 (D#m)             (F#)
+Ye shaam mastaanee, madahosh kiye jaaye
+               (B)            (C#)         (F#)
+mujhe dor koee khinche, teree orr liye jaaye
+
+
+----------------------------------------------------------------
+15. Musafir Hoon Yaaron
+----------------------------------------------------------------
+F#           B         F#          B  
+Musafir hoon yaaron na ghar hai na tikhana
+B                  F#  B          F#
+Mujhe chalte jaana hai bas chalte jaana
+
+
+F#       E                F#
+Ek raah rukh gayi tho aur judh gayi
+F#       E                F#
+Main mura tho saath saath raha murgayi
+E         B               F#
+Hawaon ke paron par mera ashiana
+Musafir hoon yaaron na ghar hai na tikhana
+Mujhe chalte jaana hai bas chalte jaana
+
+-----------------------------------------------------------------
+16. Chhod Do Aanchal
+-----------------------------------------------------------------
+
+Chhod Do Aanchal Jamaana Kya Kahega
+(O O O Chhod Do Aanchal Jamaana Kya Kahega
+Ha Ha Ha Inn Adaao Kaa Jamaana Bhee Hai Divaana
+Divaana Kya Kahega) - (2)
+Ha Ha Ha Chhod Do Aanchal Jamaana Kya Kahega
+
+
+</pre></body></html>

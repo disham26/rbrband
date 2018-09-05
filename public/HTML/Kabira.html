@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>Kabira</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 120; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+[FEMALE]
+
+Kaisi teri [G]khudgarzi
+Na [D]dhoop chune na chhaaon
+Kaisi teri [G]khudgarzi
+Kisi [D]thor tike na paaon ] x2
+
+[Bm]Ban liya apna paigambar
+[G]Tar liya tu saat samandar
+[Bm]Phir bhi sookha mann ke andar
+[G]Kyun reh ga[A]ya
+
+[MALE]
+
+Re Ka[D]bira maan [G]jaa
+Re Fa[D]qeera maan [G]jaa
+Aaja [A]tujhko pukaare teri parchhaaiyan
+Re Ka[D]bira maan [G]ja
+Re Fa[D]qeera maan [G]ja
+Kaisa [G] tu hai nirmohi kaisa [A] harjaaiya
+
+[G]/[D]/[Bm]/[D]/
+
+
+[MALE]
+
+[G]Tooti chaarpaai wohi
+[D]Thandi purvaai rasta [G]dekhe .. [A] .. [D]
+[G]Doodhon ki malaai wohi
+[D]Mitti ki suraahi rasta [G]dekhe.. [A]
+
+[FEMALE]
+
+Kaisi teri [G]khudgarzi
+Lab na[D]mak rame na misri
+Kaisi teri [G]khudgarzi
+Tujhe [D]preet purani bisri..
+
+[D]Mast Maula, mast Kalander
+[G]Tu hawa ka [D]ek bavandar
+[Bm]Bujh ke yun andar hi andar
+[G]Kyun reh ga[D]ya..
+
+[MALE]
+
+Re Ka[D]bira maan [G]jaa
+Re Fa[D]qeera maan [G]jaa
+Aaja [A]tujhko pukaare teri parchhaaiyan
+Re Ka[D]bira maan [G]ja
+Re Fa[D]qeera maan [G]ja
+Kaisa [D] tu hai nirmohi kaisa [A] harjaaiya...
+
+
+</pre></body></html>

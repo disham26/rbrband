@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>Aaj Jaane Ki Abhi</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SON[G] DURATION HERE:
+duration = 120; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "([G]#", "([G]", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+
+
+    [G]        [A]      [Bm]
+Aaj jaane ki zid na karo
+    [G]        [A]      [Bm]
+Aaj jaane ki zid na karo
+       [Em]         	       [A]
+Yoonhi pehlu mein baithe raho
+       [Em]                [A]
+Yoonhi pehlu mein baithe raho
+    [G]        [Gm]     [D]
+Aaj jaane ki zid na karo
+    [G]        [A]      [Bm]
+Aaj jaane ki zid na karo
+
+[Verse]
+[D]         [F#m]         [D]
+Haaye mar jaayenge
+               [F#m]      [D]
+Hum toh lutt jaayenge
+       [G]         [F#m]      A/D
+Aisi baatein kiya na karo
+
+[chorus]
+    [G]        [A]      [Bm]
+Aaj jaane ki zid na karo
+    [G]        [A]      [D]
+Aaj jaane ki zid na karo
+
+[Verse]
+[D]                    [Bm]               [F#m]      [A]
+Tumhi socho zara kyun na roke tumhe
+           [G]                         [F#m]      [A]
+Jaan jaati hai jab uth ke jaate ho tum (x2)
+             [Bm]     [A]                 [F#m]/[A]
+Tum ko apni kasam jaane jaan
+        [Em]    [F#m]       [A]/[D]
+Baat itni meri maan lo
+
+
+
+[Verse 1]
+
+[D]                [G]   [D]    [Bm]
+Abhi  mujh mein kahin    Baaqi thodi si hai zindagi
+[D]                [G]   [D]    [Bm]
+Jaagi    dhadkan nayi   Jaana zinda hoon main toh abhi
+[G]     [A]     [G]      [A]
+Kuch aisi lagan   iss lamhe mein hai
+[G]           [A]
+Ye lamha kahaan tha mera   
+[D]     [Bm]   [D]        [Bm]
+Ab hai saamne    Issey chhoo loon zaraa
+[G]      [A]    [D]           [D]          [Bm]    [D]    [Bm]
+Mar jaaoon ya jee loon zaraa    Khushiyaan choom loon    Yaa ro loo'n zaraa
+[G]       [A]    [D]
+Mar jaaoon ya jee loon zaraa
+[D]               [G]    [D]   [Bm]
+Ho o   abhi mujh mein kahin   Baaqi thodi si hai zindagi
+
+
+[Chorus]
+
+[D]         [C]      [D]      [Bm]  [F#]            [Bm]
+Ho   dhoop mein jalte huey tann ko   chhaya ped ki mill gayee
+[D]      [C]    [D]           [Bm]     [F#]            [Bm]
+Roothe bachche ki hansi jaise   phuslaane se phir khil gayee
+[E]               [D] 
+Kuchh aisa hi ab mehsoos dil ko ho raha hai
+[E]               [D]
+Barso'n ke puraane zakhmo pe marham laga sa hai
+[G]      [A]      [G]       [A]    [G]          [A]
+Kuch ehsaan hai, iss lamhe mein hai    Ye lamha kahaan tha mera
+[D]    [Bm]       [D]         [Bm]
+Ab hai saamne    Issey chhoo loon zaraa
+[G]      [A]      [D]
+Mar jaaoon ya jee loon zaraa
+[D]       [Bm]       [D]     [Bm]
+Khushiyaan choom loon    Yaa ro loo'n zaraa
+[G]      [A]     [D]
+Mar jaaoon ya jee loon zaraa
+
+
+</pre></body></html>

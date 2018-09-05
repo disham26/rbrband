@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>Phir Bhi Dil Hai Hindustani</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 120; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+[110 BPM]
+[Bm] 									[A]
+Hum Logo Ko Samajh Sako to Samjho dilbar jaani
+[A] 							[Bm]
+Jitna bhi tum samjhoge utni hogi hairaani
+[Bm] 									[A]
+Apni chhatri tumko dede kabhi jo barse paani
+[A] 							[Bm]
+Kabhi naye packet me beche tumko cheez purani
+
+
+[Bm]             [A]
+Phir bhi dil hai hindustani
+[A]             [Bm]
+Phir bhi dil hai hindustani
+
+[Bm]             [A]
+Thode anari hai thode khiladi
+[A]             [Bm]
+Ruk Ruk ke chalti hai apni gaadi
+[Bm]             [A]
+Humein Pyaar chahiye or kuch paise bhi
+[A]             [Bm]
+Hum aise bhi hai, or hai vaise bhi
+
+[Bm] 									[A]
+Hum logo ko samajh sako to samjho dilbar jaani
+[A] 							[Bm]
+Ulti Seedhi Jaisi Bhi Hai Apni Yahi Kahani
+[Bm] 									[A]
+Thodi Hum Me Hushiyari Hai Thodi Hai Naadani
+[A] 							[Bm]
+Thodi Hum Me Sacchai Hai Thodi Beimaani
+
+[Bm]             [A]
+Phir bhi dil hai hindustani
+[A]             [Bm]
+Phir bhi dil hai hindustani
+
+Aankhon Mein Kuch Aasun Hai Kuch Sapne Hai
+Aasun Aur Sapne Dono Hi Apne Hai
+Aankhon Mein Kuch Aason Hai Kuch Sapne Hai
+Aason Aur Sapne Dono Hi Apne Hai
+Dil Dukha Hai Lekin, Tuta To Nahin Hai
+Umeed Ka Daaman Chhuta To Nahin Hai
+Hum Logo Ko, Samajh Sako To, Samjho Dilbar Jaani
+Thodi Majburi Hai Lekin Thodi Hai Manmaani
+Thodi Tu Tu Main Main Hai Aur Thodi Kheecha Taani
+Humme Kaafi Baatein Hai Jo Lagti Hai Deewani
+Phir Bhi Dil Hai Hindustani, Phir Bhi Dil Hai Hindustani
+
+
+</pre></body></html>

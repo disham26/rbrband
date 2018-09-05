@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>Zara Zara Tujhe Bhula Diya</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 120; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+
+
+
+[Verse]
+[Am]        [C]
+Zara zara behekta hai
+[Am]
+Mehekta hai
+[G]
+Aaj toh mera
+[Am]         [C]
+Tan badan main pyasi hoon
+[Am]
+Mujhe bhar le
+[G]
+Apni bahon mein
+
+[Chorus]
+[Am]        [G]
+Haan teri kasam
+       [F]
+Mujhko sanam
+     [Em]         [Am]
+Duur kahin na jaa na
+    [G]
+Yeh duuri
+      [F]
+kehti hai
+     [Em]        [Am]
+Paas mere aaja re
+
+[Verse]
+[Am]
+Yunhi garaj garaj kaali ghata barse
+[Em]
+Hum yaar bheeg jayen
+[Dm]                   [C]
+[C]hahat ki is baarish mein
+[Am]
+Meri geeli geeli laton ko suljhaye
+[Em]
+Tu apni ungliyon se
+[Dm]                         [C]
+Mein toh hoon isi khwahish mein
+[Am]       [Em]
+Sardi ki raaton mein hum
+[F]            [G]
+Soye rahe ek chaadar mein
+    [Am]    [Em]
+Hum dono tanha ho
+[Dm]          [G]
+Na koi rahe is ghar mein
+
+
+
+
+[Am]                 [G]
+Kaali kaali khaali raaton se
+[F]                  [Am]
+Hone lagi hai dosti
+[Am]               [G]
+Khoya khoya inn raahon mein
+[F]      [G]            [Am]
+Ab mera kuch bhi nahi
+[Am]
+Har pal har lamha
+[F]                [C]    [G]
+Main kaise sehta hoon
+[Am]
+Har pal har lamha
+[F]             [C]               [G]
+Main khudh se yeh kehta rehta hoon
+[Am]               [G]
+Tujhe bhula diya oh
+[F]                [G]
+Tujhe bhula diya oh
+[Am]               [G]
+Tujhe bhula diya oh
+[F]                   [G]
+Phir kyun teri yaadon ne
+[Am]              [G]
+Mujhe rula diya oh
+[Am]
+Mujhe rula diya
+
+
+[Verse]
+
+[Am]           [Am]           [C]              [G]
+Teri yaadon mein likhe jo lafz dete hai sunayi
+A            [Am]           [C]              [G]
+Beetay lamhe poochte hai kyun hue aise judaa
+       [G]                 [Am]
+Khuda, khuda mila jo yeh faasla hai
+[G]                 [Am]
+Khuda tera hi yeh faisla hai
+[G]                  [Am]
+Khuda hona tha woh ho gaya
+[F]           [Am]
+Jo tune tha likha
+
+
+</pre></body></html>

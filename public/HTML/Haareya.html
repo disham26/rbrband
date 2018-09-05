@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>Haareya</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 180; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+Lyrics of Haareya
+
+
+
+
+
+
+
+[Em]            [Am]
+1               2
+Dekheya main chaand dekheya
+[Em]            [Am]
+1               2
+Nooran waale sitaare dekheya
+[Em]     [Am]        [C]     [D]
+1        2           3        4
+Par tere jaisa na koi dekheya main
+[Em]            [Am]
+1               2
+Lagta hai nigaahon mein teri
+[Em]            [Am]
+1               2
+Bin doobe rehna hi nahi
+[Em]            [Am]
+1               2
+Mujhe ishq yeh karne se
+[C]                 [D]
+3                    4
+Ab koi bhi na rok sakeya
+
+[Chorus]
+               [Em]      [Am]
+               1         2
+O haareya main dil haareya
+               [C]       [D]
+               3         4
+O haareya main dil haareya
+               [Em]      [Am]
+               1         2
+O haareya main dil haareya
+           [C]      [D]
+           3        4
+Main haara tujhpe o.. X2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Bridge]
+[Em]            [D]
+1               4
+Khuli aankhon se dekha woh
+[Bm]           [Am]
+5              2
+Haseen khwab hai tu
+[Em]          [D]
+1             4
+Dil mein jo utar jaaye woh
+[Bm]          [Am]
+5             5
+Pyaari baat hai tu
+
+
+[Em]            [D]
+1               4
+Khuli aankhon se dekha woh
+[Bm]           [Am]
+5              2
+Haseen khwab hai tu
+[Em]          [D]
+1             4
+Dil mein jo utar jaaye woh
+[Bm]          [Am]
+5             5
+Pyaari baat hai tu
+
+
+[Chorus]
+[Em]           [Am]
+1              2
+Tere naam ka nasha nasha hai
+[C]              [D]
+3                 4
+Zubaan pe chhaa gayaa
+[Em]               [Am]
+1                  2
+Iss bekhudi mein doobne se
+[C]                  [D]
+3                    4
+Main khud ko na rok sakeya
+
+[Verse]
+[Em]           [Am]
+1              2
+Dekheya main phool dekheya
+[Em]           [Am]
+1              2
+Khushboo ke nazare dekheya
+[Em]        [Am]        [C]    [D]
+1           2            3      4
+Par tere jaisa na koi dekheya main
+[Em]           [Am]
+1              2
+Lagta hai baahon mein teri
+[Em]           [Am]
+1              2
+Bikhre bin rehna hi nahi
+[Em]           [Am]
+1              2
+Mujhe ishq yeh karne se
+[C]                  [D]
+3                    4 
+Ab koi bhi na rok sakeya
+
+[Chorus]
+               [Em]      [Am]
+               1         2
+O haareya main dil haareya
+               [C]       [D]
+               3         4
+O haareya main dil haareya
+               [Em]      [Am]
+               1         2
+O haareya main dil haareya
+           [C]      [D]
+           3        4
+Main haara tujhpe o.. X2
+
+
+
+
+</pre></body></html>
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/> <meta charset="UTF-8">
+<title>SongScroller Template</title>
+<script type="text/javascript">
+window.scrollBy(0,1); 
+
+// ENTER SONG DURATION HERE:
+duration = 120; // in seconds
+
+ss = 1; // scroll step in pixels
+var t = new Array ("(H", "(G#", "(G", "(F#", "(F", "(E", "(D#", "(D", "(C#", "(C", "(B", "(A#", "(A", "(H");
+function transup() {
+for (a=0; a<t.length-1; a++){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a+1]).join(t[a]);}}
+
+function transdown() {
+for (a=t.length-1; a<0; a--){
+document.getElementById('lyrics').innerHTML = document.getElementById('lyrics').innerHTML.split(t[a]).join(t[a+1]);}}
+
+function pageScroll() {
+if (document.getElementById("scroll").innerText == "START SCROLL"){
+autoscroll = setInterval("window.scrollBy(0, ss);", Math.round(duration *1000/((document.body.scrollHeight * ((((document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color')).split('\n').length - 3) / (document.getElementById('lyrics').innerText.split('\n').length -2))))) / ss)) ); 
+document.getElementById("scroll").innerText = "STOP SCROLL";}
+else {clearInterval(autoscroll); document.getElementById("scroll").innerText = "START SCROLL";}}
+</script></head>
+<body style="font-size:60px; font-weight:bold;" onkeypress="pageScroll()" onLoad = "while(document.body.scrollWidth > window.innerWidth) {document.body.style.fontSize = parseInt(document.body.style.fontSize) - 1+'px';}; 
+document.body.innerHTML = document.body.innerHTML.replace(/\u005B/g, '<font color=red>(');
+document.body.innerHTML = document.body.innerHTML.replace(/\u005D/g, ')</font>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007B/g, '<font color=blue>');
+document.body.innerHTML = document.body.innerHTML.replace(/\u007D/g, '</font>');
+while(((document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')).split('\n').length - 4) / (document.getElementById('lyrics').innerText.split('\n').length-2) * document.body.scrollHeight) < (window.innerHeight/2))
+{document.body.innerHTML = document.body.innerHTML.substring(0, document.body.innerHTML.indexOf('<font color')) +'\n' + document.body.innerHTML.substring(document.body.innerHTML.indexOf('<font color'));} 
+w=0; for (a=0; a < document.getElementById('lyrics').innerText.split('\n').length; a++) { if(document.getElementById('lyrics').innerText.split('\n')[a].length > w) {w= document.getElementById('lyrics').innerText.split('\n')[a].length;}} 
+if(w>50){alert('Lyric width is '+ (w) +' characters. Split lyrics into shorter lines if text is too small.');} 
+">
+<a style="position:fixed; bottom:1%; left:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: pageScroll();" id="scroll" >START SCROLL</a>
+<a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transup();" id="tu" >TRANS+</a>
+<!-- <a style="position:fixed; bottom:1%; right:1%; font-size:150%; font-weight:bold; background-color:yellow;" href="javascript: transdown();" id="tu" >TRANS-</a> -->
+<pre id="lyrics" style="font-size:100%; font-weight:bold;">
+<!-- ADD LYRICS BELOW THIS LINE -->
+
+PLACE THE SONG TITLE, GUITAR CHORD FINGERINGS,
+CAPO POSITION, OPENING COMMENTS, AND ANY 
+MULTI-LINE GUITAR TABS HERE AT THE TOP
+OF THE SONG TEXT.
+
+GRANDMA GOT RUN OVER BY A REINDEER
+Gmaj7 = 3 2 0 0 0 2
+G7 = 3 2 0 0 0 1
+
+INTRO TAB:
+e:-------------------2-:
+B:-----------------1---:
+G:---------------2-----:
+D:-------------0-------:
+A:-----2-0-3-2---------:
+E:-2-3-----------------:
+
+[-- PLACE GUITAR CHORDS, INLINE COMMENTS, AND
+INLINE GUITAR TABS INSIDE SQUARE BRACKETS 
+TO DISPLAY THEM IN RED. --]
+
+[--PLAY INTRO TAB--]
+[G]GRANDMA GOT RUN OVER BY A [Gmaj7]REINDEER
+[G7]WALKING HOME FROM OUR HOUSE CHRISTMAS [C]EVE
+YOU CAN SAY THERES NO SUCH THING AS [G]SANTA
+BUT [D]AS FOR ME AND GRANDPA WE BE[G]LIEVE
+
+[G]SHE'D BEEN DRINKING TOO MUCH [Gmaj7]EGG NOG
+[G7]AND WE WARNED HER NOT TO [C]GO
+BUT SHE FORGOT HER MEDI[G]CATION
+AND [D]WANDERED OUT THE DOOR INTO THE [G]SNOW
+
+[G]WHEN WE FOUND HER CHRISTMAS [Gmaj7]MORNING
+[G7]AT THE SCENE OF THE [C]ATTACK
+THERE WERE HOOFPRINTS ON HER [G]FOREHEAD
+IN[D]CRIMINATING CLAW MARKS ON HER [G]BACK
+
+{ANY TEXT INSIDE CURLY BRACKETS WILL BE DISPLAYED
+IN BLUE. THIS FEATURE CAN BE USED TO IDENTIFY
+SECOND-SINGER LYRICS FOR DUETS AND HARMONIES.}
+
+{[G]GRANDMA GOT RUN OVER BY A [Gmaj7]REINDEER
+[G7]WALKING HOME FROM OUR HOUSE CHRISTMAS [C]EVE
+YOU CAN SAY THERES NO SUCH THING AS [G]SANTA
+BUT [D]AS FOR ME AND GRANDPA WE BE[G]LIEVE}
+
+[G]IT'S JUST NOT CHRISTMAS WITHOUT [Gmaj7]GRANDMA
+[G7]ALL THE FAMILYS DRESSED IN [C]BLACK
+AND WE JUST CANT HELP BUT [G]WONDER
+SHOULD WE [D]OPEN UP HER GIFTS 
+OR SEND THEM [G]BACK
+
+[G]NOW WERE ALL SO PROUD OF [Gmaj7]GRANDPA
+[G7]HE'S BEEN TAKING THIS SO [C]WELL
+SEE HIM IN THERE WATCHING [G]FOOTBALL
+DRINKING [D]BEER AND PLAYING CARDS 
+WITH COUSIN [G]MEL
+
+{[G]GRANDMA GOT RUN OVER BY A [Gmaj7]REINDEER
+[G7]WALKING HOME FROM OUR HOUSE CHRISTMAS [C]EVE
+YOU CAN SAY THERES NO SUCH THING AS [G]SANTA
+BUT [D]AS FOR ME AND GRANDPA WE BE[G]LIEVE}
+
+[G]NOW THE GOOSE IS ON THE [Gmaj7]TABLE
+[G7]AND THE PUDDING MADE OF [C]FIG
+AND THE BLUE AND SILVER [G]CANDLES
+THAT [D]WOULD'VE MATCHED THE HAIR 
+IN GRANDMAS [G]WIG
+
+[G]I'VE WARNED ALL MY FRIENDS AND [Gmaj7]NEIGHBORS
+[G7]BETTER WATCH OUT FOR YOUR [C]SELVES
+THEY SHOULD NEVER GIVE A [G]LICENSE
+TO A [D]MAN WHO DRIVES A SLEIGH 
+AND PLAYS WITH [G]ELVES
+
+[--INLINE GUITAR TABS REPRESENT A SERIES OF 
+SINGLE NOTES. EACH NOTE IS REPRESENTED BY 
+A STRING NAME AND FRET NUMBER. 
+A LOWER CASE 'e' IS USED FOR THE THINNER 
+HIGH E-STRING, AND A CAPITAL 'E'
+FOR THE HEAVIER LOW E-STRING.--]
+[--HERE'S AN EXAMPLE OF AN INLINE TAB 
+WITH 8 CONSECUTIVE NOTES:--]
+
+[tab: E3,A0,A2,A3,D0,D2,D4,D0]
+
+{[G]GRANDMA GOT RUN OVER BY A [Gmaj7]REINDEER
+[G7]WALKING HOME FROM OUR HOUSE CHRISTMAS [C]EVE
+YOU CAN SAY THERES NO SUCH THING AS [G]SANTA
+BUT [D]AS FOR ME AND GRANDPA WE BE[G]LIEVE}
+
+</pre></body></html>
+
